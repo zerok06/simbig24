@@ -42,7 +42,13 @@
             {
                 "isSub": true,
                 "title": "Speakers",
-                "url": "#speakers"
+                "url": "#speakers",
+                "sub": [
+                    {
+                        "title": "COMMITTEE",
+                        "url": "/committee"
+                    }
+                ]
             }
         ]
     }

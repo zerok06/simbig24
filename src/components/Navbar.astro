@@ -1,12 +1,42 @@
 ---
 import Wrapper from './Wrapper.astro'
+import DATA from '../../information.json'
+
+const {
+  hero: { navbar },
+} = DATA
 ---
 
 <nav>
   <Wrapper>
     <div class="h-20 flex justify-between items-center">
       <a href="/">LOGO</a>
-      <div class="flex items-center gap-2"></div>
+      <ul class="flex items-center gap-2">
+        {
+          navbar.map(({ isSub, title, sub = [] }) => {
+            if (isSub) {
+              return (
+                <li class="relative group">
+                  <p class="px-2 py-1 cursor-default">{title}</p>
+                  <div class="absolute top-[100%] right-0 px-4 py-3 bg-white text-black min-w-[200px] hidden group-hover:flex">
+                    {sub.map(item => (
+                      <a href="#">{item.title}</a>
+                    ))}
+                  </div>
+                </li>
+              )
+            } else {
+              return (
+                <li>
+                  <a href="#" class="px-2 py-1">
+                    {title}
+                  </a>
+                </li>
+              )
+            }
+          })
+        }
+      </ul>
     </div>
   </Wrapper>
 </nav>
