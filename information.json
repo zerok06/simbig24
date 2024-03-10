@@ -31,5 +31,19 @@
             ]
         }
     },
-    "hero": {}
+    "hero": {
+        "background": "/assets/images/hero-bg.jpg",
+        "navbar": [
+            {
+                "isSub": false,
+                "title": "Speakers",
+                "url": "#speakers"
+            },
+            {
+                "isSub": true,
+                "title": "Speakers",
+                "url": "#speakers"
+            }
+        ]
+    }
 }

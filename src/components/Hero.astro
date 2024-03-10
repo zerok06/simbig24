@@ -1,9 +1,18 @@
 ---
 import Wrapper from '../components/Wrapper.astro'
+import DATA from '../../information.json'
+import Navbar from './Navbar.astro'
+
+const {
+  hero: { background },
+} = DATA
 ---
 
-<header class="min-h-[100svh]">
-  <nav>
-    <Wrapper>asdasd</Wrapper>
-  </nav>
+<header class="min-h-[100svh] relative bg-black/70 text-white">
+  <img
+    src={background}
+    alt="hero background simbig"
+    class="h-full w-full absolute -z-10 top-0 left-0 object-cover"
+  />
+  <Navbar />
 </header>
