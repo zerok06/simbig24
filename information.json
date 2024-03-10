@@ -1,0 +1,35 @@
+{
+    "title": "",
+    "socialLinks": {
+        "linkedin": {
+            "name": "Linkedin",
+            "url": "https://www.linkedin.com/company/simbig/",
+            "color": "#007bb5"
+        },
+        "facebook": {
+            "name": "Facebook",
+            "url": "https://www.facebook.com/SIMBig.Conference/",
+            "color": "#3b5998"
+        },
+        "x": {
+            "name": "X",
+            "url": "https://twitter.com/SIMBigPeru",
+            "color": "#000000"
+        },
+        "youtube": {
+            "name": "Youtube",
+            "url": "https://www.youtube.com/channel/UCNgraquKWFCzcujSavfB6mA",
+            "color": "#cb2027"
+        },
+        "instagram": {
+            "name": "Instagram",
+            "url": "https://www.instagram.com/simbig.conference/",
+            "color": [
+                "#f9ce34",
+                "#ee2a7b",
+                "#6228d7"
+            ]
+        }
+    },
+    "hero": {}
+}
