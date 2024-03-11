@@ -93,5 +93,9 @@
                 }
             }
         ]
+    },
+    "dates": {
+        "title": "Important Dates",
+        "paragraph": "10th International Conference on Information Management and Big Data"
     }
 }
