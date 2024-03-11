@@ -62,16 +62,16 @@
     },
     "counters": {
         "participants": {
-            "number": 0,
-            "text": "Participants in all Editions Of SIMBig"
+            "number": 2000,
+            "text": "Participants in all \nEditions Of SIMBig"
         },
         "articles": {
-            "number": 0,
-            "text": "Published Research Articles"
+            "number": 200,
+            "text": "Published Research \nArticles"
         },
         "speakers": {
-            "number": 0,
-            "text": "Top Keynote Speakers"
+            "number": 50,
+            "text": "Top Keynote\n Speakers"
         },
         "banner": "/assets/images/counters-bg.jpg"
     }
