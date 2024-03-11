@@ -13,14 +13,14 @@ const {
       <a href="/">LOGO</a>
       <ul class="flex items-center gap-2">
         {
-          navbar.map(({ isSub, title, sub = [] }) => {
+          navbar.map(({ isSub, title, sub = [], url }) => {
             if (isSub) {
               return (
                 <li class="relative group">
                   <p class="px-2 py-1 cursor-default">{title}</p>
                   <div class="absolute top-[100%] right-0 px-4 py-3 bg-white text-black min-w-[200px] hidden group-hover:flex">
                     {sub.map(item => (
-                      <a href="#">{item.title}</a>
+                      <a href={item.url}>{item.title}</a>
                     ))}
                   </div>
                 </li>
@@ -28,7 +28,7 @@ const {
             } else {
               return (
                 <li>
-                  <a href="#" class="px-2 py-1">
+                  <a href={url} class="px-2 py-1">
                     {title}
                   </a>
                 </li>

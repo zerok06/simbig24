@@ -1,16 +1,16 @@
 ---
 import DATA from '../../information.json'
 const {
-  socialLinks: { linkedin, x, facebook, instagram, youtube },
+  socialLinks: { LinkedIn, x, Facebook, Instagram, YouTube },
 } = DATA
 ---
 
 <aside class="absolute top-[calc(50svh-120px)] left-0 flex flex-col z-50">
   <a
-    href={linkedin.url}
+    href={LinkedIn.url}
     target="_blank"
     class="h-12 w-12 flex text-white hover:w-16 transition-all duration-300 justify-center items-center"
-    style={{ background: linkedin.color }}
+    style={{ background: LinkedIn.color }}
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -43,10 +43,10 @@ const {
   </a>
 
   <a
-    href={facebook.url}
+    href={Facebook.url}
     target="_blank"
     class="h-12 w-12 flex text-white hover:w-16 transition-all duration-300 justify-center items-center"
-    style={{ background: facebook.color }}
+    style={{ background: Facebook.color }}
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -61,11 +61,11 @@ const {
   </a>
 
   <a
-    href={instagram.url}
+    href={Instagram.url}
     target="_blank"
     class="h-12 w-12 flex text-white hover:w-16 transition-all duration-300 justify-center items-center"
     style={{
-      background: `linear-gradient(40deg ,${instagram.color.join(',')})`,
+      background: `linear-gradient(40deg ,${Instagram.color.join(',')})`,
     }}
   >
     <svg
@@ -81,10 +81,10 @@ const {
   </a>
 
   <a
-    href={youtube.url}
+    href={YouTube.url}
     target="_blank"
     class="h-12 w-12 flex text-white hover:w-16 transition-all duration-300 justify-center items-center"
-    style={{ background: youtube.color }}
+    style={{ background: YouTube.color }}
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"

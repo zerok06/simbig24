@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary: 206 100% 27%;
+    --bg: 206 100% 15%;
+}
+
+html {
+    font-family: "Poppins";
+}

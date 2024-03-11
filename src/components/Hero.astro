@@ -4,15 +4,30 @@ import DATA from '../../information.json'
 import Navbar from './Navbar.astro'
 
 const {
-  hero: { background },
+  hero: { background, title, paragraph },
 } = DATA
 ---
 
-<header class="min-h-[100svh] relative bg-black/70 text-white">
+<header class="min-h-[100svh] relative bg-black/30 text-white">
   <img
     src={background}
     alt="hero background simbig"
     class="h-full w-full absolute -z-10 top-0 left-0 object-cover"
   />
   <Navbar />
+  <section class="h-[calc(100svh-80px)]">
+    <div class="w-full max-w-7xl mx-auto h-full">
+      <div class="flex h-full">
+        <div class="flex-1 flex flex-col gap-4 justify-center">
+          <h1 class="font-bold text-4xl md:text-8xl text-center md:text-left">
+            {title}
+          </h1>
+          <p class="text-white/80 text-lg text-center md:text-left">
+            {paragraph}
+          </p>
+        </div>
+        <div class="hidden md:flex-1"></div>
+      </div>
+    </div>
+  </section>
 </header>

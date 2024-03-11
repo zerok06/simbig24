@@ -1,12 +1,12 @@
 {
     "title": "",
     "socialLinks": {
-        "linkedin": {
-            "name": "Linkedin",
+        "LinkedIn": {
+            "name": "LinkedIn",
             "url": "https://www.linkedin.com/company/simbig/",
             "color": "#007bb5"
         },
-        "facebook": {
+        "Facebook": {
             "name": "Facebook",
             "url": "https://www.facebook.com/SIMBig.Conference/",
             "color": "#3b5998"
@@ -16,12 +16,12 @@
             "url": "https://twitter.com/SIMBigPeru",
             "color": "#000000"
         },
-        "youtube": {
-            "name": "Youtube",
+        "YouTube": {
+            "name": "YouTube",
             "url": "https://www.youtube.com/channel/UCNgraquKWFCzcujSavfB6mA",
             "color": "#cb2027"
         },
-        "instagram": {
+        "Instagram": {
             "name": "Instagram",
             "url": "https://www.instagram.com/simbig.conference/",
             "color": [
@@ -32,6 +32,9 @@
         }
     },
     "hero": {
+        "title": "SIMBig 2023",
+        "paragraph": "10th International Conference on Information Management and Big Data",
+        "date": "",
         "background": "/assets/images/hero-bg.jpg",
         "navbar": [
             {
@@ -51,5 +54,25 @@
                 ]
             }
         ]
+    },
+    "about": {
+        "title": "SIMBig",
+        "paragraph": "SIMBig is one of the first conferences in Latin America grouping areas such as Artificial Intelligence, Machine Learning, Deep Learning, Healthcare Informatics, Natural Language Processing, Semantic Web, Software Engineering, among others.",
+        "image": ""
+    },
+    "counters": {
+        "participants": {
+            "number": 0,
+            "text": "Participants in all Editions Of SIMBig"
+        },
+        "articles": {
+            "number": 0,
+            "text": "Published Research Articles"
+        },
+        "speakers": {
+            "number": 0,
+            "text": "Top Keynote Speakers"
+        },
+        "banner": "/assets/images/counters-bg.jpg"
     }
 }
