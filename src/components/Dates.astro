@@ -2,16 +2,42 @@
 import Wrapper from '../components/Wrapper.astro'
 import DATA from '../../information.json'
 const {
-  dates: { title, paragraph },
+  dates: { title, paragraph, content },
 } = DATA
 ---
 
-<section class="py-20 bg-bg text-white">
+<section class="py-20">
   <Wrapper>
     <span class="text-primary font-medium text-base text-center block"
       >[Our Important Dates]</span
     >
     <h2 class="text-center text-5xl font-bold mb-2">{title}</h2>
-    <p class="text-center text-white/80 mb-6">{paragraph}</p>
+    <p class="text-center text-black/80 mb-6">{paragraph}</p>
+    <div class="flex flex-col">
+      {
+        content.map(item => (
+          <div>
+            <div class="w-full gap-4 flex py-4 px-8 rounded-lg">
+              <div class="min-w-[200px] text-lg font-semibold flex items-center">
+                {item.date}
+              </div>
+              <div class="flex-1 flex gap-10">
+                <div class="h-32 w-32 rounded-lg bg-red-400 overflow-hidden">
+                  <img
+                    src={item.image}
+                    class="w-[120%] h-full object-cover"
+                    alt={item.name}
+                  />
+                </div>
+                <div class="flex flex-col gap-1 justify-center">
+                  <h4 class="text-xl font-semibold">{item.name}</h4>
+                  <p class="text-base text-black/80">{item.desc}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
   </Wrapper>
 </section>

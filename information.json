@@ -96,6 +96,53 @@
     },
     "dates": {
         "title": "Important Dates",
-        "paragraph": "10th International Conference on Information Management and Big Data"
+        "paragraph": "10th International Conference on Information Management and Big Data.",
+        "content": [
+            {
+                "name": "Papers submission deadline",
+                "desc": "Description",
+                "date": "June 10, 2024",
+                "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            },
+            {
+                "name": "Papers submission deadline",
+                "desc": "Description",
+                "date": "June 10, 2024",
+                "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            },
+            {
+                "name": "Papers submission deadline",
+                "desc": "Description",
+                "date": "June 10, 2024",
+                "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            }
+        ]
+    },
+    "entidades": {
+        "title": "Organizing Institutions & Sponsors",
+        "desc": "Organizing Institutions & Sponsors",
+        "institution": [
+            {
+                "name": "Universidad Nacional de Moquegua",
+                "url": "",
+                "image": "/assets/images/unam.webp"
+            }
+        ],
+        "sponsors": []
+    },
+    "testimonial": {
+        "title": "Past Keynote Speakers Testimonials",
+        "desc": "Past Keynote Speakers Testimonials",
+        "content": [
+            {
+                "date": "June 10, 2024",
+                "comento": "",
+                "people": {
+                    "image": "",
+                    "name": "",
+                    "job": ""
+                }
+            }
+        ]
     }
 }

@@ -1,0 +1,55 @@
+---
+import Wrapper from '../components/Wrapper.astro'
+import DATA from '../../information.json'
+const {
+  entidades: { title, desc, institution, sponsors },
+} = DATA
+
+const existItems = sponsors.length > 0
+---
+
+<section class="bg-black py-20 text-white">
+  <Wrapper>
+    <span class="text-primary font-medium text-base text-center block"
+      >[Sponsored By]</span
+    >
+    <h2 class="text-center text-5xl font-bold mb-2">{title}</h2>
+    <p class="text-center text-white/80 mb-6">{desc}</p>
+    <h3 class="text-left text-2xl font-bold mb-2 mt-8">
+      Organizing Institutions
+    </h3>
+    <div class="flex mt-4">
+      {
+        institution.map(item => (
+          <div class="min-w-[249.6px] max-w-[20%] flex items-center justify-center">
+            <a
+              href={item.url}
+              class="h-24 w-24 opacity-80 hover:opacity-100 transition-opacity duration-300"
+            >
+              <img src={item.image} alt={item.name} />
+            </a>
+          </div>
+        ))
+      }
+    </div>
+    {
+      existItems && (
+        <>
+          <h3 class="text-left text-2xl font-bold mb-2 mt-8">Sponsors</h3>
+          <div class="flex mt-4">
+            {sponsors.map(({ url, image, name }) => (
+              <div class="min-w-[249.6px] max-w-[20%] flex items-center justify-center">
+                <a
+                  href={url}
+                  class="h-24 w-24 opacity-80 hover:opacity-100 transition-opacity duration-300"
+                >
+                  <img src={image} alt={name} />
+                </a>
+              </div>
+            ))}
+          </div>
+        </>
+      )
+    }
+  </Wrapper>
+</section>

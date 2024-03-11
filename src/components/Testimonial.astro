@@ -1,0 +1,18 @@
+---
+import Wrapper from '../components/Wrapper.astro'
+import DATA from '../../information.json'
+const {
+  testimonial: { title, desc },
+} = DATA
+---
+
+<Wrapper>
+  <section class="py-20">
+    <span class="text-primary font-medium text-base text-center block"
+      >[Our Important Dates]</span
+    >
+    <h2 class="text-center text-5xl font-bold mb-2">{title}</h2>
+    <p class="text-center text-black/80 mb-6">{desc}</p>
+    <div></div>
+  </section>
+</Wrapper>
