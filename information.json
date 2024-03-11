@@ -74,5 +74,24 @@
             "text": "Top Keynote\n Speakers"
         },
         "banner": "/assets/images/counters-bg.jpg"
+    },
+    "speakers": {
+        "isActive": false,
+        "title": "Keynote Speakers",
+        "paragraph": "10th International Conference on Information Management and Big Data",
+        "components": [
+            {
+                "name": "DIAB, Mona",
+                "job": "PROFESSOR, PHD.",
+                "center": "",
+                "social": {
+                    "1": {
+                        "name": "website",
+                        "url": "",
+                        "icon": ""
+                    }
+                }
+            }
+        ]
     }
 }
