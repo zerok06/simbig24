@@ -136,11 +136,29 @@
         "content": [
             {
                 "date": "June 10, 2024",
-                "comento": "",
+                "comento": "SIMBig is a very good opportunity to make new collaborations between Peruvian and foreign universities.",
                 "people": {
-                    "image": "",
-                    "name": "",
-                    "job": ""
+                    "image": "https://simbig.org/SIMBig2023/img/testimonials/pascal-poncelet.jpg",
+                    "name": "Pascal Poncelet",
+                    "job": "University of Montpellier, France"
+                }
+            },
+            {
+                "date": "June 10, 2024",
+                "comento": "SIMBig is a very good opportunity to make new collaborations between Peruvian and foreign universities.",
+                "people": {
+                    "image": "https://simbig.org/SIMBig2023/img/testimonials/pascal-poncelet.jpg",
+                    "name": "Pascal Poncelet",
+                    "job": "University of Montpellier, France"
+                }
+            },
+            {
+                "date": "June 10, 2024",
+                "comento": "SIMBig is a very good opportunity to make new collaborations between Peruvian and foreign universities.",
+                "people": {
+                    "image": "https://simbig.org/SIMBig2023/img/testimonials/pascal-poncelet.jpg",
+                    "name": "Pascal Poncelet",
+                    "job": "University of Montpellier, France"
                 }
             }
         ]
