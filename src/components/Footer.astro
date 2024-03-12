@@ -1,0 +1,46 @@
+---
+import Wrapper from '../components/Wrapper.astro'
+import DATA from '../../information.json'
+const {
+  footer: { copyright, creator, nav },
+  hero: { title, paragraph },
+} = DATA
+---
+
+<section class="py-16 bg-black text-white">
+  <Wrapper>
+    <section class="flex mb-8">
+      <div>
+        <h2 class="text-3xl font-semibold">{title}</h2>
+        <p class="text-white/80">{paragraph}</p>
+      </div>
+      <div>
+        <h2>Menu</h2>
+        <div></div>
+      </div>
+    </section>
+    <section class="flex items-center md:flex-row flex-col md:justify-between">
+      <div class="text-sm text-white/70 font-medium flex gap-3">
+        {
+          nav.map(item => (
+            <a
+              href={item.path}
+              class="hover:text-white transition-colors duration-300"
+            >
+              {item.name}
+            </a>
+          ))
+        }
+      </div>
+      <div>
+        <p class="text-sm text-white/70">
+          {copyright} - Design by <a
+            href={creator.github}
+            class="text-white font-medium"
+            target="_blank">{creator.name}</a
+          >
+        </p>
+      </div>
+    </section>
+  </Wrapper>
+</section>

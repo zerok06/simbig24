@@ -168,5 +168,29 @@
         "desc": "Participate in one of the first conferences in Latin America that group data science topics and be part of the technological change.",
         "url": "",
         "banner": ""
+    },
+    "footer": {
+        "copyright": "© 2023 Copyright SIMBig.org",
+        "nav": [
+            {
+                "name": "Privacy Policy",
+                "path": "/privacy-policy"
+            },
+            {
+                "name": "Terms of use",
+                "path": "/terms-of-use"
+            },
+            {
+                "name": "FAQ's",
+                "path": "/faq"
+            }
+        ],
+        "menu": [
+            {}
+        ],
+        "creator": {
+            "github": "https://github.com/zerok06",
+            "name": "zerok06"
+        }
     }
 }
