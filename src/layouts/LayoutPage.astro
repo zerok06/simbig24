@@ -1,11 +1,15 @@
 ---
-import Navbar from '../components/Navbar.astro'
 import '../styles/base.css'
+import Navbar from '../components/Navbar.astro'
+import SocialLinks from '../components/SocialLinks.astro'
+import Footer from '../components/Footer.astro'
 interface Props {
   title: string
+  background: string
+  tag: string
 }
 
-const { title } = Astro.props
+const { title, background, tag } = Astro.props
 ---
 
 <!doctype html>
@@ -19,7 +23,34 @@ const { title } = Astro.props
     <title>{title}</title>
   </head>
   <body class="min-h-screen antialiased">
+    <SocialLinks />
+    <header class="min-h-[50svh] relative bg-black/30 text-white">
+      <img
+        src={background}
+        alt="hero background simbig"
+        class="h-full w-full absolute -z-10 top-0 left-0 object-cover"
+      />
+      <Navbar />
+      <section class="h-[calc(50svh-80px)]">
+        <div class="w-full max-w-7xl mx-auto h-full">
+          <div class="flex h-full">
+            <div class="flex-1 flex flex-col gap-4 justify-center">
+              <p class="text-white font-medium text-base text-left block">
+                [{tag}]
+              </p>
+              <h1
+                class="font-bold text-3xl md:text-6xl text-center md:text-left"
+              >
+                {title}
+              </h1>
+            </div>
+            <div class="hidden md:flex-1"></div>
+          </div>
+        </div>
+      </section>
+    </header>
     <slot />
+    <Footer />
   </body>
 </html>
 <style is:global>

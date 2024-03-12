@@ -43,12 +43,36 @@
                 "url": "#speakers"
             },
             {
+                "isSub": false,
+                "title": "Dates",
+                "url": "#dates"
+            },
+            {
+                "isSub": false,
+                "title": "Registration",
+                "url": "#registration"
+            },
+            {
+                "isSub": false,
+                "title": "Program",
+                "url": "#program"
+            },
+            {
+                "isSub": false,
+                "title": "Venue",
+                "url": "#venue"
+            },
+            {
                 "isSub": true,
-                "title": "Speakers",
+                "title": "Committee",
                 "url": "#speakers",
                 "sub": [
                     {
-                        "title": "COMMITTEE",
+                        "title": "Organizing Committee",
+                        "url": "/committee"
+                    },
+                    {
+                        "title": "Program Committee",
                         "url": "/committee"
                     }
                 ]
@@ -192,5 +216,10 @@
             "github": "https://github.com/zerok06",
             "name": "zerok06"
         }
+    },
+    "privacy-policy": {
+        "title": "Privacy Policy",
+        "tag": "Privacy Policy",
+        "background": "https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?q=80&w=1930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
 }
