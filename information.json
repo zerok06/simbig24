@@ -162,5 +162,11 @@
                 }
             }
         ]
+    },
+    "cta": {
+        "title": "Call for Papers",
+        "desc": "Participate in one of the first conferences in Latin America that group data science topics and be part of the technological change.",
+        "url": "",
+        "banner": ""
     }
 }

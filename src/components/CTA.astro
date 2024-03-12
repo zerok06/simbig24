@@ -1,0 +1,16 @@
+---
+import Wrapper from '../components/Wrapper.astro'
+import DATA from '../../information.json'
+const {
+  cta: { title, desc },
+} = DATA
+---
+
+<Wrapper>
+  <section class="rounded-3xl p-8 text-white bg-bg my-20">
+    <div class="flex flex-col justify-center py-10">
+      <h2 class="text-4xl font-semibold text-center">{title}</h2>
+      <p class="text-center mx-auto max-w-max md:max-w-[700px]">{desc}</p>
+    </div>
+  </section>
+</Wrapper>
