@@ -34,7 +34,7 @@
     "hero": {
         "title": "SIMBig 2023",
         "paragraph": "10th International Conference on Information Management and Big Data",
-        "date": "",
+        "date": "Peru, Universidad Nacional de Moquegua, OCT 29 - 31, 2024",
         "background": "/assets/images/hero-bg.jpg",
         "navbar": [
             {
@@ -50,7 +50,7 @@
             {
                 "isSub": false,
                 "title": "Registration",
-                "url": "#registration"
+                "url": "/registration"
             },
             {
                 "isSub": false,
@@ -100,7 +100,7 @@
         "banner": "/assets/images/counters-bg.jpg"
     },
     "speakers": {
-        "isActive": false,
+        "isActive": true,
         "title": "Keynote Speakers",
         "paragraph": "10th International Conference on Information Management and Big Data",
         "components": [
@@ -124,21 +124,27 @@
         "content": [
             {
                 "name": "Papers submission deadline",
-                "desc": "Description",
+                "desc": "Final deadline for submission of research papers for evaluation at the conference.",
                 "date": "June 10, 2024",
-                "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                "image": "/assets/images/papers.jpg"
             },
             {
-                "name": "Papers submission deadline",
-                "desc": "Description",
-                "date": "June 10, 2024",
-                "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                "name": "Notification of acceptance",
+                "desc": "Official communication on the acceptance or rejection of a paper for presentation at the conference.",
+                "date": "July 15, 2024",
+                "image": "/assets/images/notification.jpg"
             },
             {
-                "name": "Papers submission deadline",
-                "desc": "Description",
-                "date": "June 10, 2024",
-                "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                "name": "Camera-ready versions",
+                "desc": "Papers prepared and formatted according to conference standards for inclusion in the proceedings.",
+                "date": "October 10, 2024",
+                "image": "/assets/images/list.jpg"
+            },
+            {
+                "name": "Conference held at the Universidad Nacional de Moquegua, Peru",
+                "desc": "Academic event to be held at the National University of Moquegua, Peru, where presentations and discussions will take place.",
+                "date": "October 29 - 31, 2024",
+                "image": "/assets/images/conference.jpg"
             }
         ]
     },
@@ -162,27 +168,36 @@
                 "date": "June 10, 2024",
                 "comento": "SIMBig is a very good opportunity to make new collaborations between Peruvian and foreign universities.",
                 "people": {
-                    "image": "https://simbig.org/SIMBig2023/img/testimonials/pascal-poncelet.jpg",
+                    "image": "/assets/images/testimonials/pascal-poncelet.jpg",
                     "name": "Pascal Poncelet",
                     "job": "University of Montpellier, France"
                 }
             },
             {
                 "date": "June 10, 2024",
-                "comento": "SIMBig is a very good opportunity to make new collaborations between Peruvian and foreign universities.",
+                "comento": "SIMBig is a very good conference with very quality presentations.",
                 "people": {
-                    "image": "https://simbig.org/SIMBig2023/img/testimonials/pascal-poncelet.jpg",
-                    "name": "Pascal Poncelet",
-                    "job": "University of Montpellier, France"
+                    "image": "/assets/images/testimonials/diana-inkpen.jpg",
+                    "name": "Diana Impken",
+                    "job": "University of Ottawa, Canada"
                 }
             },
             {
                 "date": "June 10, 2024",
-                "comento": "SIMBig is a very good opportunity to make new collaborations between Peruvian and foreign universities.",
+                "comento": "Events like these [SIMBig] are a great opportunity for students to interact with researchers and to see cutting edge things happening.",
                 "people": {
-                    "image": "https://simbig.org/SIMBig2023/img/testimonials/pascal-poncelet.jpg",
-                    "name": "Pascal Poncelet",
-                    "job": "University of Montpellier, France"
+                    "image": "/assets/images/testimonials/lisa-getoor.jpg",
+                    "name": "Lise Getoor",
+                    "job": "University of California, USA"
+                }
+            },
+            {
+                "date": "June 10, 2024",
+                "comento": "[SIMbig] attracts the next generations data mining and bigdata researches. One important thing is to bridge between areas as big data and supply chain and attract more people.",
+                "people": {
+                    "image": "/assets/images/testimonials/jian-pei.jpg",
+                    "name": "Jian Pei",
+                    "job": "Simon Fraser University, Canada"
                 }
             }
         ]
@@ -220,6 +235,11 @@
     "privacy-policy": {
         "title": "Privacy Policy",
         "tag": "Privacy Policy",
+        "background": "https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?q=80&w=1930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    "registration": {
+        "title": "Registration",
+        "tag": "registration",
         "background": "https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?q=80&w=1930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
 }
