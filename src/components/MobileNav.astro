@@ -1,0 +1,153 @@
+---
+import DATA from '../../information.json'
+const {
+  hero: { navbar },
+} = DATA
+---
+
+<nav class="md:hidden block">
+  <button
+    id="controler"
+    class="flex h-10 w-10 border border-white/20 rounded-lg justify-center items-center hover:bg-white/5 transition duration-300"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="24"
+      height="24"
+      color="#fff"
+      fill="none"
+    >
+      <path
+        d="M4 5L20 5"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+      <path
+        d="M4 12L20 12"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+      <path
+        d="M4 19L20 19"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"></path>
+    </svg>
+  </button>
+  <div
+    class="mobile fixed z-50 h-screen w-full bg-black/95 backdrop-blur top-0 left-0"
+  >
+    <div class="h-20 flex items-center px-4 justify-end">
+      <button
+        id="controler"
+        class="flex h-10 w-10 border border-white/20 rounded-lg justify-center items-center hover:bg-white/5 transition duration-300"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          color="#fff"
+          fill="none"
+        >
+          <path
+            d="M19 5L5 19M5 5L19 19"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="h-full flex flex-col px-12">
+      {
+        navbar.map(({ isSub, title, url, sub = [] }) => {
+          if (isSub) {
+            return (
+              <details class="group">
+                <summary class="flex justify-between items-center cursor-pointer list-none">
+                  <span class="font-medium text-lg"> {title}</span>
+                  <span class="transition group-open:rotate-180">
+                    <svg
+                      fill="none"
+                      height="24"
+                      shape-rendering="geometricPrecision"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      viewBox="0 0 24 24"
+                      width="24"
+                    >
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </span>
+                </summary>
+                <div class="flex flex-col pl-5">
+                  {sub.map(item => (
+                    <a
+                      href={item.url}
+                      class="py-2 opacity-70 hover:opacity-100 transition-opacity duration-300"
+                    >
+                      {item.title}
+                    </a>
+                  ))}
+                </div>
+              </details>
+            )
+          } else {
+            return (
+              <a
+                href={url}
+                class="py-2 group flex flex-row justify-between items-center font-medium text-lg"
+              >
+                {title}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  color="#fff"
+                  fill="none"
+                  class="opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                >
+                  <path
+                    d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            )
+          }
+        })
+      }
+    </div>
+  </div>
+</nav>
+<style is:global>
+  .mobile {
+    clip-path: circle(0.2% at 100% 0);
+    transition: clip-path 0.3s ease;
+  }
+  .isActiveMenu {
+    clip-path: circle(141.2% at 100% 0);
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobile = document.querySelector('div.mobile')
+    const controls = document.querySelectorAll('#controler')
+    controls?.forEach(item =>
+      item.addEventListener('click', () => {
+        mobile?.classList.toggle('isActiveMenu')
+      })
+    )
+  })
+</script>

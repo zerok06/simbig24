@@ -1,0 +1,158 @@
+---
+import '../styles/base.css'
+import Navbar from '../components/Navbar.astro'
+import SocialLinks from '../components/SocialLinks.astro'
+import Footer from '../components/Footer.astro'
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>404 Oppss.</title>
+  </head>
+  <body class="min-h-screen antialiased relative">
+    <SocialLinks />
+    <header class="min-h-[100svh] bg-[rgba(0,0,0,.4)] text-white z-0">
+      <img
+        src="https://images.unsplash.com/photo-1575029644286-efb9039cac46?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="hero background simbig"
+        class="h-full w-full absolute -z-10 top-0 left-0 object-cover"
+      />
+      <Navbar />
+      <section class="h-[calc(100svh-80px)]">
+        <div class="w-full max-w-7xl mx-auto h-full">
+          <div class="flex h-full">
+            <div
+              class="flex-1 flex flex-col gap-3 justify-center sm:items-start items-center"
+            >
+              <p
+                class="text-white font-medium text-base md:text-left block text-center"
+              >
+                [Oppss.]
+              </p>
+              <h1
+                class="font-bold text-7xl md:text-9xl text-center md:text-left"
+              >
+                404
+              </h1>
+              <h2 class="text-4xl font-semibold md:text-left text-center">
+                How Did You Get Here?
+              </h2>
+              <a
+                href="/"
+                class="px-4 py-2 border border-white flex gap-1 justify-center items-center"
+              >
+                Return Home
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  color="#fff"
+                  fill="none"
+                >
+                  <path
+                    d="M20 12L4 12"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                  <path
+                    d="M15 17C15 17 20 13.3176 20 12C20 10.6824 15 7 15 7"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="hidden md:flex-1"></div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <slot />
+  </body>
+</html>
+<style is:global>
+  body {
+    font-family: 'Poppins';
+  }
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 100;
+    font-display: block;
+    src: url(/assets/fonts/poppins/Poppins-Thin.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    font-display: block;
+    src: url(/assets/fonts/poppins/Poppins-ExtraLight.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-display: block;
+    src: url(/assets/fonts/poppins/Poppins-Light.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url(/assets/fonts/poppins/Poppins-Regular.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-display: block;
+    src: url(/assets/fonts/poppins/Poppins-Medium.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-display: block;
+    src: url(/assets/fonts/poppins/Poppins-SemiBold.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-display: block;
+    src: url(/assets/fonts/poppins/Poppins-Bold.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-display: block;
+    src: url(/assets/fonts/poppins/Poppins-ExtraBold.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url(/assets/fonts/poppins/Poppins-Black.ttf) format('truetype');
+  }
+</style>

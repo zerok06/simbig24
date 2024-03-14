@@ -40,12 +40,12 @@
             {
                 "isSub": false,
                 "title": "Speakers",
-                "url": "#speakers"
+                "url": "/#speakers"
             },
             {
                 "isSub": false,
                 "title": "Dates",
-                "url": "#dates"
+                "url": "/#dates"
             },
             {
                 "isSub": false,
@@ -55,12 +55,23 @@
             {
                 "isSub": false,
                 "title": "Program",
-                "url": "#program"
+                "url": "/#program"
             },
             {
                 "isSub": false,
                 "title": "Venue",
-                "url": "#venue"
+                "url": "/#venue"
+            },
+            {
+                "isSub": true,
+                "title": "Call for Papers",
+                "url": "#call-for-papers",
+                "sub": [
+                    {
+                        "title": "Main Conference",
+                        "url": "/call-for-paper/main-conference"
+                    }
+                ]
             },
             {
                 "isSub": true,

@@ -1,6 +1,7 @@
 ---
 import Wrapper from './Wrapper.astro'
 import DATA from '../../information.json'
+import MobileNav from './MobileNav.astro'
 
 const {
   hero: { navbar },
@@ -11,7 +12,7 @@ const {
   <Wrapper>
     <div class="h-20 flex justify-between items-center">
       <a href="/">LOGO</a>
-      <ul class="flex items-center gap-2">
+      <ul class="md:flex hidden items-center gap-2">
         {
           navbar.map(({ isSub, title, sub = [], url }) => {
             if (isSub) {
@@ -64,6 +65,7 @@ const {
           })
         }
       </ul>
+      <MobileNav />
     </div>
   </Wrapper>
 </nav>
