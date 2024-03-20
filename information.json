@@ -1,5 +1,6 @@
 {
     "title": "",
+    "logo": "/assets/logo_text-white.svg",
     "socialLinks": {
         "LinkedIn": {
             "name": "LinkedIn",
@@ -35,7 +36,7 @@
         "title": "SIMBig 2023",
         "paragraph": "10th International Conference on Information Management and Big Data",
         "date": "Peru, Universidad Nacional de Moquegua, OCT 29 - 31, 2024",
-        "background": "/assets/images/hero-bg.jpg",
+        "background": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/54/42/05/dsc00418-largejpg.jpg?w=1200&h=-1&s=1",
         "navbar": [
             {
                 "isSub": false,
@@ -80,11 +81,11 @@
                 "sub": [
                     {
                         "title": "Organizing Committee",
-                        "url": "/committee"
+                        "url": "/committee/organizing-committee"
                     },
                     {
                         "title": "Program Committee",
-                        "url": "/committee"
+                        "url": "/committee/program-committee"
                     }
                 ]
             }
@@ -93,7 +94,7 @@
     "about": {
         "title": "SIMBig",
         "paragraph": "SIMBig is one of the first conferences in Latin America grouping areas such as Artificial Intelligence, Machine Learning, Deep Learning, Healthcare Informatics, Natural Language Processing, Semantic Web, Software Engineering, among others.",
-        "image": ""
+        "image": "/assets/images/about-us.jpg"
     },
     "counters": {
         "participants": {
@@ -111,7 +112,7 @@
         "banner": "/assets/images/counters-bg.jpg"
     },
     "speakers": {
-        "isActive": true,
+        "isActive": false,
         "title": "Keynote Speakers",
         "paragraph": "10th International Conference on Information Management and Big Data",
         "components": [
@@ -135,27 +136,19 @@
         "content": [
             {
                 "name": "Papers submission deadline",
-                "desc": "Final deadline for submission of research papers for evaluation at the conference.",
-                "date": "June 10, 2024",
-                "image": "/assets/images/papers.jpg"
+                "date": "June 10, 2024"
             },
             {
                 "name": "Notification of acceptance",
-                "desc": "Official communication on the acceptance or rejection of a paper for presentation at the conference.",
-                "date": "July 15, 2024",
-                "image": "/assets/images/notification.jpg"
+                "date": "July 15, 2024"
             },
             {
                 "name": "Camera-ready versions",
-                "desc": "Papers prepared and formatted according to conference standards for inclusion in the proceedings.",
-                "date": "October 10, 2024",
-                "image": "/assets/images/list.jpg"
+                "date": "October 10, 2024"
             },
             {
                 "name": "Conference held at the Universidad Nacional de Moquegua, Peru",
-                "desc": "Academic event to be held at the National University of Moquegua, Peru, where presentations and discussions will take place.",
-                "date": "October 29 - 31, 2024",
-                "image": "/assets/images/conference.jpg"
+                "date": "October 29 - 31, 2024"
             }
         ]
     },
@@ -252,5 +245,10 @@
         "title": "Registration",
         "tag": "registration",
         "background": "https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?q=80&w=1930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    "organizing-committee": {
+        "title": "Organizing Committee",
+        "tag": "Organizing Committee",
+        "background": "https://images.unsplash.com/photo-1573164574572-cb89e39749b4?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
 }

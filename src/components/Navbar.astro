@@ -5,13 +5,17 @@ import MobileNav from './MobileNav.astro'
 
 const {
   hero: { navbar },
+  logo,
+  title,
 } = DATA
 ---
 
 <nav>
   <Wrapper>
     <div class="h-20 flex justify-between items-center">
-      <a href="/">LOGO</a>
+      <a href="/" class="h-[40px]">
+        <img src={logo} alt={title} class="h-full" />
+      </a>
       <ul class="md:flex hidden items-center gap-2">
         {
           navbar.map(({ isSub, title, sub = [], url }) => {
