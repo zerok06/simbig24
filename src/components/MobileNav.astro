@@ -39,7 +39,7 @@ const {
     </svg>
   </button>
   <div
-    class="mobile fixed z-50 h-[100svh] w-full bg-black/95 backdrop-blur top-0 left-0"
+    class="mobile fixed z-50 h-full w-full bg-black/95 backdrop-blur top-0 left-0 flex flex-col"
   >
     <div class="h-20 flex items-center px-4 justify-end">
       <button
@@ -133,11 +133,11 @@ const {
 </nav>
 <style is:global>
   .mobile {
-    clip-path: circle(0.2% at 100% 0);
+    clip-path: circle(0% at 100% 0);
     transition: clip-path 0.3s ease;
   }
   .isActiveMenu {
-    clip-path: circle(141.2% at 100% 0);
+    clip-path: circle(200% at 100% 0);
   }
 </style>
 <script>
