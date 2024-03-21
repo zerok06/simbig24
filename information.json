@@ -36,7 +36,7 @@
         "title": "SIMBig 2023",
         "paragraph": "10th International Conference on Information Management and Big Data",
         "date": "Peru, Universidad Nacional de Moquegua, OCT 29 - 31, 2024",
-        "background": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/54/42/05/dsc00418-largejpg.jpg?w=1200&h=-1&s=1",
+        "background": "/assets/images/hero-bg.webp",
         "navbar": [
             {
                 "isSub": false,
@@ -114,7 +114,7 @@
     "speakers": {
         "isActive": false,
         "title": "Keynote Speakers",
-        "paragraph": "10th International Conference on Information Management and Big Data",
+        "paragraph": "Outstanding leaders who will challenge your ideas and enhance your creativity.",
         "components": [
             {
                 "name": "DIAB, Mona",
@@ -132,7 +132,7 @@
     },
     "dates": {
         "title": "Important Dates",
-        "paragraph": "10th International Conference on Information Management and Big Data.",
+        "paragraph": "Don't miss the crucial deadlines for paper submissions at our event.",
         "content": [
             {
                 "name": "Papers submission deadline",
@@ -154,7 +154,7 @@
     },
     "entidades": {
         "title": "Organizing Institutions & Sponsors",
-        "desc": "Organizing Institutions & Sponsors",
+        "desc": "Meet our sponsors and organizers.",
         "institution": [
             {
                 "name": "Universidad Nacional de Moquegua",
@@ -166,7 +166,7 @@
     },
     "testimonial": {
         "title": "Past Keynote Speakers Testimonials",
-        "desc": "Past Keynote Speakers Testimonials",
+        "desc": "Discover the opinions of past speakers.",
         "content": [
             {
                 "date": "June 10, 2024",
@@ -212,6 +212,40 @@
         "url": "",
         "banner": ""
     },
+    "contact": {
+        "title": "Contact Us",
+        "desc": "Questions or comments? Contact us.",
+        "items": [
+            {
+                "name": "Juan Antonio Lossio-Ventura",
+                "title": "Ph.D. in Computer Science",
+                "uni": "National Institutes of Health",
+                "location": "Bethesda, USA",
+                "desc": "",
+                "image": "https://simbig.org/SIMBig2023/img/comittee/juan.jpg",
+                "social": {
+                    "email": "juan.lossio@nih.gov",
+                    "website": "https://simbig.org/lossio-ventura/",
+                    "LinkedIn": "https://www.linkedin.com/in/juan-antonio-lossio-ventura-22898859/",
+                    "twitter": "https://twitter.com/lossio666?lang=es"
+                }
+            },
+            {
+                "name": "Hugo Alatrista-Salas",
+                "title": "Ph.D. in Computer Science",
+                "uni": "Pontificia Universidad Católica del Perú - PUCP",
+                "location": "Lima, PERU",
+                "desc": "",
+                "image": "https://simbig.org/SIMBig2023/img/comittee/hugo.png",
+                "social": {
+                    "email": "halatrista@simbig.org",
+                    "website": "https://simbig.org/alatrista-salas/",
+                    "LinkedIn": "https://www.linkedin.com/in/hugoalatristasalas/",
+                    "twitter": "https://twitter.com/HugoAlatsal?lang=es"
+                }
+            }
+        ]
+    },
     "footer": {
         "copyright": "© 2023 Copyright SIMBig.org",
         "nav": [
@@ -249,6 +283,98 @@
     "organizing-committee": {
         "title": "Organizing Committee",
         "tag": "Organizing Committee",
-        "background": "https://images.unsplash.com/photo-1573164574572-cb89e39749b4?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "background": "https://images.unsplash.com/photo-1573164574572-cb89e39749b4?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "items": {
+            "general-chair": {
+                "title": "General Chair",
+                "items": [
+                    {
+                        "name": "Juan Antonio Lossio-Ventura",
+                        "title": "Ph.D. in Computer Science",
+                        "uni": "National Institutes of Health",
+                        "location": "Bethesda, USA",
+                        "desc": "",
+                        "image": "https://simbig.org/SIMBig2023/img/comittee/juan.jpg",
+                        "social": {
+                            "email": "juan.lossio@nih.gov",
+                            "website": "https://simbig.org/lossio-ventura/",
+                            "LinkedIn": "https://www.linkedin.com/in/juan-antonio-lossio-ventura-22898859/",
+                            "twitter": "https://twitter.com/lossio666?lang=es"
+                        }
+                    },
+                    {
+                        "name": "Hugo Alatrista-Salas",
+                        "title": "Ph.D. in Computer Science",
+                        "uni": "Pontificia Universidad Católica del Perú - PUCP",
+                        "location": "Lima, PERU",
+                        "desc": "",
+                        "image": "https://simbig.org/SIMBig2023/img/comittee/hugo.png",
+                        "social": {
+                            "email": "halatrista@simbig.org",
+                            "website": "https://simbig.org/alatrista-salas/",
+                            "LinkedIn": "https://www.linkedin.com/in/hugoalatristasalas/",
+                            "twitter": "https://twitter.com/HugoAlatsal?lang=es"
+                        }
+                    }
+                ]
+            },
+            "local-chair": {
+                "title": "Local Chair",
+                "items": [
+                    {
+                        "name": "Juan Antonio Lossio-Ventura",
+                        "title": "Ph.D. in Computer Science",
+                        "uni": "National Institutes of Health",
+                        "location": "Bethesda, USA",
+                        "desc": "",
+                        "image": "https://simbig.org/SIMBig2023/img/comittee/juan.jpg",
+                        "social": {
+                            "email": "juan.lossio@nih.gov",
+                            "website": "https://simbig.org/lossio-ventura/",
+                            "LinkedIn": "https://www.linkedin.com/in/juan-antonio-lossio-ventura-22898859/",
+                            "twitter": "https://twitter.com/lossio666?lang=es"
+                        }
+                    }
+                ]
+            },
+            "web-developer": {
+                "title": "Web Developers",
+                "items": [
+                    {
+                        "name": "Juan Antonio Lossio-Ventura",
+                        "title": "Ph.D. in Computer Science",
+                        "uni": "National Institutes of Health",
+                        "location": "Bethesda, USA",
+                        "desc": "",
+                        "image": "https://simbig.org/SIMBig2023/img/comittee/juan.jpg",
+                        "social": {
+                            "email": "juan.lossio@nih.gov",
+                            "website": "https://simbig.org/lossio-ventura/",
+                            "LinkedIn": "https://www.linkedin.com/in/juan-antonio-lossio-ventura-22898859/",
+                            "twitter": "https://twitter.com/lossio666?lang=es"
+                        }
+                    }
+                ]
+            },
+            "social-media": {
+                "title": "Social Media",
+                "items": [
+                    {
+                        "name": "Juan Antonio Lossio-Ventura",
+                        "title": "Ph.D. in Computer Science",
+                        "uni": "National Institutes of Health",
+                        "location": "Bethesda, USA",
+                        "desc": "",
+                        "image": "https://simbig.org/SIMBig2023/img/comittee/juan.jpg",
+                        "social": {
+                            "email": "juan.lossio@nih.gov",
+                            "website": "https://simbig.org/lossio-ventura/",
+                            "LinkedIn": "https://www.linkedin.com/in/juan-antonio-lossio-ventura-22898859/",
+                            "twitter": "https://twitter.com/lossio666?lang=es"
+                        }
+                    }
+                ]
+            }
+        }
     }
 }
