@@ -18,24 +18,28 @@ const {
     <div class="w-full max-w-7xl mx-auto h-full">
       <div class="flex h-full justify-center">
         <div class="flex flex-col gap-4 justify-center items-center">
-          <p class="text-balance">[{date}]</p>
-          <h1 class="font-bold text-4xl md:text-8xl text-center md:text-left">
+          <p class="text-balance max-w-[400px] text-center font-semibold">
+            [{date}]
+          </p>
+          <h1 class="font-bold text-6xl md:text-8xl text-center md:text-left">
             {title}
           </h1>
-          <p class="text-white/80 text-lg text-center md:text-left">
+          <p
+            class="text-white/80 text-lg text-center md:text-left max-w-[500px]"
+          >
             {paragraph}
           </p>
           <div class="flex items-end justify-center z-10">
             <div class="m-2 sm:m-5 flex flex-col items-center">
               <span
-                class="text-white font-bold text-xl sm:text-5xl tabular-nums"
+                class="text-white font-bold text-3xl sm:text-5xl tabular-nums"
                 id="days">--</span
               >
               <p>Days</p>
             </div>
             <div class="m-2 sm:m-5 flex flex-col items-center">
               <span
-                class="text-white font-bold text-xl sm:text-5xl tabular-nums"
+                class="text-white font-bold text-3xl sm:text-5xl tabular-nums"
                 id="hours"
               >
                 --</span
@@ -44,14 +48,14 @@ const {
             </div>
             <div class="m-2 sm:m-5 flex flex-col items-center">
               <span
-                class="text-white font-bold text-xl sm:text-5xl tabular-nums"
+                class="text-white font-bold text-3xl sm:text-5xl tabular-nums"
                 id="minutes">--</span
               >
               <p>Minutes</p>
             </div>
             <div class="m-2 sm:m-5 flex flex-col items-center">
               <span
-                class="text-white font-bold text-xl sm:text-5xl tabular-nums"
+                class="text-white font-bold text-3xl sm:text-5xl tabular-nums"
                 id="seconds">--</span
               >
               <p>Seconds</p>
