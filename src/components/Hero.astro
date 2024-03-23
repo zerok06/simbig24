@@ -7,7 +7,7 @@ const {
 } = DATA
 ---
 
-<header class="min-h-[80svh] bg-black/30 text-white relative">
+<header class="min-h-[80svh] bg-black/50 text-white relative">
   <img
     src={background}
     alt="hero background simbig"
@@ -18,10 +18,19 @@ const {
     <div class="w-full max-w-7xl mx-auto h-full">
       <div class="flex h-full justify-center">
         <div class="flex flex-col gap-4 justify-center items-center">
-          <h1 class="font-bold text-5xl md:text-8xl text-center md:text-left">
+          <h1
+            class="font-bold text-5xl md:text-8xl text-center relative md:text-left"
+          >
             {title}
+            <img
+              src="/assets/images/bander.png"
+              class="absolute md:-right-5 -top-3 -right-4 h-[30px] md:-top-4 rotate-12 md:h-[50px]"
+              alt=""
+            />
           </h1>
-          <p class="text-white/80 text-lg text-center max-w-[500px]">
+          <p
+            class="text-white/80 text-lg text-center max-w-[500px] font-medium"
+          >
             {paragraph}
           </p>
           <div class="flex items-end justify-center z-10 gap-3">
