@@ -161,6 +161,11 @@
                 "name": "Universidad Nacional de Moquegua",
                 "url": "",
                 "image": "/assets/images/unam.webp"
+            },
+            {
+                "name": "Pôle Léonard de Vinci",
+                "url": "",
+                "image": "/assets/images/pulv.png"
             }
         ],
         "sponsors": []
@@ -210,6 +215,11 @@
     "cta": {
         "title": "Call for Papers",
         "desc": "Participate in one of the first conferences in Latin America that group data science topics and be part of the technological change.",
+        "url": "",
+        "banner": ""
+    },
+    "cta2": {
+        "title": "LEARN, CONNECT and EXPERIENCE.",
         "url": "",
         "banner": ""
     },
