@@ -7,19 +7,22 @@ const {
 } = DATA
 ---
 
-<section class="py-16 bg-black text-white">
+<footer class="pt-16 pb-3 bg-black text-white">
   <Wrapper>
-    <section class="flex mb-8">
+    <section class="flex flex-wrap gap-6 mb-8">
       <div>
-        <h2 class="text-3xl font-semibold">{title}</h2>
-        <p class="text-white/80">{paragraph}</p>
+        <h2 class="text-xl md:text-2xl font-semibold">{title}</h2>
+        <p class="text-white/80 text-sm">{paragraph}</p>
       </div>
-      <div>
+      <!--       <div>
         <h2>Menu</h2>
         <div></div>
-      </div>
+      </div> -->
     </section>
-    <section class="flex items-center md:flex-row flex-col md:justify-between">
+    <hr class="border-white/20" />
+    <section
+      class="flex items-center md:flex-row flex-col md:justify-between mt-3"
+    >
       <div class="text-sm text-white/70 font-medium flex gap-3">
         {
           nav.map(item => (
@@ -43,4 +46,4 @@ const {
       </div>
     </section>
   </Wrapper>
-</section>
+</footer>
