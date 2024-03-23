@@ -333,17 +333,42 @@
                 "title": "Local Chair",
                 "items": [
                     {
-                        "name": "Juan Antonio Lossio-Ventura",
+                        "name": "Victor Yana Mamani",
                         "title": "Ph.D. in Computer Science",
-                        "uni": "National Institutes of Health",
-                        "location": "Bethesda, USA",
+                        "uni": "Universidad Nacional de Moquegua",
+                        "location": "Moquegua, Peru",
                         "desc": "",
-                        "image": "https://simbig.org/SIMBig2023/img/comittee/juan.jpg",
                         "social": {
-                            "email": "juan.lossio@nih.gov",
-                            "website": "https://simbig.org/lossio-ventura/",
-                            "LinkedIn": "https://www.linkedin.com/in/juan-antonio-lossio-ventura-22898859/",
-                            "twitter": "https://twitter.com/lossio666?lang=es"
+                            "email": "#",
+                            "website": "#",
+                            "LinkedIn": "#",
+                            "twitter": "#"
+                        }
+                    },
+                    {
+                        "name": "Carlos Alberto Silva Delgado",
+                        "title": "Ph.D. in Computer Science",
+                        "uni": "Universidad Nacional de Moquegua",
+                        "location": "Moquegua, Peru",
+                        "desc": "",
+                        "social": {
+                            "email": "#",
+                            "website": "#",
+                            "LinkedIn": "#",
+                            "twitter": "#"
+                        }
+                    },
+                    {
+                        "name": "Mario Gauna Chino",
+                        "title": "Ph.D. in Computer Science",
+                        "uni": "Universidad Nacional de Moquegua",
+                        "location": "Moquegua, Peru",
+                        "desc": "",
+                        "social": {
+                            "email": "#",
+                            "website": "#",
+                            "LinkedIn": "#",
+                            "twitter": "#"
                         }
                     }
                 ]
@@ -352,17 +377,16 @@
                 "title": "Web Developers",
                 "items": [
                     {
-                        "name": "Juan Antonio Lossio-Ventura",
-                        "title": "Ph.D. in Computer Science",
-                        "uni": "National Institutes of Health",
-                        "location": "Bethesda, USA",
+                        "name": "Jose Enrique Paye Mamani",
+                        "title": "Stdnt. Systems and Computer Engineering",
+                        "uni": "Universidad Nacional de Moquegua",
+                        "location": "Moquegua, Peru",
                         "desc": "",
-                        "image": "https://simbig.org/SIMBig2023/img/comittee/juan.jpg",
                         "social": {
-                            "email": "juan.lossio@nih.gov",
-                            "website": "https://simbig.org/lossio-ventura/",
-                            "LinkedIn": "https://www.linkedin.com/in/juan-antonio-lossio-ventura-22898859/",
-                            "twitter": "https://twitter.com/lossio666?lang=es"
+                            "email": "jose.geeksjose@gmail.com",
+                            "website": "#",
+                            "LinkedIn": "https://www.linkedin.com/in/zerok06/",
+                            "twitter": "https://twitter.com/ZkZerok"
                         }
                     }
                 ]
@@ -371,17 +395,29 @@
                 "title": "Social Media",
                 "items": [
                     {
-                        "name": "Juan Antonio Lossio-Ventura",
-                        "title": "Ph.D. in Computer Science",
-                        "uni": "National Institutes of Health",
-                        "location": "Bethesda, USA",
+                        "name": "Honorio Apaza Alanoca",
+                        "title": "Mgtr. Systems and Computer Engineering",
+                        "uni": "Universidad Nacional de Moquegua",
+                        "location": "Moquegua, Peru",
                         "desc": "",
-                        "image": "https://simbig.org/SIMBig2023/img/comittee/juan.jpg",
                         "social": {
-                            "email": "juan.lossio@nih.gov",
-                            "website": "https://simbig.org/lossio-ventura/",
-                            "LinkedIn": "https://www.linkedin.com/in/juan-antonio-lossio-ventura-22898859/",
-                            "twitter": "https://twitter.com/lossio666?lang=es"
+                            "email": "#",
+                            "website": "#",
+                            "LinkedIn": "#",
+                            "twitter": "#"
+                        }
+                    },
+                    {
+                        "name": "Diego Ismael Mamani Padilla",
+                        "title": "Systems and Computer Engineer",
+                        "uni": "Universidad Nacional de Moquegua",
+                        "location": "Moquegua, Peru",
+                        "desc": "",
+                        "social": {
+                            "email": "#",
+                            "website": "#",
+                            "LinkedIn": "#",
+                            "twitter": "#"
                         }
                     }
                 ]
