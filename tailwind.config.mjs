@@ -6,6 +6,7 @@ export default {
     extend: {
       colors: {
         primary: 'hsl(var(--primary))',
+        secondary: 'hsl(var(--secondary))',
         bg: 'hsl(var(--bg))',
       },
     },
