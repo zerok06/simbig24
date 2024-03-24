@@ -7,14 +7,14 @@ const {
 } = DATA
 ---
 
-<header class="min-h-[80svh] bg-black/60 text-white relative">
+<header class="min-h-[80vh] bg-black/60 text-white relative">
   <img
     src={background}
     alt="hero background simbig"
     class="h-full w-full absolute -z-10 top-0 left-0 object-cover contrast-150"
   />
   <Navbar />
-  <section class="h-[calc(80svh-80px)]">
+  <section class="h-[calc(80vh-80px)]">
     <div class="w-full max-w-7xl mx-auto h-full">
       <div class="flex h-full justify-center">
         <div class="flex flex-col gap-4 justify-center items-center">
@@ -78,10 +78,10 @@ const {
     </div>
   </section>
   <div
-    class="absolute py-4 bg-primary gap-4 md:gap-0 bottom-0 left-[50%] -translate-x-[50%] w-full max-w-[800px] translate-y-4 shadow-xl flex flex-wrap justify-center"
+    class="absolute py-4 bg-primary gap-4 md:gap-0 bottom-0 left-[50%] items-center -translate-x-[50%] w-full md:w-[800px] translate-y-4 shadow-xl flex justify-center"
   >
     <div
-      class="min-w-[350px] max-w-[50%] p-0 md:pl-8 flex items-center justify-center md:flex-row flex-col gap-2 md:gap-6"
+      class="max-w-[50%] p-0 md:pl-8 flex items-center justify-center md:flex-row flex-col gap-2 md:gap-6"
     >
       <div>
         <svg class="w-[30px] md:w-[60px]" viewBox="0 0 20 20" fill="#fff">
@@ -95,15 +95,15 @@ const {
       </div>
       <div class="flex flex-col justify-center">
         <h3
-          class="font-semibold text-lg md:text-xl leading-none text-secondary md:text-left text-center"
+          class="font-semibold w-[150px] md:w-auto text-base md:text-xl leading-none text-secondary md:text-left text-center"
         >
           {gps}
         </h3>
-        <p class="text-base md:text-lg md:text-left text-center">Ilo - Peru</p>
+        <p class="text-sm md:text-lg md:text-left text-center">Ilo - Peru</p>
       </div>
     </div>
     <div
-      class="min-w-[350px] max-w-[50%] p-0 md:pr-8 flex md:flex-row flex-col items-center gap-2 md:gap-6"
+      class="max-w-[50%] p-0 md:pr-8 flex md:flex-row flex-col items-center gap-2 md:gap-6"
     >
       <div>
         <svg
@@ -182,11 +182,11 @@ const {
       </div>
       <div class="flex flex-col justify-center">
         <h3
-          class="font-semibold text-lg md:text-xl leading-none text-secondary md:text-left text-center"
+          class="font-semibold text-base md:text-xl w-[200px] md:w-auto leading-none text-secondary md:text-left text-center"
         >
           {date}
         </h3>
-        <p class="text-lg md:text-left text-center">2024</p>
+        <p class="text-sm md:text-left text-center">2024</p>
       </div>
     </div>
   </div>
