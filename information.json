@@ -302,7 +302,7 @@
                 "title": "General Chair",
                 "items": [
                     {
-                        "name": "Juan Antonio Lossio-Ventura",
+                        "name": "Juan Lossio-Ventura",
                         "title": "Ph.D. in Computer Science",
                         "uni": "National Institutes of Health",
                         "location": "Bethesda, USA",
@@ -318,8 +318,8 @@
                     {
                         "name": "Hugo Alatrista-Salas",
                         "title": "Ph.D. in Computer Science",
-                        "uni": "Pontificia Universidad Católica del Perú - PUCP",
-                        "location": "Lima, PERU",
+                        "uni": "Pôle Universitataire Léonard de Vinci Research Center",
+                        "location": "Paris, FRANCE",
                         "desc": "",
                         "image": "https://simbig.org/SIMBig2023/img/comittee/hugo.png",
                         "social": {

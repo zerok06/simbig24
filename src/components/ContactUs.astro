@@ -13,7 +13,6 @@ const {
 
 <Wrapper>
   <section class="py-20">
-    
     <h2 class="text-center md:text-5xl font-bold mb-2 text-3xl">{title}</h2>
     <p class="text-center text-black/80 mb-6">{desc}</p>
     <div class="flex flex-wrap gap-y-4 justify-around">
@@ -28,11 +27,11 @@ const {
                   alt={element.name}
                 />
                 <div class="bg-primary px-1 py-3 min-w-[85%] translate-x-[-50%]  text-white text-center text-balance font-medium  absolute -bottom-2 left-[50%]">
-                  {element.title}
+                  {element.name}
                 </div>
               </div>
               <h3 class="text-lg font-semibold text-center text-balance w-[80%] leading-none mt-2">
-                {element.name}
+                {element.title}
               </h3>
               <p class="text-sm leading-tight mt-1 text-center text-balance">
                 {element.uni}
