@@ -40,31 +40,37 @@
         "background": "/assets/images/hero-bg.webp",
         "navbar": [
             {
+                "isActive": true,
                 "isSub": false,
                 "title": "Speakers",
                 "url": "/#speakers"
             },
             {
+                "isActive": true,
                 "isSub": false,
                 "title": "Dates",
                 "url": "/#dates"
             },
             {
+                "isActive": false,
                 "isSub": false,
                 "title": "Registration",
                 "url": "/registration"
             },
             {
+                "isActive": false,
                 "isSub": false,
                 "title": "Program",
                 "url": "/#program"
             },
             {
+                "isActive": true,
                 "isSub": false,
                 "title": "Venue",
                 "url": "/#venue"
             },
             {
+                "isActive": true,
                 "isSub": true,
                 "title": "Call for Papers",
                 "url": "#call-for-papers",

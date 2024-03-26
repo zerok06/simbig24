@@ -22,55 +22,57 @@ const {
       </a>
       <ul class="md:flex hidden items-center gap-2">
         {
-          navbar.map(({ isSub, title, sub = [], url }) => {
-            if (isSub) {
-              return (
-                <li class="relative group">
-                  <p class="px-2 py-1 cursor-default flex gap-1 justify-center items-center">
-                    {title}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      height="24"
-                      color="#fff"
-                      fill="none"
-                      class="group-hover:rotate-180 transition-transform duration-300"
-                    >
-                      <path
-                        d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </p>
-                  <div class="absolute top-[100%] right-0 px-4 py-5 bg-white text-black min-w-[250px] hidden group-hover:flex flex-col rounded-lg gap-2">
-                    {sub.map(item => (
-                      <a
-                        href={item.url}
-                        class="flex gap-2 hover:text-primary transition-colors duration-300"
+          navbar
+            .filter(item => item.isActive === true)
+            .map(({ isSub, title, sub = [], url }) => {
+              if (isSub) {
+                return (
+                  <li class="relative group">
+                    <p class="px-2 py-1 cursor-default flex gap-1 justify-center items-center">
+                      {title}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        color="#fff"
+                        fill="none"
+                        class="group-hover:rotate-180 transition-transform duration-300"
                       >
-                        {item.title}
-                      </a>
-                    ))}
-                  </div>
-                </li>
-              )
-            } else {
-              return (
-                <li>
-                  <a
-                    href={url}
-                    class="px-2 py-1 before:content-[''] relative before:h-[2px] before:hover:w-[100%] before:w-0 before:transition-all before:duration-300 before:absolute before:hover:left-0 before:bottom-0 before:rounded-md before:right-0 before:bg-white"
-                  >
-                    {title}
-                  </a>
-                </li>
-              )
-            }
-          })
+                        <path
+                          d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </p>
+                    <div class="absolute top-[100%] right-0 px-4 py-5 bg-white text-black min-w-[250px] hidden group-hover:flex flex-col rounded-lg gap-2">
+                      {sub.map(item => (
+                        <a
+                          href={item.url}
+                          class="flex gap-2 hover:text-primary transition-colors duration-300"
+                        >
+                          {item.title}
+                        </a>
+                      ))}
+                    </div>
+                  </li>
+                )
+              } else {
+                return (
+                  <li>
+                    <a
+                      href={url}
+                      class="px-2 py-1 before:content-[''] relative before:h-[2px] before:hover:w-[100%] before:w-0 before:transition-all before:duration-300 before:absolute before:hover:left-0 before:bottom-0 before:rounded-md before:right-0 before:bg-white"
+                    >
+                      {title}
+                    </a>
+                  </li>
+                )
+              }
+            })
         }
       </ul>
       <MobileNav />
