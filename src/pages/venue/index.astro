@@ -1,0 +1,11 @@
+---
+import LayoutPage from '../../layouts/LayoutPage.astro'
+import DATA from '../../../information.json'
+const {
+  'privacy-policy': { tag, title, background },
+} = DATA
+---
+
+<LayoutPage title={title} background={background} tag={tag}>
+  <main>asda</main>
+</LayoutPage>
