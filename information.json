@@ -42,6 +42,12 @@
             {
                 "isActive": true,
                 "isSub": false,
+                "title": "Home",
+                "url": "/"
+            },
+            {
+                "isActive": true,
+                "isSub": false,
                 "title": "Speakers",
                 "url": "/#speakers"
             },
@@ -82,6 +88,7 @@
                 ]
             },
             {
+                "isActive": true,
                 "isSub": true,
                 "title": "Committee",
                 "url": "#speakers",
