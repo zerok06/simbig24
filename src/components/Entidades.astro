@@ -2,7 +2,13 @@
 import Wrapper from '../components/Wrapper.astro'
 import DATA from '../../information.json'
 const {
-  entidades: { title, desc, institution, sponsors },
+  entidades: {
+    title,
+    desc,
+    organizing,
+    sponsors,
+    'co-organizing': coorganizing,
+  },
 } = DATA
 
 const existItems = sponsors.length > 0
@@ -21,7 +27,28 @@ const existItems = sponsors.length > 0
       class="flex mt-4 flex-wrap md:justify-start justify-center md:gap-0 gap-6"
     >
       {
-        institution.map(item => (
+        organizing.map(item => (
+          <div class="min-w-[70px] md:min-w-[249.6px] max-w-[20%] flex items-center justify-center">
+            <a
+              href={item.url}
+              class="h-24 w-24 opacity-80 hover:opacity-100 transition-opacity duration-300"
+            >
+              <img src={item.image} alt={item.name} />
+            </a>
+          </div>
+        ))
+      }
+    </div>
+    <h3
+      class="md:text-2xl md:text-left text-center font-bold mb-2 mt-8 text-xl"
+    >
+      Co-organizing Institutions
+    </h3>
+    <div
+      class="flex mt-4 flex-wrap md:justify-start justify-center md:gap-0 gap-6"
+    >
+      {
+        coorganizing.map(item => (
           <div class="min-w-[70px] md:min-w-[249.6px] max-w-[20%] flex items-center justify-center">
             <a
               href={item.url}

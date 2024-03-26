@@ -156,12 +156,14 @@
     "entidades": {
         "title": "Organizing Institutions & Sponsors",
         "desc": "Meet our sponsors and organizers.",
-        "institution": [
+        "organizing": [
             {
                 "name": "Universidad Nacional de Moquegua",
                 "url": "",
                 "image": "/assets/images/unam.webp"
-            },
+            }
+        ],
+        "co-organizing": [
             {
                 "name": "Pôle Léonard de Vinci",
                 "url": "",
