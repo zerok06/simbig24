@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets'
 import DATA from '../../information.json'
 import Navbar from './Navbar.astro'
 
@@ -8,11 +9,18 @@ const {
 ---
 
 <header class="min-h-[80vh] bg-black/60 text-white relative">
-  <img
+  <Image
+    src={import(background)}
+    height={576}
+    width={1024}
+    alt={title}
+    class="h-full w-full absolute -z-10 top-0 left-0 object-cover contrast-150"
+  />
+  <!-- <img
     src={background}
     alt="hero background simbig"
     class="h-full w-full absolute -z-10 top-0 left-0 object-cover contrast-150"
-  />
+  /> -->
   <Navbar />
   <section class="h-[calc(80vh-80px)]">
     <div class="w-full max-w-7xl mx-auto h-full">

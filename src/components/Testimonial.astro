@@ -1,6 +1,7 @@
 ---
 import Wrapper from '../components/Wrapper.astro'
 import DATA from '../../information.json'
+import { Image } from 'astro:assets'
 const {
   testimonial: { title, desc, content },
 } = DATA
@@ -16,13 +17,17 @@ const {
           <div class="min-w-[330px] md:min-w-[416px] max-w-[33%] p-4">
             <div class="w-full min-h-[150px] p-4 bg-white rounded-3xl relative shadow-lg shadow-black/5">
               <span class="block text-black/50 text-sm">{date}</span>
-              <p class="text-black/80 py-3 text-pretty">{comento}</p>
+              <p class="text-black/80 py-3 text-pretty text-sm md:text-base">
+                {comento}
+              </p>
               <div class="absolute top-[calc(100%-10px)] left-10 w-0 h-0 border-l-[30px] border-t-transparent border-b-transparent rotate-90 border-t-[20px] border-b-[20px] border-solid border-l-white" />
             </div>
             <div class="mt-8 flex gap-4">
               <div class="h-16 w-16 rounded-full overflow-hidden">
-                <img
-                  src={image}
+                <Image
+                  src={import(image)}
+                  height={64}
+                  width={64}
                   alt={name}
                   class="h-full w-full object-cover"
                 />

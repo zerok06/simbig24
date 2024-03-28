@@ -45,7 +45,7 @@
         "paragraph": "11th International Conference on Information Management and Big Data",
         "date": "October 29 - 31",
         "gps": "Universidad Nacional de Moquegua",
-        "background": "/assets/images/hero-bg.webp",
+        "background": "../../public/assets/images/hero-bg.webp",
         "navbar": [
             {
                 "isActive": true,
@@ -116,7 +116,7 @@
     "about": {
         "title": "SIMBig",
         "paragraph": "SIMBig is one of the first conferences in Latin America grouping areas such as Artificial Intelligence, Machine Learning, Deep Learning, Healthcare Informatics, Natural Language Processing, Semantic Web, Software Engineering, among others.",
-        "image": "/assets/images/about-us.jpg"
+        "image": "../../public/assets/images/about-us.jpg"
     },
     "counters": {
         "participants": {
@@ -201,7 +201,7 @@
                 "date": "June 10, 2024",
                 "comento": "SIMBig is a very good opportunity to make new collaborations between Peruvian and foreign universities.",
                 "people": {
-                    "image": "/assets/images/testimonials/pascal-poncelet.jpg",
+                    "image": "../../public/assets/images/testimonials/pascal-poncelet.jpg",
                     "name": "Pascal Poncelet",
                     "job": "University of Montpellier, France"
                 }
@@ -210,7 +210,7 @@
                 "date": "June 10, 2024",
                 "comento": "SIMBig is a very good conference with very quality presentations.",
                 "people": {
-                    "image": "/assets/images/testimonials/diana-inkpen.jpg",
+                    "image": "../../public/assets/images/testimonials/diana-inkpen.jpg",
                     "name": "Diana Impken",
                     "job": "University of Ottawa, Canada"
                 }
@@ -219,7 +219,7 @@
                 "date": "June 10, 2024",
                 "comento": "Events like these [SIMBig] are a great opportunity for students to interact with researchers and to see cutting edge things happening.",
                 "people": {
-                    "image": "/assets/images/testimonials/lisa-getoor.jpg",
+                    "image": "../../public/assets/images/testimonials/lisa-getoor.jpg",
                     "name": "Lise Getoor",
                     "job": "University of California, USA"
                 }
@@ -228,7 +228,7 @@
                 "date": "June 10, 2024",
                 "comento": "[SIMbig] attracts the next generations data mining and bigdata researches. One important thing is to bridge between areas as big data and supply chain and attract more people.",
                 "people": {
-                    "image": "/assets/images/testimonials/jian-pei.jpg",
+                    "image": "../../public/assets/images/testimonials/jian-pei.jpg",
                     "name": "Jian Pei",
                     "job": "Simon Fraser University, Canada"
                 }
@@ -333,7 +333,7 @@
                         "uni": "National Institutes of Health",
                         "location": "Bethesda, USA",
                         "desc": "",
-                        "image": "https://simbig.org/SIMBig2023/img/comittee/juan.jpg",
+                        "image": "../../public/assets/images/committee/juan.jpg",
                         "social": {
                             "email": "juan.lossio@nih.gov",
                             "website": "https://simbig.org/lossio-ventura/",
@@ -347,7 +347,7 @@
                         "uni": "Pôle Universitataire Léonard de Vinci Research Center",
                         "location": "Paris, FRANCE",
                         "desc": "",
-                        "image": "https://simbig.org/SIMBig2023/img/comittee/hugo.png",
+                        "image": "../../public/assets/images/committee/hugo.png",
                         "social": {
                             "email": "halatrista@simbig.org",
                             "website": "https://simbig.org/alatrista-salas/",
