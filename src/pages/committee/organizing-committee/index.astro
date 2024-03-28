@@ -37,7 +37,7 @@ const {
                   <div class="relative flex justify-center">
                     <img
                       src={image}
-                      class="aspect-square object-cover w-[80%]"
+                      class="aspect-square object-cover w-[224px]"
                       alt={name}
                     />
                     <div class="bg-primary px-1 py-3 min-w-[85%] translate-x-[-50%]  text-white text-center text-balance font-medium  absolute -bottom-2 left-[50%] leading-tight">
@@ -131,7 +131,7 @@ const {
                   <div class="relative flex justify-center">
                     <img
                       src={image}
-                      class="aspect-square object-cover w-[80%]"
+                      class="aspect-square object-cover w-[224px]"
                       alt={name}
                     />
                     <div class="bg-primary px-1 py-3 min-w-[85%] translate-x-[-50%]  text-white text-center text-balance font-medium  absolute -bottom-2 left-[50%] leading-tight">
@@ -319,7 +319,7 @@ const {
                   <div class="relative flex justify-center">
                     <img
                       src={image}
-                      class="aspect-square object-cover w-[80%]"
+                      class="aspect-square object-cover w-[224px]"
                       alt={name}
                     />
                     <div class="bg-primary px-1 py-3 min-w-[85%] translate-x-[-50%]  text-white text-center text-balance font-medium  absolute -bottom-2 left-[50%] leading-tight">
@@ -346,6 +346,19 @@ const {
                           class="fill-primary"
                         >
                           <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                        </svg>
+                      </a>
+                    )}
+                    {social.hasOwnProperty('google') && (
+                      <a href={social.google} target="_blank">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                          height="20"
+                          width="20"
+                          class="fill-primary"
+                        >
+                          <path d="M390.9 298.5c0 0 0 .1 .1 .1c9.2 19.4 14.4 41.1 14.4 64C405.3 445.1 338.5 512 256 512s-149.3-66.9-149.3-149.3c0-22.9 5.2-44.6 14.4-64h0c1.7-3.6 3.6-7.2 5.6-10.7c4.4-7.6 9.4-14.7 15-21.3c27.4-32.6 68.5-53.3 114.4-53.3c33.6 0 64.6 11.1 89.6 29.9c9.1 6.9 17.4 14.7 24.8 23.5c5.6 6.6 10.6 13.8 15 21.3c2 3.4 3.8 7 5.5 10.5zm26.4-18.8c-30.1-58.4-91-98.4-161.3-98.4s-131.2 40-161.3 98.4L0 202.7 256 0 512 202.7l-94.7 77.1z" />
                         </svg>
                       </a>
                     )}

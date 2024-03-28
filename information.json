@@ -1,6 +1,14 @@
 {
     "title": "",
     "logo": "/assets/logo_text-white.svg",
+    "siteData": {
+        "title": "My Astro Blog",
+        "description": "My musings about the Astro framework",
+        "image": {
+            "src": "/images/image-default.jpg",
+            "alt": "My Astro Blog"
+        }
+    },
     "socialLinks": {
         "LinkedIn": {
             "name": "LinkedIn",
@@ -358,6 +366,7 @@
                         "uni": "Universidad Nacional de Moquegua",
                         "location": "Moquegua, Peru",
                         "desc": "",
+                        "image": "/assets/images/committee/yana.jpg",
                         "social": {
                             "email": "#",
                             "website": "#",
@@ -404,7 +413,7 @@
                         "desc": "",
                         "social": {
                             "email": "jose.geeksjose@gmail.com",
-                            "website": "#",
+                            "website": "https://portfolio-zerok06.vercel.app/",
                             "LinkedIn": "https://www.linkedin.com/in/zerok06/",
                             "twitter": "https://twitter.com/ZkZerok"
                         }
@@ -416,15 +425,16 @@
                 "items": [
                     {
                         "name": "Honorio Apaza Alanoca",
-                        "title": "Mgtr. Systems and Computer Engineering",
+                        "title": "Mcs. in Computer Science",
                         "uni": "Universidad Nacional de Moquegua",
+                        "image": "/assets/images/committee/honorio.jpeg",
                         "location": "Moquegua, Peru",
                         "desc": "",
                         "social": {
                             "email": "#",
-                            "website": "#",
-                            "LinkedIn": "#",
-                            "twitter": "#"
+                            "LinkedIn": "https://www.linkedin.com/in/honorio-aa/",
+                            "twitter": "https://twitter.com/honorioApz",
+                            "google": "https://scholar.google.com/citations?user=49ikTuYAAAAJ&hl=en"
                         }
                     },
                     {
