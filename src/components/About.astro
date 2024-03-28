@@ -1,8 +1,6 @@
 ---
 import Wrapper from '../components/Wrapper.astro'
 import DATA from '../../information.json'
-import { Image } from 'astro:assets'
-import AboutImage from '../../public/assets/images/about-us.jpg'
 const {
   about: { paragraph, image, title },
 } = DATA
@@ -17,13 +15,7 @@ const {
       </div>
       <div class="flex-1">
         <div class="aspect-auto h-[400px] bg-black">
-          <Image
-            src={import(image)}
-            height={400}
-            width={500}
-            alt={title}
-            class="h-full w-full object-cover"
-          />
+          <img src={image} alt={title} class="h-full w-full object-cover" />
         </div>
       </div>
     </div>
