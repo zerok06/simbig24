@@ -368,10 +368,7 @@
                         "desc": "",
                         "image": "/assets/images/committee/yana.jpg",
                         "social": {
-                            "email": "#",
-                            "website": "#",
-                            "LinkedIn": "#",
-                            "twitter": "#"
+                            "website": "https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=27970"
                         }
                     },
                     {
@@ -379,12 +376,11 @@
                         "title": "Ph.D. in Computer Science",
                         "uni": "Universidad Nacional de Moquegua",
                         "location": "Moquegua, Peru",
+                        "image": "/assets/images/committee/carlos.jpeg",
                         "desc": "",
                         "social": {
-                            "email": "#",
-                            "website": "#",
-                            "LinkedIn": "#",
-                            "twitter": "#"
+                            "website": "https://sites.google.com/view/portafoliounamcasd/inicio",
+                            "LinkedIn": "https://www.linkedin.com/in/carlos-alberto-silva-delgado-87654050/"
                         }
                     },
                     {
@@ -393,12 +389,7 @@
                         "uni": "Universidad Nacional de Moquegua",
                         "location": "Moquegua, Peru",
                         "desc": "",
-                        "social": {
-                            "email": "#",
-                            "website": "#",
-                            "LinkedIn": "#",
-                            "twitter": "#"
-                        }
+                        "social": {}
                     }
                 ]
             },
@@ -431,7 +422,6 @@
                         "location": "Moquegua, Peru",
                         "desc": "",
                         "social": {
-                            "email": "#",
                             "LinkedIn": "https://www.linkedin.com/in/honorio-aa/",
                             "twitter": "https://twitter.com/honorioApz",
                             "google": "https://scholar.google.com/citations?user=49ikTuYAAAAJ&hl=en"
@@ -442,12 +432,10 @@
                         "title": "Systems and Computer Engineer",
                         "uni": "Universidad Nacional de Moquegua",
                         "location": "Moquegua, Peru",
+                        "image": "/assets/images/committee/diego.jpeg",
                         "desc": "",
                         "social": {
-                            "email": "#",
-                            "website": "#",
-                            "LinkedIn": "#",
-                            "twitter": "#"
+                            "email": "diegoimpadilla@gmail.com"
                         }
                     }
                 ]
