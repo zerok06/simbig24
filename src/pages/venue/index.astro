@@ -1,11 +1,74 @@
 ---
 import LayoutPage from '../../layouts/LayoutPage.astro'
 import DATA from '../../../information.json'
+import Wrapper from '../../components/Wrapper.astro'
 const {
   venue: { tag, title, background },
 } = DATA
 ---
 
 <LayoutPage title={title} background={background} tag={tag}>
-  <main>Venue</main>
+  <main class="py-20">
+    <Wrapper>
+      <!-- <h2 class="text-3xl font-semibold md:text-4xl">Venue</h2> -->
+      <!-- <section class="grid grid-cols-1 gap-4 md:grid-cols-2 py-14">
+        <div>
+          <h3></h3>
+          <p class="text-black/70">
+            SIMBig 2023 will take place in Mexico City, Mexico. Mexico City is
+            located in the Valley of Mexico, on the central plateau.
+            Tenochtitlan, originally built by the Aztecs in 1325 on an island in
+            Lake Texcoco, was almost completely destroyed in the Tenochtitlan
+            Asedio of 1521. It was redistributed and rebuilt to meet
+            contemporary Spanish urban standards. The municipal government of
+            Mexico City was established in 1524; at that time it was known as
+            Mexico Tenochtitlan; however, it was officially recognised as Mexico
+            City in 1585. Since then it has been the centre of Spanish-speaking
+            politics, administration and finance. The Distrito Federal was
+            established in 1824 after independence from Spain and remained as
+            such until 2016. As a cultural destination, it is unparalleled in
+            North America. With the sole exception of London, it has more
+            museums than any other city in the world. The city's population
+            thrives on delicious food and an exquisite culture that is a
+            synthesis of many influences from outside the city's borders, not
+            just the cultures that already existed.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://prensaregional.pe/wp-content/uploads/2023/07/Moquegua-de-Noche-Vista-aerea-10032023.jpg"
+            alt=""
+          />
+        </div>
+      </section> -->
+      <section class="grid grid-cols-1 gap-x-10 gap-y-4 md:grid-cols-2 py-14">
+        <div>
+          <h3 class="text-2xl font-semibold mb-4 md:text-3xl">Location</h3>
+          <p class="text-black/70">
+            SIMBig 2023 will be held at the National University of Moquegua, in
+            Ciudad Jardin in the province of Ilo. This university, founded in
+            2007, offers diverse careers such as Fisheries Engineering, Systems
+            and Computer Engineering and Environmental Engineering at the Ilo
+            campus, and Public Management, Social Development, Agroindustrial
+            Engineering and Mining Engineering at the Mariscal Nieto campus. The
+            university stands out for its commitment to academic excellence and
+            scientific research.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/53/Ingreso_al_Campus_de_la_Universidad_Nacional_de_Moquegua.jpg"
+            alt=""
+          />
+        </div>
+      </section>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15212.073441048273!2d-71.36017702632228!3d-17.60186300749709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91445c85cd541421%3A0x430096ea6da2b877!2sUniversidad%20Nacional%20de%20Moquegua!5e0!3m2!1ses-419!2spe!4v1712200205950!5m2!1ses-419!2spe"
+        height="450"
+        style="border:0;width:100%;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </Wrapper>
+  </main>
 </LayoutPage>
