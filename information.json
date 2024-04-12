@@ -1,12 +1,13 @@
 {
-    "title": "",
-    "logo": "/assets/logo_text-white.svg",
+    "title": "SIMBig 2024",
+    "url": "https://simbig.org/SIMBig2024/",
+    "logo": "https://simbig.org/SIMBig2024/assets/logo_text-white.svg",
     "siteData": {
-        "title": "My Astro Blog",
-        "description": "My musings about the Astro framework",
+        "title": "SIMBig 2024",
+        "description": "SIMBig is one of the first conferences in Latin America grouping areas such as Artificial Intelligence, Machine Learning, Deep Learning, Healthcare Informatics, Natural Language Processing, Semantic Web, Software Engineering, among others.",
         "image": {
-            "src": "/images/image-default.jpg",
-            "alt": "My Astro Blog"
+            "src": "https://simbig.org/SIMBig2024/images/image-default.jpg",
+            "alt": "SIMBig 2024"
         }
     },
     "socialLinks": {
@@ -45,53 +46,53 @@
         "paragraph": "11th International Conference on Information Management and Big Data",
         "date": "October 29 - 31",
         "gps": "Universidad Nacional de Moquegua",
-        "background": "/assets/images/hero-bg.webp",
+        "background": "https://simbig.org/SIMBig2024/assets/images/hero-bg.webp",
         "navbar": [
             {
                 "isActive": true,
                 "isSub": false,
                 "title": "Home",
-                "url": "/"
+                "url": "https://simbig.org/SIMBig2024/"
             },
             {
                 "isActive": true,
                 "isSub": false,
                 "title": "Speakers",
-                "url": "/#speakers"
+                "url": "https://simbig.org/SIMBig2024/#speakers"
             },
             {
                 "isActive": true,
                 "isSub": false,
                 "title": "Dates",
-                "url": "/#dates"
+                "url": "https://simbig.org/SIMBig2024/#dates"
             },
             {
                 "isActive": false,
                 "isSub": false,
                 "title": "Registration",
-                "url": "/registration"
+                "url": "https://simbig.org/SIMBig2024/registration"
             },
             {
                 "isActive": false,
                 "isSub": false,
                 "title": "Program",
-                "url": "/#program"
+                "url": "https://simbig.org/SIMBig2024/#program"
             },
             {
                 "isActive": true,
                 "isSub": false,
                 "title": "Venue",
-                "url": "/venue"
+                "url": "https://simbig.org/SIMBig2024/venue"
             },
             {
                 "isActive": true,
                 "isSub": true,
                 "title": "Call for Papers",
-                "url": "#call-for-papers",
+                "url": "https://simbig.org/SIMBig2024/#call-for-papers",
                 "sub": [
                     {
                         "title": "Main Conference",
-                        "url": "/call-for-paper/main-conference"
+                        "url": "https://simbig.org/SIMBig2024/call-for-paper/main-conference"
                     }
                 ]
             },
@@ -103,11 +104,11 @@
                 "sub": [
                     {
                         "title": "Organizing Committee",
-                        "url": "/committee/organizing-committee"
+                        "url": "https://simbig.org/SIMBig2024/committee/organizing-committee"
                     },
                     {
                         "title": "Program Committee",
-                        "url": "/committee/program-committee"
+                        "url": "https://simbig.org/SIMBig2024/committee/program-committee"
                     }
                 ]
             }
@@ -116,7 +117,7 @@
     "about": {
         "title": "SIMBig",
         "paragraph": "SIMBig is one of the first conferences in Latin America grouping areas such as Artificial Intelligence, Machine Learning, Deep Learning, Healthcare Informatics, Natural Language Processing, Semantic Web, Software Engineering, among others.",
-        "image": "/assets/images/about-us.jpg"
+        "image": "https://simbig.org/SIMBig2024/assets/images/about-us.jpg"
     },
     "counters": {
         "participants": {
@@ -131,7 +132,7 @@
             "number": 50,
             "text": "Top Keynote\n Speakers"
         },
-        "banner": "/assets/images/counters-bg.jpg"
+        "banner": "https://simbig.org/SIMBig2024/assets/images/counters-bg.jpg"
     },
     "speakers": {
         "isActive": false,
@@ -180,15 +181,15 @@
         "organizing": [
             {
                 "name": "Universidad Nacional de Moquegua",
-                "url": "",
-                "image": "/assets/images/unam.webp"
+                "url": "https://unam.edu.pe/",
+                "image": "https://simbig.org/SIMBig2024/assets/images/unam.webp"
             }
         ],
         "co-organizing": [
             {
                 "name": "Pôle Léonard de Vinci",
-                "url": "",
-                "image": "/assets/images/pulv.png"
+                "url": "https://www.devinci.fr/",
+                "image": "https://simbig.org/SIMBig2024/assets/images/pulv.png"
             }
         ],
         "sponsors": []
@@ -201,7 +202,7 @@
                 "date": "June 10, 2024",
                 "comento": "SIMBig is a very good opportunity to make new collaborations between Peruvian and foreign universities.",
                 "people": {
-                    "image": "/assets/images/testimonials/pascal-poncelet.jpg",
+                    "image": "https://simbig.org/SIMBig2024/assets/images/testimonials/pascal-poncelet.jpg",
                     "name": "Pascal Poncelet",
                     "job": "University of Montpellier, France"
                 }
@@ -210,7 +211,7 @@
                 "date": "June 10, 2024",
                 "comento": "SIMBig is a very good conference with very quality presentations.",
                 "people": {
-                    "image": "/assets/images/testimonials/diana-inkpen.jpg",
+                    "image": "https://simbig.org/SIMBig2024/assets/images/testimonials/diana-inkpen.jpg",
                     "name": "Diana Impken",
                     "job": "University of Ottawa, Canada"
                 }
@@ -219,7 +220,7 @@
                 "date": "June 10, 2024",
                 "comento": "Events like these [SIMBig] are a great opportunity for students to interact with researchers and to see cutting edge things happening.",
                 "people": {
-                    "image": "/assets/images/testimonials/lisa-getoor.jpg",
+                    "image": "https://simbig.org/SIMBig2024/assets/images/testimonials/lisa-getoor.jpg",
                     "name": "Lise Getoor",
                     "job": "University of California, USA"
                 }
@@ -228,7 +229,7 @@
                 "date": "June 10, 2024",
                 "comento": "[SIMbig] attracts the next generations data mining and bigdata researches. One important thing is to bridge between areas as big data and supply chain and attract more people.",
                 "people": {
-                    "image": "/assets/images/testimonials/jian-pei.jpg",
+                    "image": "https://simbig.org/SIMBig2024/assets/images/testimonials/jian-pei.jpg",
                     "name": "Jian Pei",
                     "job": "Simon Fraser University, Canada"
                 }
@@ -285,15 +286,15 @@
         "nav": [
             {
                 "name": "Privacy Policy",
-                "path": "/privacy-policy"
+                "path": "https://simbig.org/SIMBig2024/privacy-policy"
             },
             {
                 "name": "Terms of use",
-                "path": "/terms-of-use"
+                "path": "https://simbig.org/SIMBig2024/terms-of-use"
             },
             {
                 "name": "FAQ's",
-                "path": "/faq"
+                "path": "https://simbig.org/SIMBig2024/faq"
             }
         ],
         "menu": [
@@ -366,7 +367,7 @@
                         "uni": "Universidad Nacional de Moquegua",
                         "location": "Moquegua, Peru",
                         "desc": "",
-                        "image": "/assets/images/committee/yana.jpg",
+                        "image": "https://simbig.org/SIMBig2024/assets/images/committee/yana.jpg",
                         "social": {
                             "website": "https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=27970"
                         }
@@ -376,7 +377,7 @@
                         "title": "Coordinator of the Faculty of Engineering and Architecture",
                         "uni": "Universidad Nacional de Moquegua",
                         "location": "Moquegua, Peru",
-                        "image": "/assets/images/committee/carlos.jpeg",
+                        "image": "https://simbig.org/SIMBig2024/assets/images/committee/carlos.jpeg",
                         "desc": "",
                         "social": {
                             "website": "https://sites.google.com/view/portafoliounamcasd/inicio",
@@ -387,7 +388,7 @@
                         "name": "Mario Gauna Chino",
                         "title": "Coordinator of the Academic Department of Systems Engineering and Informatics",
                         "uni": "Universidad Nacional de Moquegua",
-                        "image": "/assets/images/committee/mario.jpg",
+                        "image": "https://simbig.org/SIMBig2024/assets/images/committee/mario.jpg",
                         "location": "Moquegua, Peru",
                         "desc": "",
                         "social": {}
@@ -419,7 +420,7 @@
                         "name": "Honorio Apaza Alanoca",
                         "title": "Mcs. in Computer Science",
                         "uni": "Universidad Nacional de Moquegua",
-                        "image": "/assets/images/committee/honorio.jpeg",
+                        "image": "https://simbig.org/SIMBig2024/assets/images/committee/honorio.jpeg",
                         "location": "Moquegua, Peru",
                         "desc": "",
                         "social": {
@@ -433,7 +434,7 @@
                         "title": "Systems and Computer Engineer",
                         "uni": "Universidad Nacional de Moquegua",
                         "location": "Moquegua, Peru",
-                        "image": "/assets/images/committee/diego.jpeg",
+                        "image": "https://simbig.org/SIMBig2024/assets/images/committee/diego.jpeg",
                         "desc": "",
                         "social": {
                             "email": "diegoimpadilla@gmail.com"
