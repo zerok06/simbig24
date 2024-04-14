@@ -33,7 +33,10 @@ const existItems = sponsors.length > 0
               href={item.url}
               class="h-24 w-24 opacity-80 hover:opacity-100 transition-opacity duration-300"
             >
-              <img src={item.image} alt={item.name} />
+              <img
+                src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${item.image}`}
+                alt={item.name}
+              />
             </a>
           </div>
         ))
@@ -54,7 +57,10 @@ const existItems = sponsors.length > 0
               href={item.url}
               class="h-24 w-24 opacity-80 hover:opacity-100 transition-opacity duration-300"
             >
-              <img src={item.image} alt={item.name} />
+              <img
+                src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${item.image}`}
+                alt={item.name}
+              />
             </a>
           </div>
         ))
@@ -71,7 +77,10 @@ const existItems = sponsors.length > 0
                   href={url}
                   class="h-24 w-24 opacity-80 hover:opacity-100 transition-opacity duration-300"
                 >
-                  <img src={image} alt={name} />
+                  <img
+                    src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${image}`}
+                    alt={name}
+                  />
                 </a>
               </div>
             ))}

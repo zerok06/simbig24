@@ -22,7 +22,7 @@ const {
             <div class="mt-8 flex gap-4">
               <div class="h-16 w-16 rounded-full overflow-hidden">
                 <img
-                  src={image}
+                  src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${image}`}
                   alt={name}
                   class="h-full w-full object-cover"
                 />

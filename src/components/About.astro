@@ -15,7 +15,11 @@ const {
       </div>
       <div class="flex-1">
         <div class="aspect-auto h-[400px] bg-black">
-          <img src={image} alt={title} class="h-full w-full object-cover" />
+          <img
+            src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${image}`}
+            alt={title}
+            class="h-full w-full object-cover"
+          />
         </div>
       </div>
     </div>

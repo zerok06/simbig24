@@ -3,6 +3,12 @@ import '../styles/base.css'
 import Navbar from '../components/Navbar.astro'
 import SocialLinks from '../components/SocialLinks.astro'
 import Footer from '../components/Footer.astro'
+
+import DATA from '../../information.json'
+
+const {
+  '404': { background },
+} = DATA
 ---
 
 <!doctype html>
@@ -19,7 +25,7 @@ import Footer from '../components/Footer.astro'
     <SocialLinks />
     <header class="min-h-[100svh] bg-[rgba(0,0,0,.4)] text-white z-0">
       <img
-        src="https://images.unsplash.com/photo-1575029644286-efb9039cac46?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${background}`}
         alt="hero background simbig"
         class="h-full w-full absolute -z-10 top-0 left-0 object-cover"
       />
@@ -44,7 +50,7 @@ import Footer from '../components/Footer.astro'
                 How Did You Get Here?
               </h2>
               <a
-                href="/"
+                href={`${import.meta.env.PROD ? '/SIMBig2024' : '/'}`}
                 class="px-4 py-2 border border-white flex gap-1 justify-center items-center"
               >
                 Return Home
@@ -80,79 +86,3 @@ import Footer from '../components/Footer.astro'
     <slot />
   </body>
 </html>
-<style is:global>
-  body {
-    font-family: 'Poppins';
-  }
-  @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 100;
-    font-display: block;
-    src: url(/assets/fonts/poppins/Poppins-Thin.ttf) format('truetype');
-  }
-
-  @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 200;
-    font-display: block;
-    src: url(/assets/fonts/poppins/Poppins-ExtraLight.ttf) format('truetype');
-  }
-
-  @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    font-display: block;
-    src: url(/assets/fonts/poppins/Poppins-Light.ttf) format('truetype');
-  }
-
-  @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-display: block;
-    src: url(/assets/fonts/poppins/Poppins-Regular.ttf) format('truetype');
-  }
-
-  @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-display: block;
-    src: url(/assets/fonts/poppins/Poppins-Medium.ttf) format('truetype');
-  }
-
-  @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-display: block;
-    src: url(/assets/fonts/poppins/Poppins-SemiBold.ttf) format('truetype');
-  }
-
-  @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-display: block;
-    src: url(/assets/fonts/poppins/Poppins-Bold.ttf) format('truetype');
-  }
-
-  @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 800;
-    font-display: block;
-    src: url(/assets/fonts/poppins/Poppins-ExtraBold.ttf) format('truetype');
-  }
-
-  @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 900;
-    font-display: block;
-    src: url(/assets/fonts/poppins/Poppins-Black.ttf) format('truetype');
-  }
-</style>

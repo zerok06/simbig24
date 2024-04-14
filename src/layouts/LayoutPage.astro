@@ -19,7 +19,11 @@ const { title, background, tag } = Astro.props
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${'/favicon.svg'}`}
+    />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <SEO title={title} />
@@ -28,7 +32,7 @@ const { title, background, tag } = Astro.props
     <SocialLinks />
     <header class="min-h-[50svh] relative bg-black/30 text-white">
       <img
-        src={background}
+        src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${background}`}
         alt="hero background simbig"
         class="h-full w-full absolute -z-10 top-0 left-0 object-cover"
       />
@@ -54,6 +58,9 @@ const { title, background, tag } = Astro.props
     <slot />
     <Footer />
     <style is:global>
+      html {
+        scrollbar-width: thin;
+      }
       body {
         font-family: 'Poppins';
       }

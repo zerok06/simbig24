@@ -27,7 +27,7 @@ const {
         {
           nav.map(item => (
             <a
-              href={item.path}
+              href={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${item.path}`}
               class="hover:text-white transition-colors duration-300"
             >
               {item.name}

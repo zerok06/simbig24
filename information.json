@@ -1,6 +1,9 @@
 {
     "title": "",
     "logo": "/assets/logo_text-white.svg",
+    "404": {
+        "background": "/assets/images/background/5.webp"
+    },
     "siteData": {
         "title": "SIMBig 2024",
         "description": "SIMBig is one of the first conferences in Latin America grouping areas such as Artificial Intelligence, Machine Learning, Deep Learning, Healthcare Informatics, Natural Language Processing, Semantic Web, Software Engineering, among others.",
@@ -44,6 +47,7 @@
         "title": "SIMBig 2024",
         "paragraph": "11th International Conference on Information Management and Big Data",
         "date": "October 29 - 31",
+        "bandera": "/assets/images/bander.png",
         "gps": "Universidad Nacional de Moquegua",
         "background": "/assets/images/hero-bg.webp",
         "navbar": [
@@ -180,14 +184,14 @@
         "organizing": [
             {
                 "name": "Universidad Nacional de Moquegua",
-                "url": "",
+                "url": "https://unam.edu.pe/",
                 "image": "/assets/images/unam.webp"
             }
         ],
         "co-organizing": [
             {
                 "name": "Pôle Léonard de Vinci",
-                "url": "",
+                "url": "https://www.devinci.fr/",
                 "image": "/assets/images/pulv.png"
             }
         ],
@@ -247,7 +251,7 @@
         "banner": ""
     },
     "contact": {
-        "title": "SIMBig 2024 - Contact Us",
+        "title": "Contact Us",
         "desc": "Questions or comments? Contact us.",
         "items": [
             {
@@ -256,7 +260,7 @@
                 "uni": "National Institutes of Health",
                 "location": "Bethesda, USA",
                 "desc": "",
-                "image": "https://simbig.org/SIMBig2023/img/comittee/juan.jpg",
+                "image": "/assets/images/committee/juan.webp",
                 "social": {
                     "email": "juan.lossio@nih.gov",
                     "website": "https://simbig.org/lossio-ventura/",
@@ -270,7 +274,7 @@
                 "uni": "Pontificia Universidad Católica del Perú - PUCP",
                 "location": "Lima, PERU",
                 "desc": "",
-                "image": "https://simbig.org/SIMBig2023/img/comittee/hugo.png",
+                "image": "/assets/images/committee/hugo.webp",
                 "social": {
                     "email": "halatrista@simbig.org",
                     "website": "https://simbig.org/alatrista-salas/",
@@ -305,24 +309,24 @@
         }
     },
     "privacy-policy": {
-        "title": "SIMBig 2024 - Privacy Policy",
+        "title": "Privacy Policy",
         "tag": "Privacy Policy",
-        "background": "https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?q=80&w=1930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "background": "/assets/images/background/2.webp"
     },
     "registration": {
-        "title": "SIMBig 2024 - Registration",
+        "title": "Registration",
         "tag": "registration",
-        "background": "https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?q=80&w=1930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "background": "/assets/images/background/1.webp"
     },
     "venue": {
-        "title": "SIMBig 2024 - Venue",
+        "title": "Venue",
         "tag": "Venue",
-        "background": "https://images.unsplash.com/photo-1519750157634-b6d493a0f77c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "background": "/assets/images/background/3.webp"
     },
     "organizing-committee": {
-        "title": "SIMBig 2024 - Organizing Committee",
+        "title": "Organizing Committee",
         "tag": "Organizing Committee",
-        "background": "https://images.unsplash.com/photo-1573164574572-cb89e39749b4?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "background": "/assets/images/background/4.webp",
         "items": {
             "general-chair": {
                 "title": "General Chair",
@@ -333,7 +337,7 @@
                         "uni": "National Institutes of Health",
                         "location": "Bethesda, USA",
                         "desc": "",
-                        "image": "https://simbig.org/SIMBig2023/img/comittee/juan.jpg",
+                        "image": "/assets/images/committee/juan.webp",
                         "social": {
                             "email": "juan.lossio@nih.gov",
                             "website": "https://simbig.org/lossio-ventura/",
@@ -347,7 +351,7 @@
                         "uni": "Pôle Universitataire Léonard de Vinci Research Center",
                         "location": "Paris, FRANCE",
                         "desc": "",
-                        "image": "https://simbig.org/SIMBig2023/img/comittee/hugo.png",
+                        "image": "/assets/images/committee/hugo.webp",
                         "social": {
                             "email": "halatrista@simbig.org",
                             "website": "https://simbig.org/alatrista-salas/",

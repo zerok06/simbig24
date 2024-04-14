@@ -36,7 +36,7 @@ const {
                 <div class="flex flex-col gap-2 items-center h-full">
                   <div class="relative flex justify-center">
                     <img
-                      src={image}
+                      src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${image}`}
                       class="aspect-square object-cover w-[224px]"
                       alt={name}
                     />
@@ -134,7 +134,7 @@ const {
                 <div class="flex flex-col gap-2 items-center h-full">
                   <div class="relative flex justify-center">
                     <img
-                      src={image}
+                      src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${image}`}
                       class="aspect-square object-cover w-[224px]"
                       alt={name}
                     />
@@ -232,7 +232,7 @@ const {
                 <div class="flex flex-col gap-2 items-center h-full">
                   <div class="relative flex justify-center">
                     <img
-                      src={image}
+                      src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${image}`}
                       class="aspect-square object-cover w-[80%]"
                       alt={name}
                     />
@@ -326,7 +326,7 @@ const {
                 <div class="flex flex-col gap-2 items-center h-full">
                   <div class="relative flex justify-center">
                     <img
-                      src={image}
+                      src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${image}`}
                       class="aspect-square object-cover w-[224px]"
                       alt={name}
                     />

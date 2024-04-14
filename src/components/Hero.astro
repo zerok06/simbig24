@@ -3,13 +3,13 @@ import DATA from '../../information.json'
 import Navbar from './Navbar.astro'
 
 const {
-  hero: { background, title, paragraph, date, gps },
+  hero: { background, title, paragraph, date, gps, bandera },
 } = DATA
 ---
 
 <header class="min-h-[80vh] bg-black/60 text-white relative">
   <img
-    src={background}
+    src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${background}`}
     alt="hero background simbig"
     class="h-full w-full absolute -z-10 top-0 left-0 object-cover contrast-150"
   />
@@ -23,7 +23,7 @@ const {
           >
             {title}
             <img
-              src="/assets/images/bander.png"
+              src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${bandera}`}
               class="absolute md:-right-5 -top-3 -right-4 h-[30px] md:-top-4 rotate-12 md:h-[50px]"
               alt=""
             />
@@ -191,4 +191,6 @@ const {
     </div>
   </div>
 </header>
-<script src="/assets/js/Counterdown.js" is:inline></script>
+<script
+  src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${'/assets/js/Counterdown.js'}`}
+  is:inline></script>

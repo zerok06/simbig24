@@ -13,9 +13,12 @@ const {
 <nav>
   <Wrapper>
     <div class="h-20 flex justify-between items-center">
-      <a href="/" class="h-[35px] md:h-[50px]">
+      <a
+        href={`${import.meta.env.PROD ? '/SIMBig2024' : '/'}`}
+        class="h-[35px] md:h-[50px]"
+      >
         <img
-          src={logo}
+          src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${logo}`}
           alt={title}
           class="h-full drop-shadow-[0_0_10px_rgba(255,255,255,.4)]"
         />
@@ -51,7 +54,7 @@ const {
                     <div class="absolute top-[100%] right-0 px-4 py-5 bg-white text-black min-w-[250px] hidden group-hover:flex flex-col rounded-lg gap-2">
                       {sub.map(item => (
                         <a
-                          href={item.url}
+                          href={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${item.url}`}
                           class="flex gap-2 hover:text-primary transition-colors duration-300"
                         >
                           {item.title}
@@ -64,7 +67,7 @@ const {
                 return (
                   <li>
                     <a
-                      href={url}
+                      href={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${url}`}
                       class="px-2 py-1 before:content-[''] relative before:h-[2px] before:hover:w-[100%] before:w-0 before:transition-all before:duration-300 before:absolute before:hover:left-0 before:bottom-0 before:rounded-md before:right-0 before:bg-white"
                     >
                       {title}
