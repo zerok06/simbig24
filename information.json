@@ -2,11 +2,11 @@
     "title": "",
     "logo": "/assets/logo_text-white.svg",
     "siteData": {
-        "title": "My Astro Blog",
-        "description": "My musings about the Astro framework",
+        "title": "SIMBig 2024",
+        "description": "SIMBig is one of the first conferences in Latin America grouping areas such as Artificial Intelligence, Machine Learning, Deep Learning, Healthcare Informatics, Natural Language Processing, Semantic Web, Software Engineering, among others.",
         "image": {
             "src": "/images/image-default.jpg",
-            "alt": "My Astro Blog"
+            "alt": "SIMBig 2024"
         }
     },
     "socialLinks": {
