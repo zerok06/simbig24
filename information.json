@@ -46,7 +46,7 @@
     "hero": {
         "title": "SIMBig 2024",
         "paragraph": "11th International Conference on Information Management and Big Data",
-        "date": "November 13 - 14 - 15",
+        "date": "November 20 - 22",
         "bandera": "/assets/images/bander.png",
         "gps": "UNAM ,PERU",
         "background": "/assets/images/hero-bg.webp",
@@ -174,7 +174,7 @@
             },
             {
                 "name": "Conference held at the Universidad Nacional de Moquegua, Peru",
-                "date": "November 13 - 14 - 15, 2024"
+                "date": "November 20 - 22, 2024"
             }
         ]
     },

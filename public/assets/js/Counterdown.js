@@ -366,10 +366,9 @@ document.addEventListener('DOMContentLoaded', () => {
       minutes: MINUTES,
     } = countdown(
       new Date(),
-      new Date(2024, 10, 13),
+      new Date(2024, 10, 20),
       countdown.DAYS | countdown.HOURS | countdown.MINUTES | countdown.SECONDS
     )
-
     const days = document.getElementById('days')
     const hours = document.getElementById('hours')
     const minutes = document.getElementById('minutes')
