@@ -24,11 +24,11 @@ const existItems = sponsors.length > 0
       Organizing Institutions
     </h3>
     <div
-      class="flex mt-4 flex-wrap md:justify-start justify-center md:gap-0 gap-6"
+      class="flex mt-4 flex-wrap sm:flex-row flex-col items-center md:justify-start justify-center md:gap-0 gap-6"
     >
       {
         organizing.map(item => (
-          <div class="min-w-[70px] md:min-w-[249.6px] max-w-[20%] flex items-center justify-center">
+          <div class="min-w-[130px] md:min-w-[249.6px] max-w-[20%] flex items-center justify-center">
             <a
               href={item.url}
               class="h-24 w-24 opacity-80 hover:opacity-100 transition-opacity duration-300"
@@ -48,14 +48,14 @@ const existItems = sponsors.length > 0
       Co-organizing Institutions
     </h3>
     <div
-      class="flex mt-4 flex-wrap md:justify-start justify-center md:gap-0 gap-6"
+      class="flex mt-4 flex-wrap sm:flex-row flex-col items-center md:justify-start justify-center md:gap-0 gap-6"
     >
       {
         coorganizing.map(item => (
-          <div class="min-w-[70px] md:min-w-[249.6px] max-w-[20%] flex items-center justify-center">
+          <div class="min-w-[130px] md:min-w-[249.6px] max-w-[20%] flex items-center justify-center">
             <a
               href={item.url}
-              class="h-24 w-24 opacity-80 hover:opacity-100 transition-opacity duration-300"
+              class="h-32 w-32 opacity-80 hover:opacity-100 transition-opacity duration-300"
             >
               <img
                 src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${item.image}`}
