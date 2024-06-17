@@ -2,7 +2,7 @@
 import Wrapper from '../components/Wrapper.astro'
 import DATA from '../../information.json'
 const {
-  speakers: { isActive, paragraph, title },
+  speakers: { isActive, paragraph, title, components },
 } = DATA
 ---
 
@@ -12,126 +12,124 @@ const {
     <p class="text-center text-black/80 mb-6">{paragraph}</p>
     {
       isActive ? (
-        <div class="flex flex-wrap justify-between">
-          <div class="px-2 max-w-[25%] min-w-[312px]">
-            <div class="flex flex-col gap-1 items-center">
-              <img
-                src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}`}
-                class="h-36 w-36 rounded-full border mx-auto"
-                alt=""
-              />
-              <div class="px-3 py-2 rounded-2xl bg-primary -translate-y-4 flex gap-1">
-                <a href="#">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="16"
-                    height="16"
-                    color="#fff"
-                    fill="none"
-                  >
-                    <path
-                      d="M9.14339 10.691L9.35031 10.4841C11.329 8.50532 14.5372 8.50532 16.5159 10.4841C18.4947 12.4628 18.4947 15.671 16.5159 17.6497L13.6497 20.5159C11.671 22.4947 8.46279 22.4947 6.48405 20.5159C4.50532 18.5372 4.50532 15.329 6.48405 13.3503L6.9484 12.886"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      d="M17.0516 11.114L17.5159 10.6497C19.4947 8.67095 19.4947 5.46279 17.5159 3.48405C15.5372 1.50532 12.329 1.50532 10.3503 3.48405L7.48405 6.35031C5.50532 8.32904 5.50532 11.5372 7.48405 13.5159C9.46279 15.4947 12.671 15.4947 14.6497 13.5159L14.8566 13.309"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="16"
-                    height="16"
-                    color="#fff"
-                    fill="none"
-                  >
-                    <path
-                      d="M3 21L10.5484 13.4516M21 3L13.4516 10.5484M13.4516 10.5484L8 3H3L10.5484 13.4516M13.4516 10.5484L21 21H16L10.5484 13.4516"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="16"
-                    height="16"
-                    color="#fff"
-                    fill="none"
-                  >
-                    <path
-                      d="M4.5 9.5H4C3.05719 9.5 2.58579 9.5 2.29289 9.79289C2 10.0858 2 10.5572 2 11.5V20C2 20.9428 2 21.4142 2.29289 21.7071C2.58579 22 3.05719 22 4 22H4.5C5.44281 22 5.91421 22 6.20711 21.7071C6.5 21.4142 6.5 20.9428 6.5 20V11.5C6.5 10.5572 6.5 10.0858 6.20711 9.79289C5.91421 9.5 5.44281 9.5 4.5 9.5Z"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                    />
-                    <path
-                      d="M6.5 4.25C6.5 5.49264 5.49264 6.5 4.25 6.5C3.00736 6.5 2 5.49264 2 4.25C2 3.00736 3.00736 2 4.25 2C5.49264 2 6.5 3.00736 6.5 4.25Z"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                    />
-                    <path
-                      d="M12.326 9.5H11.5C10.5572 9.5 10.0858 9.5 9.79289 9.79289C9.5 10.0858 9.5 10.5572 9.5 11.5V20C9.5 20.9428 9.5 21.4142 9.79289 21.7071C10.0858 22 10.5572 22 11.5 22H12C12.9428 22 13.4142 22 13.7071 21.7071C14 21.4142 14 20.9428 14 20L14.0001 16.5001C14.0001 14.8433 14.5281 13.5001 16.0879 13.5001C16.8677 13.5001 17.5 14.1717 17.5 15.0001V19.5001C17.5 20.4429 17.5 20.9143 17.7929 21.2072C18.0857 21.5001 18.5572 21.5001 19.5 21.5001H19.9987C20.9413 21.5001 21.4126 21.5001 21.7055 21.2073C21.9984 20.9145 21.9985 20.4432 21.9987 19.5006L22.0001 14.0002C22.0001 11.515 19.6364 9.50024 17.2968 9.50024C15.9649 9.50024 14.7767 10.1531 14.0001 11.174C14 10.5439 14 10.2289 13.8632 9.995C13.7765 9.84686 13.6531 9.72353 13.505 9.63687C13.2711 9.5 12.9561 9.5 12.326 9.5Z"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="16"
-                    height="16"
-                    color="#fff"
-                    fill="none"
-                  >
-                    <circle
-                      cx="12"
-                      cy="12"
-                      r="10"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                    />
-                    <path
-                      d="M12 12H17C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C13.3807 7 14.6307 7.55964 15.5355 8.46447"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </a>
-              </div>
-              <div class="flex flex-col gap-1">
-                <h3 class="text-center text-lg">Lorem, ipsum.</h3>
-                <p class="text-primary font-medium text-sm text-center block">
-                  []
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="px-2 max-w-[25%] min-w-[312px]">
-            <div>asd</div>
-          </div>
-          <div class="px-2 max-w-[25%] min-w-[312px]">
-            <div>asd</div>
-          </div>
-          <div class="px-2 max-w-[25%] min-w-[312px]">
-            <div>asd</div>
-          </div>
+        <div class="flex flex-wrap justify-center gap-y-4 md:gap-y-8">
+          {components.map(
+            ({ image, job, name, desc, path = '#', social, slug }) => (
+              <a href={`${path}/#${slug}`}>
+                <div class="px-2 max-w-[25%] min-w-[312px]">
+                  <div class="flex flex-col gap-1 items-center">
+                    <div class="relative rounded-md overflow-hidden">
+                      <img
+                        src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${image}`}
+                        class="aspect-[3/4]  border object-cover w-full"
+                        alt={name}
+                      />
+                      <img
+                        src="https://simbig.org/SIMBig2023/img/speakers/afiliation/google-logo1.jpg"
+                        alt="google logo"
+                        class="h-7 absolute right-0 bottom-0"
+                      />
+                    </div>
+                    {/* Informacion */}
+                    <div class="flex flex-col gap-1 my-2">
+                      <h3 class="text-center text-lg font-medium">{name}</h3>
+                      <p class="text-primary font-medium text-sm text-center block">
+                        {job}
+                      </p>
+                    </div>
+                    {/* Redes */}
+                    <div class="flex gap-2 mt-2">
+                      {social.hasOwnProperty('email') && (
+                        <a
+                          href={'mailto:'.concat(social.email)}
+                          target="_blank"
+                          class="size-10 rounded-full bg-primary/10 flex justify-center items-center"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                            height="18"
+                            width="18"
+                            class="fill-primary/80"
+                          >
+                            <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                          </svg>
+                        </a>
+                      )}
+                      {social.hasOwnProperty('website') && (
+                        <a
+                          href={social.website}
+                          target="_blank"
+                          class="size-10 rounded-full bg-primary/10 flex justify-center items-center"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                            height="18"
+                            width="18"
+                            class="fill-primary/80"
+                          >
+                            <path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z" />
+                          </svg>
+                        </a>
+                      )}
+                      {social.hasOwnProperty('LinkedIn') && (
+                        <a
+                          href={social.LinkedIn}
+                          target="_blank"
+                          class="size-10 rounded-full bg-primary/10 flex justify-center items-center"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                            height="18"
+                            width="18"
+                            class="fill-primary/80"
+                          >
+                            <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                          </svg>
+                        </a>
+                      )}
+                      {social.hasOwnProperty('twitter') && (
+                        <a
+                          href={social.twitter}
+                          target="_blank"
+                          class="size-10 rounded-full bg-primary/10 flex justify-center items-center"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                            height="18"
+                            width="18"
+                            class="fill-primary/80"
+                          >
+                            <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                          </svg>
+                        </a>
+                      )}
+                      {social.hasOwnProperty('google') && (
+                        <a
+                          href={social.google}
+                          target="_blank"
+                          class="size-10 rounded-full bg-primary/10 flex justify-center items-center"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 488 512"
+                            height="18"
+                            width="18"
+                            class="fill-primary/80"
+                          >
+                            <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z" />
+                          </svg>
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </a>
+            )
+          )}
         </div>
       ) : (
         <h3 class="text-center text-secondary text-2xl font-semibold">
