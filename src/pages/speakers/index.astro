@@ -15,17 +15,35 @@ const {
       <div class="flex-col gap-4 my-10 md:gap-14 flex">
         {
           components.map(
-            ({ image, id, desc, job, name, path, social, title, slug }) => (
+            ({
+              image,
+              id,
+              desc,
+              job,
+              name,
+              path,
+              social,
+              title,
+              slug,
+              logoJob,
+            }) => (
               <div
                 class="flex gap-4 md:gap-8 flex-col md:flex-row items-start"
                 id={slug}
               >
-                <div class="flex w-[312px] md:w-[250px]">
+                <div class="flex w-[312px] md:w-[250px] relative rounded-md overflow-hidden">
                   <img
                     src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${image}`}
                     alt=""
                     class="aspect-[3/4] w-full object-cover"
                   />
+                  <div class="absolute right-0 bottom-0 bg-white pt-1 pl-1 rounded-tl-sm">
+                    <img
+                      src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${logoJob}`}
+                      alt={job}
+                      class="h-7"
+                    />
+                  </div>
                 </div>
                 <div class="flex-1">
                   <div>
@@ -33,23 +51,6 @@ const {
                     <p class="font-medium text-primary text-lg">{job}</p>
                   </div>
                   <div class="flex gap-2 my-2">
-                    {social.hasOwnProperty('email') && (
-                      <a
-                        href={'mailto:'.concat(social.email)}
-                        target="_blank"
-                        class="size-10 rounded-full bg-primary/10 flex justify-center items-center"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 512 512"
-                          height="18"
-                          width="18"
-                          class="fill-primary/80"
-                        >
-                          <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
-                        </svg>
-                      </a>
-                    )}
                     {social.hasOwnProperty('website') && (
                       <a
                         href={social.website}

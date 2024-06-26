@@ -140,7 +140,7 @@
     "speakers-page": {
         "title": "Speakers",
         "tag": "Speakers",
-        "background": "/assets/images/background/3.webp"
+        "background": "/assets/images/background/6.webp"
     },
     "speakers": {
         "isActive": true,
@@ -150,18 +150,18 @@
             {
                 "id": "b9ab17ce-ceba-4991-9e4b-08b3c4f68c39",
                 "name": "LIU, Huan",
-                "title": "Dr. Huan Liu",
+                "title": "Professor, Phd.",
                 "slug": "huan-liu",
-                "image": "https://simbig.org/SIMBig2023/img/speakers/huan_liu.jpg",
+                "image": "/assets/images/speaker/face/huan_liu.jpg",
                 "path": "/speakers",
                 "job": "Arizona State University, USA",
+                "logoJob": "/assets/images/speaker/job/asu_logo.png",
                 "desc": "Dr. Huan Liu is a Regents Professor and Ira A. Fulton Professor of Computer Science and Engineering at Arizona State University. He obtained his Ph.D. in Computer Science at University of Southern California and B.Eng. in Computer Science and Electrical Engineering at Shanghai JiaoTong University. Before he joined ASU, he worked at Telecom Australia Research Labs and was on the faculty at National University of Singapore. At Arizona State University, he was recognized for excellence in teaching and research in Computer Science and Engineering and received the 2014 President's Award for Innovation. He is the recipient of the ACM SIGKDD 2022 Innovation Award. His research interests are in data mining, machine learning, feature selection, social computing, social media mining, and artificial intelligence, investigating interdisciplinary problems that arise in many real-world, data-intensive applications with high-dimensional data of disparate forms such as social media. His well-cited publications include books, book chapters, encyclopedia entries as well as conference and journal papers. He is a co-author of a text, Social Media Mining: An Introduction, Cambridge University Press. He is a founding organizer of the International Conference Series on Social Computing, Behavioral-Cultural Modeling, and Prediction, Editor in Chief of ACM TIST, and Field Chief Editor of Frontiers in Big Data and its Specialty Chief Editor of Data Mining and Management. He is a Fellow of ACM, AAAI, AAAS, and IEEE.",
                 "social": {
-                    "email": "juan.lossio@nih.gov",
-                    "website": "https://simbig.org/lossio-ventura/",
-                    "LinkedIn": "https://www.linkedin.com/in/juan-antonio-lossio-ventura-22898859/",
-                    "twitter": "https://twitter.com/lossio666?lang=es",
-                    "google": ""
+                    "website": "https://www.public.asu.edu/~huanliu/",
+                    "LinkedIn": "https://www.linkedin.com/in/huan-liu-96ab172/",
+                    "twitter": "https://twitter.com/liuhuan",
+                    "google": "https://scholar.google.com/citations?user=Dzf46C8AAAAJ&hl=en"
                 }
             }
         ]
@@ -172,15 +172,15 @@
         "content": [
             {
                 "name": "Papers submission deadline",
-                "date": "June 10, 2024"
+                "date": "August 10, 2024"
             },
             {
                 "name": "Notification of acceptance",
-                "date": "July 15, 2024"
+                "date": "September 30, 2024"
             },
             {
                 "name": "Camera-ready versions",
-                "date": "October 10, 2024"
+                "date": "October 28, 2024"
             },
             {
                 "name": "Conference held at the Universidad Nacional de Moquegua, Peru",
@@ -320,22 +320,22 @@
     },
     "privacy-policy": {
         "title": "Privacy Policy",
-        "tag": "Privacy Policy",
+        "tag": "SIMBig 2024 - Privacy Policy",
         "background": "/assets/images/background/2.webp"
     },
     "registration": {
         "title": "Registration",
-        "tag": "registration",
+        "tag": "SIMBig 2024 - Registration",
         "background": "/assets/images/background/1.webp"
     },
     "venue": {
         "title": "Venue",
-        "tag": "Venue",
+        "tag": "SIMBig 2024 - Venue",
         "background": "/assets/images/background/3.webp"
     },
     "organizing-committee": {
         "title": "Organizing Committee",
-        "tag": "Organizing Committee",
+        "tag": "SIMBig 2024 - Organizing Committee",
         "background": "/assets/images/background/4.webp",
         "items": {
             "general-chair": {
