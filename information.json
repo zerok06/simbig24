@@ -150,7 +150,7 @@
             {
                 "id": "b9ab17ce-ceba-4991-9e4b-08b3c4f68c39",
                 "name": "LIU, Huan",
-                "title": "Professor, Phd.",
+                "title": "Professor, PhD.",
                 "slug": "huan-liu",
                 "image": "/assets/images/speaker/face/huan_liu.jpg",
                 "path": "/speakers",
@@ -162,6 +162,23 @@
                     "LinkedIn": "https://www.linkedin.com/in/huan-liu-96ab172/",
                     "twitter": "https://twitter.com/liuhuan",
                     "google": "https://scholar.google.com/citations?user=Dzf46C8AAAAJ&hl=en"
+                }
+            },
+            {
+                "id": "b9f4cc7c-dce6-45c3-b0e8-6d138a98df25",
+                "name": "Aaron Courville",
+                "title": "Professor, PhD.",
+                "slug": "aaron-courville",
+                "image": "/assets/images/speaker/face/milaaaroncourville.webp",
+                "path": "/speakers",
+                "job": "Université de Montréal, Canadá",
+                "logoJob": "/assets/images/speaker/job/Universite_de_Montreal_logo.svg",
+                "desc": "Aaron Courville is a professor in the Department of Computer Science and Operations Research (DIRO) at Université de Montréal. He has a PhD from the Robotics Institute, Carnegie Mellon University.Courville was an early contributor to deep learning: he is a founding member of Mila – Quebec Artificial Intelligence Institute, a fellow in CIFAR’s Learning in Machines & Brains program and, with Ian Goodfellow and Yoshua Bengio, co-wrote the seminal textbook on deep learning.His current research focuses on the development of deep learning models and methods. He is particularly interested in reinforcement learning, deep generative models and multimodal ML, as well as their applications, such as computer vision and natural language processing.Courville holds a Canada CIFAR AI Chair and a Canada Research Chair in Learning Representations that Generalize Systematically. His research has been supported by Microsoft Research, Samsung, Hitachi, Sony and Google (Focused Research Award).",
+                "social": {
+                    "website": "https://mila.quebec/en/aaron-courville",
+                    "LinkedIn": "https://www.linkedin.com/in/aaron-courville-53a63459/?originalSubdomain=ca",
+                    "twitter": "https://twitter.com/aaroncourville",
+                    "google": "https://scholar.google.com/citations?user=km6CP8cAAAAJ&hl=en"
                 }
             }
         ]
