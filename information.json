@@ -149,6 +149,23 @@
         "components": [
             {
                 "id": "b9ab17ce-ceba-4991-9e4b-08b3c4f68c39",
+                "name": "Anna Korhonen",
+                "title": "Professor, PhD.",
+                "slug": "anna-korhonen",
+                "image": "/assets/images/speaker/face/anna.webp",
+                "path": "/speakers",
+                "job": "University of Cambridge, Inglaterra",
+                "logoJob": "/assets/images/speaker/job/cambridge.jpg",
+                "desc": "Anna Korhonen is a Professor of Natural Language Processing at the University of Cambridge where I co-direct the Language Technology Laboratory (LTL) and direct the Centre for Human-Inspired Artificial Intelligence (CHIA). I am also a Senior Research Fellow of Churchill College, a Fellow of ACL and a Fellow of ELLIS. I previously served as a Turing Fellow of Alan Turing Institute. My research is centred around NLP and how to develop, adapt and apply computational techniques to meet the needs of intelligent applications.  I am particularly interested in responsible and human-centric NLP that draws on the understanding of human cognitive, social and creative intelligence and  focuses applications aimed at social and global good.  Many of our projects are interdisciplinary and involve collaboration with researchers in other fields as well as in other areas of Artificial Intelligence. Please see my research page for details! Prior to starting in my current position, I was a Royal Society University Research Fellow in this University, based in Computer Science and Linguistics.  Before that, I was a JSPS postdoctoral fellow in Japan where I worked at the National Institute of Informatics in Tokyo. Previously, I was a researcher at  University of Pennsylvania. I did my PhD in Computer Science at the University of Cambridge and hold masters degrees in both Computer Science  and Linguistics.",
+                "social": {
+                    "website": "https://sites.google.com/site/annakorhonen/",
+                    "LinkedIn": "https://www.linkedin.com/in/anna-korhonen-534a9b5/",
+                    "twitter": "https://twitter.com/annalkorhonen",
+                    "google": "https://scholar.google.co.uk/citations?user=SCoVoOYAAAAJ&hl=en"
+                }
+            },
+            {
+                "id": "766aac20-0807-4bf4-9a84-afdd8d836859",
                 "name": "LIU, Huan",
                 "title": "Professor, PhD.",
                 "slug": "huan-liu",
@@ -174,6 +191,23 @@
                 "job": "Université de Montréal, Canadá",
                 "logoJob": "/assets/images/speaker/job/Universite_de_Montreal_logo.svg",
                 "desc": "Aaron Courville is a professor in the Department of Computer Science and Operations Research (DIRO) at Université de Montréal. He has a PhD from the Robotics Institute, Carnegie Mellon University.Courville was an early contributor to deep learning: he is a founding member of Mila – Quebec Artificial Intelligence Institute, a fellow in CIFAR’s Learning in Machines & Brains program and, with Ian Goodfellow and Yoshua Bengio, co-wrote the seminal textbook on deep learning.His current research focuses on the development of deep learning models and methods. He is particularly interested in reinforcement learning, deep generative models and multimodal ML, as well as their applications, such as computer vision and natural language processing.Courville holds a Canada CIFAR AI Chair and a Canada Research Chair in Learning Representations that Generalize Systematically. His research has been supported by Microsoft Research, Samsung, Hitachi, Sony and Google (Focused Research Award).",
+                "social": {
+                    "website": "https://en.wikipedia.org/wiki/Mona_Diab",
+                    "LinkedIn": "https://www.linkedin.com/in/mona-diab-55946614/",
+                    "twitter": "https://twitter.com/MonaDiab77",
+                    "google": "https://scholar.google.com/citations?user=-y6SIhQAAAAJ&hl=en"
+                }
+            },
+            {
+                "id": "d708dcd3-337b-4bd6-a899-5f3713046ab3",
+                "name": "DIAB, Mona",
+                "title": "Professor, PhD.",
+                "slug": "diab-mona",
+                "image": "/assets/images/speaker/face/mona_diab.jpg",
+                "path": "/speakers",
+                "job": "Université de Montréal, Canadá",
+                "logoJob": "/assets/images/speaker/job/2560px-Carnegie_Mellon_wordmark.svg.png",
+                "desc": "Dr. Mona Diab is a computer science professor and director of Carnegie Mellon University's Language Technologies Institute. Previously, she was a professor at George Washington University and a research scientist with Facebook AI. Before joining Meta, she led the Lex Conversational AI project within Amazon AWS AI. Her current focus is on Responsible AI and how to operationalize it for NLP technologies. Her interests span building robust technologies for low resource scenarios with a special interest in Arabic technologies, (mis) information propagation, computational socio-pragmatics, computational psycholinguistics, NLG evaluation metrics, Language modeling and resource creation. Mona has served the community in several capacities: Elected President of SIGLEX and SIGSemitic, and she currently serves as the elected VP for ACL SIGDAT, the board supporting EMNLP conferences. She has delivered tutorials and organized numerous workshops and panels around Arabic processing, Responsible NLP, Code Switching, etc. She is a cofounder of CADIM (Consortium on Arabic Dialect Modeling, previously known as Columbia University Arabic Dialects Modeling Group), in 2005, which served as a world renowned reference point on Arabic Language Technologies. Moreover she helped establish two research trends in NLP, namely computational approaches to Code Switching and Semantic Textual Similarity. She is also a founding member of the *SEM conference, one of the top tier conferences in NLP. Mona has published more than 250 peer reviewed articles.",
                 "social": {
                     "website": "https://mila.quebec/en/aaron-courville",
                     "LinkedIn": "https://www.linkedin.com/in/aaron-courville-53a63459/?originalSubdomain=ca",
