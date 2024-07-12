@@ -127,9 +127,8 @@ const {
                   />
                   <p
                     class={`line-clamp-5 peer-checked:line-clamp-none text-black/60`}
-                  >
-                    {desc}
-                  </p>
+                    set:html={desc}
+                  />
                   <label
                     for={id}
                     class="peer-checked:hidden inline text-primary font-medium cursor-pointer"
