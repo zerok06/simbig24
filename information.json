@@ -98,7 +98,7 @@
                         "url": "/call-for-paper/main-conference"
                     },
                     {
-                        "title": "Dise Track",
+                        "title": "Dise Special Track",
                         "url": "/call-for-paper/track-on-data-driven-software-engineering"
                     }
                 ]
@@ -153,12 +153,12 @@
         "components": [
             {
                 "id": "b9ab17ce-ceba-4991-9e4b-08b3c4f68c39",
-                "name": "KORHONEN Anna",
+                "name": "KORHONEN, Anna",
                 "title": "Professor, PhD.",
                 "slug": "anna-korhonen",
                 "image": "/assets/images/speaker/face/anna.webp",
                 "path": "/speakers",
-                "job": "University of Cambridge, Inglaterra",
+                "job": "University of Cambridge, UK",
                 "logoJob": "/assets/images/speaker/job/cambridge.jpg",
                 "desc": "Anna Korhonen is a Professor of Artificial Intelligence at the University of Cambridge (United Kingdom), where she directs the Centre for Human-Inspired Artificial Intelligence (CHIA) and co-directs the Language Technology Laboratory (LTL). Previously, she was a fellow of the Alan Turing Institute, a University Research Fellow of the Royal Society, and a fellow of the Japan Society for the Promotion of Science. Before her current position, she worked as a researcher at the National Institute of Informatics in Tokyo and the University of Pennsylvania. She earned her PhD in Computer Science at the University of Cambridge and holds master’s degrees in both Computer Science and Linguistics.<br> <br>  Professor Korhonen’s research focuses on human-centric AI and Natural Language Processing (NLP), drawing on human cognitive, social, and creative intelligence. Her work aims to promote social and global good, including efforts to make language technologies more geographically and socially inclusive and to apply AI techniques to address problems in health, the environment, and scientific research. She has led numerous large projects, served as a Programme Chair for leading NLP conferences, and acted as an action editor for top journals such as Computational Linguistics, Transactions of ACL, and the Journal of Artificial Intelligence Research.<br> <br>  She has also been the president of SIGLEX and a member of the Association for Computational Linguistics (ACL) Executive Board. Additionally, she is a Senior Research Fellow of Churchill College in Cambridge and a Fellow of the ACL, the European Lab for Learning and Intelligent Systems (ELLIS), and the Asia-Pacific Artificial Intelligence Association (AAIA).",
                 "social": {
@@ -170,7 +170,7 @@
             },
             {
                 "id": "766aac20-0807-4bf4-9a84-afdd8d836859",
-                "name": "LIU Huan",
+                "name": "LIU, Huan",
                 "title": "Professor, PhD.",
                 "slug": "huan-liu",
                 "image": "/assets/images/speaker/face/huan_liu.jpg",
@@ -187,12 +187,12 @@
             },
             {
                 "id": "b9f4cc7c-dce6-45c3-b0e8-6d138a98df25",
-                "name": "COURVILLE Aaron",
+                "name": "COURVILLE, Aaron",
                 "title": "Professor, PhD.",
                 "slug": "aaron-courville",
                 "image": "/assets/images/speaker/face/milaaaroncourville.webp",
                 "path": "/speakers",
-                "job": "Université de Montréal, Canadá",
+                "job": "Université de Montréal, Canada",
                 "logoJob": "/assets/images/speaker/job/Universite_de_Montreal_logo.svg",
                 "desc": "Aaron Courville is a professor in the Department of Computer Science and Operations Research (DIRO) at Université de Montréal. He has a PhD from the Robotics Institute, Carnegie Mellon University.Courville was an early contributor to deep learning: he is a founding member of Mila – Quebec Artificial Intelligence Institute, a fellow in CIFAR’s Learning in Machines & Brains program and, with Ian Goodfellow and Yoshua Bengio, co-wrote the seminal textbook on deep learning.His current research focuses on the development of deep learning models and methods. He is particularly interested in reinforcement learning, deep generative models and multimodal ML, as well as their applications, such as computer vision and natural language processing.Courville holds a Canada CIFAR AI Chair and a Canada Research Chair in Learning Representations that Generalize Systematically. His research has been supported by Microsoft Research, Samsung, Hitachi, Sony and Google (Focused Research Award).",
                 "social": {
@@ -204,7 +204,7 @@
             },
             {
                 "id": "d708dcd3-337b-4bd6-a899-5f3713046ab3",
-                "name": "DIAB Mona",
+                "name": "DIAB, Mona",
                 "title": "Professor, PhD.",
                 "slug": "diab-mona",
                 "image": "/assets/images/speaker/face/mona_diab.jpg",
@@ -242,6 +242,11 @@
                 "date": "November 20 - 22, 2024"
             }
         ]
+    },
+    "callforpapers": {
+        "title": "Call for Papers",
+        "subtitle": "Conference Publications",
+        "paragraph": "All papers of SIMBig 2024 will be published with <a class='text-primary font-bold' href='https://www.springer.com/series/7899' target='_blank'>Springer CCIS</a> series (Communications in Computer and Information Science)."
     },
     "entidades": {
         "title": "Organizing Institutions & Sponsors",
@@ -514,6 +519,18 @@
         }
     },
     "track": {
+        "items": [
+            {
+                "title": "Call for Papers (Main)",
+                "desc": "Contributions for the main conference",
+                "path": "/call-for-paper/main-conference"
+            },
+            {
+                "title": "Dise Special Track",
+                "desc": "Data-Driven Software Engineering",
+                "path": "/call-for-paper/track-on-data-driven-software-engineering"
+            }
+        ],
         "main": {
             "title": "Organizers",
             "items": [
@@ -534,8 +551,8 @@
                 {
                     "name": "Hugo Alatrista-Salas",
                     "title": "Ph.D. in Computer Science",
-                    "uni": "Pontificia Universidad Católica del Perú - PUCP",
-                    "location": "Lima, PERU",
+                    "uni": "Pôle Universitataire Léonard de Vinci Research Center",
+                    "location": "Paris, FRANCE",
                     "desc": "",
                     "image": "/assets/images/committee/hugo.webp",
                     "social": {
