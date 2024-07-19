@@ -7,7 +7,7 @@ import Wrapper from '../components/Wrapper.astro'
 import SEO from '../components/SEO.astro'
 
 const {
-  frontmatter: { title, background, tag },
+  frontmatter: { title, background, tag, longTitle },
 } = Astro.props
 ---
 
@@ -35,18 +35,20 @@ const {
         class="h-full w-full absolute -z-10 top-0 left-0 object-cover"
       />
       <Navbar />
-      <section class="h-[calc(50svh-80px)]">
+      <section class="h-[calc(50svh-80px)] px-4">
         <div class="w-full max-w-6xl mx-auto h-full">
           <div class="flex h-full">
-            <div class="flex-1 flex flex-col gap-4 justify-center">
-              <!-- <p class="text-white font-medium text-base text-left block">
-                [{tag}]
-              </p> -->
+            <div class="flex-1 flex flex-col gap-1 justify-center">
               <h1
                 class="font-bold text-3xl md:text-6xl text-center md:text-left"
               >
                 {title}
               </h1>
+              <p
+                class="text-white font-semibold text-xl text-center md:text-left block"
+              >
+                {longTitle}
+              </p>
             </div>
             <div class="hidden md:flex-1"></div>
           </div>

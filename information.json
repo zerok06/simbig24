@@ -96,6 +96,10 @@
                     {
                         "title": "Main Conference",
                         "url": "/call-for-paper/main-conference"
+                    },
+                    {
+                        "title": "Dise Track",
+                        "url": "/call-for-paper/track-on-data-driven-software-engineering"
                     }
                 ]
             },
@@ -149,7 +153,7 @@
         "components": [
             {
                 "id": "b9ab17ce-ceba-4991-9e4b-08b3c4f68c39",
-                "name": "Anna Korhonen",
+                "name": "KORHONEN Anna",
                 "title": "Professor, PhD.",
                 "slug": "anna-korhonen",
                 "image": "/assets/images/speaker/face/anna.webp",
@@ -166,7 +170,7 @@
             },
             {
                 "id": "766aac20-0807-4bf4-9a84-afdd8d836859",
-                "name": "LIU, Huan",
+                "name": "LIU Huan",
                 "title": "Professor, PhD.",
                 "slug": "huan-liu",
                 "image": "/assets/images/speaker/face/huan_liu.jpg",
@@ -183,7 +187,7 @@
             },
             {
                 "id": "b9f4cc7c-dce6-45c3-b0e8-6d138a98df25",
-                "name": "Aaron Courville",
+                "name": "COURVILLE Aaron",
                 "title": "Professor, PhD.",
                 "slug": "aaron-courville",
                 "image": "/assets/images/speaker/face/milaaaroncourville.webp",
@@ -200,13 +204,13 @@
             },
             {
                 "id": "d708dcd3-337b-4bd6-a899-5f3713046ab3",
-                "name": "DIAB, Mona",
+                "name": "DIAB Mona",
                 "title": "Professor, PhD.",
                 "slug": "diab-mona",
                 "image": "/assets/images/speaker/face/mona_diab.jpg",
                 "path": "/speakers",
-                "job": "Université de Montréal, Canadá",
-                "logoJob": "/assets/images/speaker/job/2560px-Carnegie_Mellon_wordmark.svg.png",
+                "job": "Carnegie Mellon University, USA",
+                "logoJob": "/assets/images/speaker/job/carnegie.jpeg",
                 "desc": "Dr. Mona Diab is a computer science professor and director of Carnegie Mellon University's Language Technologies Institute. Previously, she was a professor at George Washington University and a research scientist with Facebook AI. Before joining Meta, she led the Lex Conversational AI project within Amazon AWS AI. Her current focus is on Responsible AI and how to operationalize it for NLP technologies. Her interests span building robust technologies for low resource scenarios with a special interest in Arabic technologies, (mis) information propagation, computational socio-pragmatics, computational psycholinguistics, NLG evaluation metrics, Language modeling and resource creation. Mona has served the community in several capacities: Elected President of SIGLEX and SIGSemitic, and she currently serves as the elected VP for ACL SIGDAT, the board supporting EMNLP conferences. She has delivered tutorials and organized numerous workshops and panels around Arabic processing, Responsible NLP, Code Switching, etc. She is a cofounder of CADIM (Consortium on Arabic Dialect Modeling, previously known as Columbia University Arabic Dialects Modeling Group), in 2005, which served as a world renowned reference point on Arabic Language Technologies. Moreover she helped establish two research trends in NLP, namely computational approaches to Code Switching and Semantic Textual Similarity. She is also a founding member of the *SEM conference, one of the top tier conferences in NLP. Mona has published more than 250 peer reviewed articles.",
                 "social": {
                     "website": "https://en.wikipedia.org/wiki/Mona_Diab",
@@ -507,6 +511,85 @@
                     }
                 ]
             }
+        }
+    },
+    "track": {
+        "main": {
+            "title": "Organizers",
+            "items": [
+                {
+                    "name": "Juan Antonio Lossio-Ventura",
+                    "title": "Ph.D. in Computer Science",
+                    "uni": "National Institutes of Health",
+                    "location": "Bethesda, USA",
+                    "desc": "",
+                    "image": "/assets/images/committee/juan.webp",
+                    "social": {
+                        "email": "juan.lossio@nih.gov",
+                        "website": "https://simbig.org/lossio-ventura/",
+                        "LinkedIn": "https://www.linkedin.com/in/juan-antonio-lossio-ventura-22898859/",
+                        "twitter": "https://twitter.com/lossio666?lang=es"
+                    }
+                },
+                {
+                    "name": "Hugo Alatrista-Salas",
+                    "title": "Ph.D. in Computer Science",
+                    "uni": "Pontificia Universidad Católica del Perú - PUCP",
+                    "location": "Lima, PERU",
+                    "desc": "",
+                    "image": "/assets/images/committee/hugo.webp",
+                    "social": {
+                        "email": "halatrista@simbig.org",
+                        "website": "https://simbig.org/alatrista-salas/",
+                        "LinkedIn": "https://www.linkedin.com/in/hugoalatristasalas/",
+                        "twitter": "https://twitter.com/HugoAlatsal?lang=es"
+                    }
+                }
+            ]
+        },
+        "dise": {
+            "title": "Organizers",
+            "items": [
+                {
+                    "name": "Jorge Eduardo Díaz Suárez",
+                    "title": "Ph.D. in Computer Science",
+                    "uni": "Universidad Peruana de Ciencias Aplicadas",
+                    "location": "Lima, Perú",
+                    "desc": "",
+                    "image": "/assets/images/track/organizers/jorge.webp",
+                    "social": {
+                        "email": "pcsijord@upc.edu.pe",
+                        "website": "https://mural.uv.es/diazsua/index.html",
+                        "LinkedIn": "https://www.linkedin.com/in/eduardo-diaz-suarez-01a50a27"
+                    }
+                },
+                {
+                    "name": "Edgar Eduardo Ceh Varela",
+                    "title": "Ph.D. in Computer Science",
+                    "uni": "Eastern New Mexico University",
+                    "location": "Portales, New Mexico, USA",
+                    "desc": "",
+                    "image": "/assets/images/track/organizers/eduardo.webp",
+                    "social": {
+                        "email": "eduardo.ceh@enmu.edu",
+                        "website": "https://eduardocehvarela.github.io/",
+                        "LinkedIn": "https://www.linkedin.com/in/edgar-ceh-varela/"
+                    }
+                },
+                {
+                    "name": "Freddy Alberto Paz Espinoza",
+                    "title": "Doctor en Ingeniería",
+                    "uni": "Pontificia Universidad Católica del Perú (PUCP)",
+                    "location": "Lima, Perú",
+                    "desc": "",
+                    "image": "/assets/images/track/organizers/fredy.webp",
+                    "social": {
+                        "email": "fpaz@pucp.edu.pe",
+                        "website": "https://www.pucp.edu.pe/profesor/freddy-paz-espinoza",
+                        "LinkedIn": "https://www.linkedin.com/in/freddy-paz-espinoza/"
+                    }
+                }
+            ]
         }
     }
 }
