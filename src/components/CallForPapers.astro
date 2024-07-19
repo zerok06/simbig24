@@ -32,7 +32,7 @@ const {
               <h4 class="text-center text-xl font-bold mt-4 mb-2">{e.title}</h4>
               <p class="text-center mb-4">{e.desc}</p>
               <a
-                href={e.path}
+                href={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${e.path}`}
                 class=" inline-block bg-white text-primary px-4 py-2 rounded-full mb-4"
               >
                 More Details
