@@ -70,7 +70,7 @@
                 "url": "/#dates"
             },
             {
-                "isActive": false,
+                "isActive": true,
                 "isSub": false,
                 "title": "Registration",
                 "url": "/registration"
@@ -1081,6 +1081,12 @@
                 "name": "Sabrine Mallek",
                 "affiliation": "ICN Business School",
                 "country": "France"
+            },
+            {
+                "id": 95,
+                "name": "Diego Silva",
+                "affiliation": "Universidade Federal de São Carlos",
+                "country": "Brazil"
             }
         ]
     },
