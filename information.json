@@ -70,7 +70,7 @@
                 "url": "/#dates"
             },
             {
-                "isActive": true,
+                "isActive": false,
                 "isSub": false,
                 "title": "Registration",
                 "url": "/registration"
@@ -95,11 +95,18 @@
                 "sub": [
                     {
                         "title": "Main Conference",
+                        "isLink": false,
                         "url": "/call-for-paper/main-conference"
                     },
                     {
                         "title": "Dise Special Track",
+                        "isLink": false,
                         "url": "/call-for-paper/track-on-data-driven-software-engineering"
+                    },
+                    {
+                        "title": "EE-AI-HPC Special Track",
+                        "isLink": true,
+                        "url": "https://www.cri.ensmp.fr/conf/ee-ai-hpc2024/"
                     }
                 ]
             },
@@ -111,10 +118,12 @@
                 "sub": [
                     {
                         "title": "Organizing Committee",
+                        "isLink": false,
                         "url": "/committee/organizing-committee"
                     },
                     {
                         "title": "Program Committee",
+                        "isLink": false,
                         "url": "/committee/program-committee"
                     }
                 ]
@@ -166,6 +175,23 @@
                     "LinkedIn": "https://www.linkedin.com/in/anna-korhonen-534a9b5/",
                     "twitter": "https://twitter.com/annalkorhonen",
                     "google": "https://scholar.google.co.uk/citations?user=SCoVoOYAAAAJ&hl=en"
+                }
+            },
+            {
+                "id": "fdd29bde-2390-48e8-9e78-101713802540",
+                "name": "KENTHAPADI, Krishnaram",
+                "title": "Professor, PhD.",
+                "slug": "krishnaram",
+                "image": "/assets/images/speaker/face/krishnaramkenthapadi.jpg",
+                "path": "/speakers",
+                "job": "Clinical AI, Oracle Health, USA",
+                "logoJob": "/assets/images/speaker/job/Oracle_Health_rgb.png",
+                "desc": "Krishnaram Kenthapadi is the Chief Scientist, Clinical AI at Oracle Health, where he leads the AI initiatives for Clinical Digital Assistant and other Oracle Health products. Previously, as the Chief AI Officer & Chief Scientist of Fiddler AI, he led initiatives on generative AI (e.g., Fiddler Auditor, an open-source library for evaluating & red-teaming LLMs before deployment; AI safety, observability & feedback mechanisms for LLMs in production), and on AI safety, alignment, observability, and trustworthiness, as well as the technical strategy, innovation, and thought leadership for Fiddler. Prior to that, he was a Principal Scientist at Amazon AWS AI, where he led the fairness, explainability, privacy, and model understanding initiatives in the Amazon AI platform, and shaped new initiatives such as Amazon SageMaker Clarify from inception to launch. Prior to joining Amazon, he led similar efforts at the LinkedIn AI team, and served as LinkedIn’s representative in Microsoft’s AI and Ethics in Engineering and Research (AETHER) Advisory Board. Previously, he was a Researcher at Microsoft Research Silicon Valley Lab. Krishnaram received his Ph.D. in Computer Science from Stanford University in 2006. He serves regularly on the senior program committees of FAccT, KDD, WWW, WSDM, and related conferences, and co-chaired the 2014 ACM Symposium on Computing for Development. His work has been recognized through awards at NAACL, WWW, SODA, CIKM, ICML AutoML workshop, and Microsoft’s AI/ML conference (MLADS). He has published 60+ papers, with 7000+ citations and filed 150+ patents (72 granted). He has presented tutorials on trustworthy generative AI, privacy, fairness, explainable AI, model monitoring, and responsible AI at forums such as ICML, KDD, WSDM, WWW, FAccT, and AAAI, given several invited industry talks, and instructed a course on responsible AI at Stanford.",
+                "social": {
+                    "website": "https://cs.stanford.edu/people/kngk/",
+                    "LinkedIn": "https://www.linkedin.com/in/krishnaramkenthapadi/",
+                    "twitter": "https://x.com/kkenthapadi",
+                    "google": "https://scholar.google.com/citations?user=NAFriCkAAAAJ&hl=en"
                 }
             },
             {
@@ -227,18 +253,30 @@
         "content": [
             {
                 "name": "Papers submission deadline",
-                "date": "August 10, 2024"
+                "date": "August 10",
+                "cancel": true,
+                "newDate": "September 07",
+                "year": ", 2024"
             },
             {
                 "name": "Notification of acceptance",
+                "cancel": false,
+                "year": ", 2024",
+                "newDate": "September 07",
                 "date": "September 30, 2024"
             },
             {
                 "name": "Camera-ready versions",
+                "year": ", 2024",
+                "newDate": "September 07",
+                "cancel": false,
                 "date": "October 28, 2024"
             },
             {
                 "name": "Conference held at the Universidad Nacional de Moquegua, Peru",
+                "year": ", 2024",
+                "cancel": false,
+                "newDate": "September 07",
                 "date": "November 20 - 22, 2024"
             }
         ]
@@ -265,7 +303,18 @@
                 "image": "/assets/images/pulv.png"
             }
         ],
-        "sponsors": []
+        "sponsors": [
+            {
+                "name": "Aij",
+                "url": "https://aij.ijcai.org/",
+                "image": "/assets/images/aij.png"
+            },
+            {
+                "name": "Franco Rojas",
+                "url": "https://www.linkedin.com/in/john-franco-rojas-258468a9/",
+                "image": "/assets/images/franco.png"
+            }
+        ]
     },
     "testimonial": {
         "title": "Past Keynote Speakers Testimonials",

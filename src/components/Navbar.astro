@@ -52,14 +52,25 @@ const {
                       </svg>
                     </p>
                     <div class="absolute top-[100%] right-0 px-4 py-5 bg-white text-black min-w-[250px] flex transition-opacity ease-in-out -z-[999] group-hover:z-10 opacity-0 group-hover:opacity-100 duration-1000 flex-col rounded-lg gap-2">
-                      {sub.map(item => (
-                        <a
-                          href={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${item.url}`}
-                          class="flex gap-2 hover:text-primary transition-colors duration-300"
-                        >
-                          {item.title}
-                        </a>
-                      ))}
+                      {sub.map(item =>
+                        item.isLink ? (
+                          <a
+                            href={item.url}
+                            target="_blank"
+                            referrerpolicy="no-referrer"
+                            class="flex gap-2 hover:text-primary transition-colors duration-300"
+                          >
+                            {item.title}
+                          </a>
+                        ) : (
+                          <a
+                            href={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${item.url}`}
+                            class="flex gap-2 hover:text-primary transition-colors duration-300"
+                          >
+                            {item.title}
+                          </a>
+                        )
+                      )}
                     </div>
                   </li>
                 )

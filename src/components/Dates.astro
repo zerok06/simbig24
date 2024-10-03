@@ -17,7 +17,17 @@ const {
           <>
             <div>
               <div class="text-xl md:text-lg font-semibold flex flex-col items-center">
-                <p class="text-primary text-xl">{item.date}</p>
+                {item.cancel ? (
+                  <div class="flex gap-1">
+                    <p class="text-primary text-xl line-through">{item.date}</p>
+                    <p class="text-primary text-xl text-red-500">
+                      {item.newDate}
+                    </p>
+                    <p class="text-primary text-xl">{item.year}</p>
+                  </div>
+                ) : (
+                  <p class="text-primary text-xl">{item.date}</p>
+                )}
                 <h4 class="text-lg font-medium text-center text-black/70 max-w-[400px]">
                   {item.name}
                 </h4>

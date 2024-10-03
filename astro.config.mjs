@@ -11,5 +11,5 @@ export default defineConfig({
     }),
     mdx(),
   ],
-  /* base: '/SIMBig2024', */
+  /*  base: '/SIMBig2024', */
 })
