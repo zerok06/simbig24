@@ -28,10 +28,13 @@ const existItems = sponsors.length > 0
     >
       {
         organizing.map(item => (
-          <div class="min-w-[130px] md:min-w-[249.6px] max-w-[20%] flex items-center justify-center">
+          <div
+            class="min-w-[130px] md:min-w-[249.6px] max-w-[20%] flex items-center justify-center"
+            title={item.name}
+          >
             <a
               href={item.url}
-              class="h-24 w-24 opacity-80 hover:opacity-100 transition-opacity duration-300"
+              class="h-24 opacity-80 hover:opacity-100 transition-opacity duration-300"
             >
               <img
                 src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${item.image}`}
@@ -52,7 +55,10 @@ const existItems = sponsors.length > 0
     >
       {
         coorganizing.map(item => (
-          <div class="min-w-[130px] md:min-w-[249.6px] max-w-[20%] flex items-center justify-center">
+          <div
+            class="min-w-[130px] md:min-w-[249.6px] max-w-[20%] flex items-center justify-center"
+            title={item.name}
+          >
             <a
               href={item.url}
               class="h-32 w-32 opacity-80 hover:opacity-100 transition-opacity duration-300"
@@ -72,7 +78,10 @@ const existItems = sponsors.length > 0
           <h3 class="text-left text-2xl font-bold mb-2 mt-8 ">Sponsors</h3>
           <div class="flex mt-4">
             {sponsors.map(({ url, image, name }) => (
-              <div class="min-w-[249.6px] max-w-[20%] flex items-center justify-center">
+              <div
+                class="min-w-[249.6px] max-w-[20%] flex items-center justify-center"
+                title={name}
+              >
                 <a
                   href={url}
                   class="h-24 w-24 opacity-80 hover:opacity-100 transition-opacity duration-300"
@@ -86,6 +95,24 @@ const existItems = sponsors.length > 0
                 </a>
               </div>
             ))}
+            <div
+              class="min-w-[249.6px] max-w-[20%] flex items-center justify-center"
+              title={'John Franco Rojas'}
+            >
+              <a
+                href={
+                  'https://www.linkedin.com/in/john-franco-rojas-258468a9/s'
+                }
+                class="h-24 opacity-80 hover:opacity-100 transition-opacity duration-300"
+                target="_blank"
+              >
+                <img
+                  src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${'/assets/images/franco.png'}`}
+                  alt={'John Franco Rojas'}
+                  class="w-full h-full object-contain "
+                />
+              </a>
+            </div>
           </div>
         </>
       )

@@ -1,0 +1,23 @@
+---
+import Wrapper from '../components/Wrapper.astro'
+import DATA from '../../information.json'
+const {
+  proceedings: { title, subtitle, paragraph },
+  track: { items },
+} = DATA
+---
+
+<section class="py-14" id="dates">
+  <Wrapper>
+    <h2 class="text-center md:text-5xl font-bold mb-8 text-3xl">{title}</h2>
+
+    <p class="text-center text-black/80" set:html={paragraph} />
+    <p class="text-sm text-primary text-center mb-6">(To be confirmed)</p>
+    <img
+      src="https://simbig.org/SIMBig2020/img/conference/springer_ccis_logo.jpg"
+      alt="Springer"
+      class="h-20 mx-auto"
+      title="Springer"
+    />
+  </Wrapper>
+</section>

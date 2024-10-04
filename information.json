@@ -180,7 +180,7 @@
             {
                 "id": "fdd29bde-2390-48e8-9e78-101713802540",
                 "name": "KENTHAPADI, Krishnaram",
-                "title": "Professor, PhD.",
+                "title": "Scientist, PhD.",
                 "slug": "krishnaram",
                 "image": "/assets/images/speaker/face/krishnaramkenthapadi.jpg",
                 "path": "/speakers",
@@ -284,6 +284,11 @@
     "callforpapers": {
         "title": "Call for Papers",
         "subtitle": "Conference Publications",
+        "paragraph": "Participate in one of the first conferences in Latin America that group data science topics and be part of the technological change."
+    },
+    "proceedings": {
+        "title": "Conference proceedings",
+        "subtitle": "Conference Publications",
         "paragraph": "All papers of SIMBig 2024 will be published with <a class='text-primary font-bold' href='https://www.springer.com/series/7899' target='_blank'>Springer CCIS</a> series (Communications in Computer and Information Science)."
     },
     "entidades": {
@@ -293,7 +298,12 @@
             {
                 "name": "Universidad Nacional de Moquegua",
                 "url": "https://unam.edu.pe/",
-                "image": "/assets/images/unam.webp"
+                "image": "/assets/images/unam.png"
+            },
+            {
+                "name": "Ingenieria de Sistema e Informatica - ILo",
+                "url": "https://unam.edu.pe/ep-sistemas/portal/",
+                "image": "/assets/images/inge.png"
             }
         ],
         "co-organizing": [
@@ -308,11 +318,6 @@
                 "name": "Aij",
                 "url": "https://aij.ijcai.org/",
                 "image": "/assets/images/aij.png"
-            },
-            {
-                "name": "Franco Rojas",
-                "url": "https://www.linkedin.com/in/john-franco-rojas-258468a9/",
-                "image": "/assets/images/franco.png"
             }
         ]
     },
@@ -1150,6 +1155,12 @@
                 "title": "Dise Special Track",
                 "desc": "Data-Driven Software Engineering",
                 "path": "/call-for-paper/track-on-data-driven-software-engineering"
+            },
+            {
+                "title": "EE-AI-HPC Special Track",
+                "desc": "Efficieny Enhencement for Artificial Intelligence and High-Performance Computing",
+                "path": "https://www.cri.ensmp.fr/conf/ee-ai-hpc2024/",
+                "isExternal": true
             }
         ],
         "main": {

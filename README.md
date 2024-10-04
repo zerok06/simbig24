@@ -1,8 +1,6 @@
 # Landing Page SimBig24
 
-
 ![Capture](./capture.png)
-
 
 ## 🧞 Commands
 

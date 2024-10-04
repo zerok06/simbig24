@@ -30,7 +30,7 @@ const {
     <SocialLinks />
     <header class="min-h-[50svh] relative bg-black/30 text-white">
       <img
-        src={background}
+        src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${background}`}
         alt="hero background simbig"
         class="h-full w-full absolute -z-10 top-0 left-0 object-cover"
       />

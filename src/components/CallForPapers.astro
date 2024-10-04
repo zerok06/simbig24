@@ -7,36 +7,38 @@ const {
 } = DATA
 ---
 
-<section class="py-20" id="dates">
+<section class="py-14" id="dates">
   <Wrapper>
     <h2 class="text-center md:text-5xl font-bold mb-8 text-3xl">{title}</h2>
-    <h3
-      class="text-center text-black/80 md:text-2xl font-semibold mb-2 text-lg"
-    >
-      {subtitle}
-    </h3>
-    <p class="text-center text-black/80" set:html={paragraph} />
-    <p class="text-sm text-primary text-center mb-6">(To be confirmed)</p>
-    <img
-      src="https://simbig.org/SIMBig2020/img/conference/springer_ccis_logo.jpg"
-      alt="Springer"
-      class="h-20 mx-auto"
-      title="Springer"
-    />
+
+    <p class="text-center text-black/80">
+      {paragraph}
+    </p>
 
     <div class="py-10 flex justify-center flex-wrap">
       {
         items.map(e => (
-          <div class=" min-w-[312px] md:min-w-[33%] px-2 py-4 text-white">
-            <div class="bg-primary rounded-2xl px-4 py-3 flex flex-col items-center">
+          <div class=" min-w-[312px] md:min-w-[33%] px-2 py-2 text-white">
+            <div class="bg-primary rounded-2xl px-4 py-2 flex flex-col items-center">
               <h4 class="text-center text-xl font-bold mt-4 mb-2">{e.title}</h4>
               <p class="text-center mb-4">{e.desc}</p>
-              <a
-                href={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${e.path}`}
-                class=" inline-block bg-white text-primary px-4 py-2 rounded-full mb-4"
-              >
-                More Details
-              </a>
+              {e.isExternal ? (
+                <a
+                  href={e.path}
+                  class=" inline-block bg-white text-primary px-4 py-2 rounded-full mb-4"
+                  target="_blank"
+                  referrerpolicy="no-referrer"
+                >
+                  More Details
+                </a>
+              ) : (
+                <a
+                  href={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${e.path}`}
+                  class=" inline-block bg-white text-primary px-4 py-2 rounded-full mb-4"
+                >
+                  More Details
+                </a>
+              )}
             </div>
           </div>
         ))
