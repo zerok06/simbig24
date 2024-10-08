@@ -1,0 +1,18 @@
+---
+import LayoutPage from '../../../layouts/LayoutPage.astro'
+import DATA from '../../../../information.json'
+import Wrapper from '../../../components/Wrapper.astro'
+import FormRegister from '../../../components/FormRegister'
+const {
+  'registration-page': { tag, title, background },
+} = DATA
+---
+
+<LayoutPage title={title} background={background} tag={tag}>
+  <main class="py-20">
+    <Wrapper>
+      <h2 class="text-3xl font-semibold md:text-4xl">{title}</h2>
+      <FormRegister client:load />
+    </Wrapper>
+  </main>
+</LayoutPage>

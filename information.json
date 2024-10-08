@@ -155,6 +155,11 @@
         "tag": "Speakers",
         "background": "/assets/images/background/6.webp"
     },
+    "registration-page": {
+        "title": "Registration",
+        "tag": "register",
+        "background": "/assets/images/background/6.webp"
+    },
     "speakers": {
         "isActive": true,
         "title": "Keynote Speakers",
