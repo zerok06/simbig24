@@ -166,6 +166,40 @@
         "paragraph": "Outstanding leaders who will challenge your ideas and enhance your creativity.",
         "components": [
             {
+                "id": "d2bfb6f1-2508-4089-9005-0ae3c2c3ed9c",
+                "name": "VILLAVICENCIO, Aline",
+                "title": "Professor, PhD.",
+                "slug": "villavicencio",
+                "image": "/assets/images/speaker/face/aline_villavicencio.jpg",
+                "path": "/speakers",
+                "job": "University of Exeter, UK",
+                "logoJob": "/assets/images/speaker/job/unexe.png",
+                "desc": "Aline Villavicencio is the Director of the Institute of Data Science and Artificial Intelligence, University of Exeter, affiliated to the  Department of Computer Science, University of Sheffield (UK), and has a Fellowship at the Alan Turing Institute. Before these, she held academic positions in the Institute of Informatics, Federal University of Rio Grande do Sul, Brazil (between 2005 and 2021) and in the School of Computer Science and Electronic Engineering, University of Essex, UK. <br/><br/>  She received her PhD from the University of Cambridge (UK) in 2001, and held postdoc positions at the University of Cambridge and University of Essex (UK). She was a Visiting Scholar at the Massachusetts Institute of Technology (USA, 2011-2012 and 2014-2015), at the École Normale Supé­rieure (France, 2014), an Erasmus-Mundus Visting Scholar at Saarland University (Germany in 2012/2013) and at the University of Bath (UK, 2006-2009).  She held a Research Fellowship from the  Brazilian National Council for Scientific and Technological Development (Brazil, 2009-2017). She is a member of the editorial board of Computational Linguistics, TACL and of JNLE. She was the PC Co-Chair of the 60th Meeting of the Association for Computational Linguistics (ACL 2022), and was the PC chair of CoNLL-2019, Senior Area Chair for ACL-2020 and ACL-2019 among others and General co-chair for the 2018 International Conference on Computational Processing of Portuguese. She was also a member of the NAACL board, SIGLEX board and of the program committees of various *ACL and AI conferences, and has co-chaired  several *ACL workshops on Cognitive Aspects of Computational Language Acquisition and on Multiword Expressions. Her research interests include lexical semantics, multilinguality, multiword expressions and cognitively motivated NLP, and has co-edited special issues and books dedicated to these topics.",
+                "social": {
+                    "website": "https://sites.google.com/view/alinev",
+                    "LinkedIn": "https://www.linkedin.com/in/aline-villavicencio-5b22b28/",
+                    "twitter": "https://x.com/alinevillav",
+                    "google": "https://scholar.google.fr/citations?user=zbwPYqwAAAAJ&hl=en"
+                }
+            },
+            {
+                "id": "d2559af9-3afa-42a8-a712-d4edc2f25ede",
+                "name": "BAEZA-YATES, Ricardo",
+                "title": "Professor, PhD.",
+                "slug": "baeza-yates",
+                "image": "/assets/images/speaker/face/ricardo_baeza.jpg",
+                "path": "/speakers",
+                "job": "Universitat Pompeu Fabra, Spain",
+                "logoJob": "/assets/images/speaker/job/upf.jpg",
+                "desc": "Ricardo Baeza-Yates is Director of Research at the Institute for Experiential AI of Northeastern University since 2021. He is also a part-time Professor at Universitat Pompeu Fabra in Barcelona and at Universidad de Chile in Santiago. Before he was the CTO of NTENT, a semantic search technology company based in California and prior to these roles, he was VP of Research at Yahoo Labs, based in Barcelona, Spain, and later in Sunnyvale, California, from 2006 to 2016. He is co-author of the best-seller Modern Information Retrieval textbook published by Addison-Wesley in 1999 and 2011 (2nd ed), which won the ASIST 2012 Book of the Year award. From 2002 to 2004 he was elected to the Board of Governors of the IEEE Computer Society and between 2012 and 2016 was elected to the ACM Council. Since 2010 he has been a founding member of the Chilean Academy of Engineering. In 2009 he was named ACM Fellow and in 2011 IEEE Fellow. He obtained the Spanish National Research Award Ángela Ruiz Robles for applied research and technology transfer given by the Scientific Computing Societies of Spain and the BBVA Foundation in 2018 and the Chilean National Award on Applied and Technological Sciences in 2024, among other distinctions. He obtained a Ph.D. in CS from the University of Waterloo, Canada, and his areas of expertise are web search and data mining, information retrieval, bias and ethics on AI, data science and algorithms in general.",
+                "social": {
+                    "website": "https://users.dcc.uchile.cl/~rbaeza/",
+                    "LinkedIn": "https://www.linkedin.com/in/ricardobaezayates/",
+                    "twitter": "https://x.com/PolarBearby",
+                    "google": "https://scholar.google.co.uk/citations?user=v9xULZwAAAAJ&hl=en"
+                }
+            },
+            {
                 "id": "b9ab17ce-ceba-4991-9e4b-08b3c4f68c39",
                 "name": "KORHONEN, Anna",
                 "title": "Professor, PhD.",

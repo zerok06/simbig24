@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useTransition } from 'react'
 import { useForm, type SubmitHandler } from 'react-hook-form'
-
+import { Toaster, toast } from 'sonner'
 interface Inputs {
   name: string
   lastName: string
@@ -13,6 +13,8 @@ interface Inputs {
   grade: string
   authorPaper: boolean
   certificate: boolean
+  operationCode: string
+  image: File
 }
 
 const country = [
@@ -266,14 +268,17 @@ const FormRegister = () => {
     register,
     handleSubmit,
     watch,
+    reset,
     formState: { errors },
   } = useForm<Inputs>()
 
   const [submitForm, setSubmitForm] = useState(false)
 
   const onSubmit: SubmitHandler<Inputs> = async data => {
+    console.log(data)
+
     setSubmitForm(true)
-    const fetching = await fetch('https://simbig24-api.onrender.com/register', {
+    const fetching = await fetch('https://localhost:3000/register', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
@@ -285,334 +290,380 @@ const FormRegister = () => {
     const response = await fetching.json()
 
     if (response.success) {
-      alert('registro correcto')
-      location.reload()
+      toast.success(
+        '¡Registro completado con éxito! Los datos han sido guardados correctamente.'
+      )
+      reset()
+    } else {
+      toast.error(
+        'Error al registrar. Hubo un problema al guardar los datos, por favor intenta nuevamente.'
+      )
     }
     setSubmitForm(false)
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="my-4">
-      <h3 className="text-2xl text-primary font-semibold">
-        Personal Information
-      </h3>
-      <div className="flex gap-4 flex-wrap py-4">
-        <div className="flex flex-1 min-w-[312px] flex-col">
-          <label htmlFor="#name" className=" text-base font-medium">
-            Name <span className="text-lg text-red-500">*</span>
+    <>
+      <Toaster richColors />
+      <form onSubmit={handleSubmit(onSubmit)} className="my-4">
+        <h3 className="text-2xl text-primary font-semibold">
+          Personal Information
+        </h3>
+        <div className="flex gap-4 flex-wrap py-4">
+          <div className="flex flex-1 min-w-[312px] flex-col">
+            <label htmlFor="#name" className=" text-base font-medium">
+              Name <span className="text-lg text-red-500">*</span>
+            </label>
+            <input
+              autoComplete="off"
+              id="#name"
+              className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
+              type="text"
+              placeholder="Your name"
+              {...register('name', {
+                required: true,
+                minLength: 2,
+                maxLength: 60,
+              })}
+            />
+            {!!errors.name && (
+              <span className="bg-yellow-300 px-6 py-2 mt-1">
+                <ul className="list-disc text-yellow-900 text-sm">
+                  <li>Must only contain letters.</li>
+                  <li>Minimum 2 characters.</li>
+                  <li>Maximum 50 characters.</li>
+                </ul>
+              </span>
+            )}
+          </div>
+          <div className="flex flex-1 min-w-[312px] flex-col">
+            <label htmlFor="#lastname" className=" text-base font-medium">
+              LastName<span className="text-lg text-red-500">*</span>
+            </label>
+            <input
+              id="#lastname"
+              autoComplete="off"
+              className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
+              type="text"
+              placeholder="Your last name"
+              {...register('lastName', {
+                required: true,
+                minLength: 2,
+                maxLength: 60,
+              })}
+            />
+            {!!errors.lastName && (
+              <span className="bg-yellow-300 px-6 py-2 mt-1">
+                <ul className="list-disc text-yellow-900 text-sm">
+                  <li>Must only contain letters.</li>
+                  <li>Minimum 2 characters.</li>
+                  <li>Maximum 50 characters.</li>
+                </ul>
+              </span>
+            )}
+          </div>
+        </div>
+        <div className="flex flex-1 min-w-[312px] flex-col py-4">
+          <label htmlFor="#email" className=" text-base font-medium">
+            Email<span className="text-lg text-red-500">*</span>
           </label>
           <input
-            autoComplete="off"
-            id="#name"
+            id="#email"
             className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
             type="text"
-            placeholder="Your name"
-            {...register('name', {
+            autoComplete="off"
+            placeholder="Your email"
+            {...register('email', {
               required: true,
-              minLength: 2,
-              maxLength: 60,
+              pattern: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
             })}
           />
-          {!!errors.name && (
+          {!!errors.email && (
             <span className="bg-yellow-300 px-6 py-2 mt-1">
               <ul className="list-disc text-yellow-900 text-sm">
-                <li>Solo debe contener letras.</li>
-                <li>Minimo 2 caracteres.</li>
-                <li>Maximo 50 caracteres.</li>
+                <li>It must contain an "email" type format.</li>
               </ul>
             </span>
           )}
         </div>
-        <div className="flex flex-1 min-w-[312px] flex-col">
-          <label htmlFor="#lastname" className=" text-base font-medium">
-            LastName<span className="text-lg text-red-500">*</span>
+        <div className="flex gap-4 flex-wrap py-4">
+          <div className="flex flex-1 min-w-[312px] flex-col">
+            <label htmlFor="#country" className=" text-base font-medium">
+              Country
+            </label>
+            <select
+              id="country"
+              autoComplete="off"
+              className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
+              {...register('country')}
+            >
+              <option disabled selected value={''}>
+                Select option...
+              </option>
+              {country.map(item => (
+                <option value={item.name} key={item.code}>
+                  {item.name}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="flex flex-1 min-w-[312px] flex-col">
+            <label htmlFor="#phone" className=" text-base font-medium">
+              Phone
+            </label>
+            <input
+              id="#phone"
+              autoComplete="off"
+              className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
+              type="text"
+              placeholder="Your phone"
+              {...register('phone', {
+                minLength: 2,
+                pattern:
+                  /^(?:\+?\d{1,3}[-.\s]?)?(?:\(?\d{2,3}\)?[-.\s]?)?\d{3}[-.\s]?\d{4}$/,
+              })}
+            />
+            {!!errors.phone && (
+              <span className="bg-yellow-300 px-6 py-2 mt-1">
+                <ul className="list-disc text-yellow-900 text-sm">
+                  <li>Valid formats:</li>
+                  <li>+1 234 567 8900</li>
+                  <li>(123) 456-7890</li>
+                  <li>123-456-7890</li>
+                  <li>123.456.7890</li>
+                  <li>1234567890</li>
+                </ul>
+              </span>
+            )}
+          </div>
+        </div>
+        <div className="flex flex-1 min-w-[312px] flex-col py-4">
+          <label htmlFor="#linkein" className=" text-base font-medium">
+            LinkedIn
           </label>
           <input
-            id="#lastname"
-            autoComplete="off"
+            id="#linkein"
             className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
+            autoComplete="off"
             type="text"
-            placeholder="Your last name"
-            {...register('lastName', {
+            placeholder="Your linkedIn"
+            {...register('linkedin')}
+          />
+        </div>
+        <h3 className="text-2xl text-primary font-semibold">
+          Academic Information<span className="text-lg text-red-500">*</span>
+        </h3>
+        <div className="flex flex-1 min-w-[312px] flex-col py-4">
+          <label htmlFor="#affiliation" className=" text-base font-medium">
+            Affiliation/University
+            <span className="text-lg text-red-500">*</span>
+          </label>
+          <input
+            id="#affiliation"
+            className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
+            autoComplete="off"
+            type="text"
+            placeholder="Please enter your affiliation or the University where you study"
+            {...register('affiliation', {
               required: true,
               minLength: 2,
-              maxLength: 60,
             })}
           />
-          {!!errors.lastName && (
+          {!!errors.affiliation && (
             <span className="bg-yellow-300 px-6 py-2 mt-1">
               <ul className="list-disc text-yellow-900 text-sm">
                 <li>Solo debe contener letras.</li>
                 <li>Minimo 2 caracteres.</li>
-                <li>Maximo 50 caracteres.</li>
               </ul>
             </span>
           )}
         </div>
-      </div>
-      <div className="flex flex-1 min-w-[312px] flex-col py-4">
-        <label htmlFor="#email" className=" text-base font-medium">
-          Email<span className="text-lg text-red-500">*</span>
-        </label>
-        <input
-          id="#email"
-          className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
-          type="text"
-          autoComplete="off"
-          placeholder="Your email"
-          {...register('email', {
-            required: true,
-            pattern: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-          })}
-        />
-        {!!errors.email && (
-          <span className="bg-yellow-300 px-6 py-2 mt-1">
-            <ul className="list-disc text-yellow-900 text-sm">
-              <li>Debe contener un formato tipo "email".</li>
-            </ul>
-          </span>
-        )}
-      </div>
-      <div className="flex gap-4 flex-wrap py-4">
-        <div className="flex flex-1 min-w-[312px] flex-col">
-          <label htmlFor="#country" className=" text-base font-medium">
-            Country
+        <div className="flex flex-1 min-w-[312px] flex-col py-4">
+          <label htmlFor="#grade" className=" text-base font-medium">
+            Grade
           </label>
           <select
-            id="country"
+            id="grade"
             autoComplete="off"
             className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
-            {...register('country')}
+            {...register('grade')}
           >
             <option disabled selected value={''}>
               Select option...
             </option>
-            {country.map(item => (
-              <option value={item.name} key={item.code}>
-                {item.name}
-              </option>
-            ))}
+            <option value="Student">Student</option>
+            <option value="Professional">Professional</option>
+            <option value="Magister">Magister</option>
+            <option value="PhD">PhD</option>
           </select>
         </div>
-        <div className="flex flex-1 min-w-[312px] flex-col">
-          <label htmlFor="#phone" className=" text-base font-medium">
-            Phone
+        <h3 className="text-2xl text-primary font-semibold">
+          Participate Information
+        </h3>
+        <div className="flex flex-1 min-w-[312px] flex-col py-4">
+          <label htmlFor="#affiliation" className=" text-base font-medium">
+            Are you a paper author?
+            <span className="text-lg text-red-500">*</span>
           </label>
-          <input
-            id="#phone"
-            autoComplete="off"
-            className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
-            type="text"
-            placeholder="Your phone"
-            {...register('phone', {
-              minLength: 2,
-              pattern:
-                /^(?:\+?\d{1,3}[-.\s]?)?(?:\(?\d{2,3}\)?[-.\s]?)?\d{3}[-.\s]?\d{4}$/,
-            })}
-          />
-          {!!errors.phone && (
+          <div className="flex gap-8 mt-3 flex-wrap">
+            <label className="flex gap-2 min-w-[50px]">
+              <input
+                autoComplete="off"
+                type="radio"
+                className="scale-125"
+                {...register('authorPaper', {
+                  required: true,
+                })}
+                value={'yes'}
+              />
+              Yes
+            </label>
+            <label className="flex gap-2">
+              <input
+                autoComplete="off"
+                type="radio"
+                className="scale-125"
+                {...register('authorPaper', {
+                  required: true,
+                })}
+                value={'no'}
+              />
+              No
+            </label>
+          </div>
+          {!!errors.authorPaper && (
             <span className="bg-yellow-300 px-6 py-2 mt-1">
               <ul className="list-disc text-yellow-900 text-sm">
-                <li>Formatos validos:</li>
-                <li>+1 234 567 8900</li>
-                <li>(123) 456-7890</li>
-                <li>123-456-7890</li>
-                <li>123.456.7890</li>
-                <li>1234567890</li>
+                <li>Required option.</li>
               </ul>
             </span>
           )}
         </div>
-      </div>
-      <div className="flex flex-1 min-w-[312px] flex-col py-4">
-        <label htmlFor="#linkein" className=" text-base font-medium">
-          LinkedIn
-        </label>
-        <input
-          id="#linkein"
-          className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
-          autoComplete="off"
-          type="text"
-          placeholder="Your linkedIn"
-          {...register('linkedin')}
-        />
-      </div>
-      <h3 className="text-2xl text-primary font-semibold">
-        Academic Information<span className="text-lg text-red-500">*</span>
-      </h3>
-      <div className="flex flex-1 min-w-[312px] flex-col py-4">
-        <label htmlFor="#affiliation" className=" text-base font-medium">
-          Affiliation/University<span className="text-lg text-red-500">*</span>
-        </label>
-        <input
-          id="#affiliation"
-          className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
-          autoComplete="off"
-          type="text"
-          placeholder="Please enter your affiliation or the University where you study"
-          {...register('affiliation', {
-            required: true,
-            minLength: 2,
-          })}
-        />
-        {!!errors.affiliation && (
-          <span className="bg-yellow-300 px-6 py-2 mt-1">
-            <ul className="list-disc text-yellow-900 text-sm">
-              <li>Solo debe contener letras.</li>
-              <li>Minimo 2 caracteres.</li>
-            </ul>
-          </span>
-        )}
-      </div>
-      <div className="flex flex-1 min-w-[312px] flex-col py-4">
-        <label htmlFor="#grade" className=" text-base font-medium">
-          Grade
-        </label>
-        <select
-          id="grade"
-          autoComplete="off"
-          className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
-          {...register('grade')}
-        >
-          <option disabled selected value={''}>
-            Select option...
-          </option>
-          <option value="Student">Student</option>
-          <option value="Professional">Professional</option>
-          <option value="Magister">Magister</option>
-          <option value="PhD">PhD</option>
-        </select>
-      </div>
-      <h3 className="text-2xl text-primary font-semibold">
-        Participate Information
-      </h3>
-      <div className="flex flex-1 min-w-[312px] flex-col py-4">
-        <label htmlFor="#affiliation" className=" text-base font-medium">
-          Are you a paper author?<span className="text-lg text-red-500">*</span>
-        </label>
-        <div className="flex gap-8 mt-3">
-          <label className="flex gap-2">
-            <input
-              autoComplete="off"
-              type="radio"
-              className="scale-125"
-              {...register('authorPaper', {
-                required: true,
-              })}
-              value={'yes'}
-            />
-            Yes
+        <div className="flex flex-1 min-w-[312px] flex-col py-4">
+          <label htmlFor="#certificate" className=" text-base font-medium">
+            Do you want a Certificate?
+            <span className="text-lg text-red-500">*</span>
+            <p className="text-black/70 text-xs">
+              Remember that this year the certification for SIMBig 2024 will
+              have a cost
+            </p>
           </label>
-          <label className="flex gap-2">
-            <input
-              autoComplete="off"
-              type="radio"
-              className="scale-125"
-              {...register('authorPaper', {
-                required: true,
-              })}
-              value={'no'}
-            />
-            No
-          </label>
-        </div>
-        {!!errors.authorPaper && (
-          <span className="bg-yellow-300 px-6 py-2 mt-1">
-            <ul className="list-disc text-yellow-900 text-sm">
-              <li>Opcion requerida.</li>
-            </ul>
-          </span>
-        )}
-      </div>
-      <div className="flex flex-1 min-w-[312px] flex-col py-4">
-        <label htmlFor="#certificate" className=" text-base font-medium">
-          Do you want a Certificate?
-          <span className="text-lg text-red-500">*</span>
-          <p className="text-black/70 text-xs">
-            Remember that this year the certification for SIMBig 2021 will have
-            a cost
-          </p>
-        </label>
-        <div className="flex gap-8 mt-3">
-          <label className="flex gap-2">
-            <input
-              type="radio"
-              autoComplete="off"
-              className="scale-125"
-              {...register('certificate', {
-                required: true,
-              })}
-              value={'yes'}
-            />
-            Yes
-          </label>
-          <label className="flex gap-2">
-            <input
-              type="radio"
-              autoComplete="off"
-              className="scale-125"
-              {...register('certificate', {
-                required: true,
-              })}
-              value={'no'}
-            />
-            No
-          </label>
-          <label className="flex gap-2">
-            <input
-              type="radio"
-              autoComplete="off"
-              className="scale-125"
-              {...register('certificate', {
-                required: true,
-              })}
-              value={'maybe'}
-            />
-            Maybe (Let me decide later)
-          </label>
-        </div>
-        {!!errors.certificate && (
-          <span className="bg-yellow-300 px-6 py-2 mt-1">
-            <ul className="list-disc text-yellow-900 text-sm">
-              <li>Opcion requerida.</li>
-            </ul>
-          </span>
-        )}
-      </div>
-      <hr className="my-8" />
-      <div className="py-4">
-        <label className="flex gap-8 items-start">
-          <input type="checkbox" className="mt-2 scale-125" />
-          <p>
-            I declare that the data filled in are real and can be used by the
-            organizers of the SIMBig 2021 Event. If you want more information
-            visit our [LINK]
-          </p>
-        </label>
-      </div>
-      <div className="py-4">
-        <label className="flex gap-8 items-start">
-          <input type="checkbox" className="mt-2 scale-125" defaultChecked />
-          <p>
-            I want to receive information on employment, research and / or other
-            related opportunities from SIMBig and its partners
-          </p>
-        </label>
-      </div>
-      <div className="flex justify-end">
-        <button
-          className="px-4 py-2 bg-primary w-[150px] text-white font-medium mt-4 flex justify-center items-center disabled:opacity-60"
-          disabled={submitForm}
-        >
-          {submitForm ? (
-            <div className="h-5 w-5 border-[3px] border-t-transparent border-l-white border-r-white border-b-white rounded-full animate-spin"></div>
-          ) : (
-            'Register'
+          <div className="flex gap-8 mt-3  flex-wrap">
+            <label className="flex gap-2 min-w-[50px]">
+              <input
+                type="radio"
+                autoComplete="off"
+                className="scale-125"
+                {...register('certificate', {
+                  required: true,
+                })}
+                value={'yes'}
+              />
+              Yes
+            </label>
+            <label className="flex gap-2">
+              <input
+                type="radio"
+                autoComplete="off"
+                className="scale-125"
+                {...register('certificate', {
+                  required: true,
+                })}
+                value={'no'}
+              />
+              No
+            </label>
+            <label className="flex gap-2">
+              <input
+                type="radio"
+                autoComplete="off"
+                className="scale-125"
+                {...register('certificate', {
+                  required: true,
+                })}
+                value={'maybe'}
+              />
+              Maybe (Let me decide later)
+            </label>
+          </div>
+          {!!errors.certificate && (
+            <span className="bg-yellow-300 px-6 py-2 mt-1">
+              <ul className="list-disc text-yellow-900 text-sm">
+                <li>Required option.</li>
+              </ul>
+            </span>
           )}
-        </button>
-        {String(submitForm)}
-      </div>
-    </form>
+        </div>
+        <hr className="my-8" />
+        <h3 className="text-2xl text-primary font-semibold">
+          Upload Your Transfer Receipt
+          <span className="text-lg text-red-500">*</span>
+        </h3>
+        <div className="flex flex-1 min-w-[312px] flex-col py-4">
+          <label className=" text-base font-medium">
+            Upload Operation Code
+            <span className="text-lg text-red-500">*</span>
+          </label>
+          <input
+            id="#operationCode"
+            className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
+            type="text"
+            autoComplete="off"
+            placeholder="Operation Code..."
+            {...register('operationCode', {
+              required: true,
+            })}
+          />
+          {!!errors.operationCode && (
+            <span className="bg-yellow-300 px-6 py-2 mt-1">
+              <ul className="list-disc text-yellow-900 text-sm">
+                <li>You must enter an operation code.</li>
+              </ul>
+            </span>
+          )}
+          <span className="bg-green-200 px-6 py-2 mt-1">
+            <ul className="list-disc text-green-900 text-sm">
+              <li>
+                Remember to save a digital copy of the operation number, as it
+                will be necessary to present it when collecting the credentials.
+              </li>
+            </ul>
+          </span>
+        </div>
+        <hr className="my-8" />
+        <div className="py-4">
+          <label className="flex gap-8 items-start">
+            <input type="checkbox" className="mt-2 scale-125" />
+            <p>
+              I declare that the data filled in are real and can be used by the
+              organizers of the SIMBig 2024 Event. If you want more information
+              visit our [LINK]
+            </p>
+          </label>
+        </div>
+        <div className="py-4">
+          <label className="flex gap-8 items-start">
+            <input type="checkbox" className="mt-2 scale-125" defaultChecked />
+            <p>
+              I want to receive information on employment, research and / or
+              other related opportunities from SIMBig and its partners
+            </p>
+          </label>
+        </div>
+        <div className="flex justify-end">
+          <button
+            className="px-4 py-2 bg-primary w-full md:w-[150px] text-white font-medium mt-4 flex justify-center items-center disabled:opacity-60"
+            disabled={submitForm}
+          >
+            {submitForm ? (
+              <div className="h-5 w-5 border-[3px] border-t-transparent border-l-white border-r-white border-b-white rounded-full animate-spin"></div>
+            ) : (
+              'Register'
+            )}
+          </button>
+        </div>
+      </form>
+    </>
   )
 }
 
