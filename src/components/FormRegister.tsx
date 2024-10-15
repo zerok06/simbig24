@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React, { useTransition } from 'react'
 import { useForm, type SubmitHandler } from 'react-hook-form'
 
 interface Inputs {
@@ -267,7 +268,44 @@ const FormRegister = () => {
     watch,
     formState: { errors },
   } = useForm<Inputs>()
-  const onSubmit: SubmitHandler<Inputs> = data => console.log(data)
+
+  const [isPending, startTransition] = useTransition()
+
+  const onSubmit: SubmitHandler<Inputs> = data => {
+    startTransition(async () => {
+      await fetch('https://simbig24-api.onrender.com/register', {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+        .then(res => res.json())
+        .then(response => {
+          if (response.success) {
+            alert('registro correcto')
+            location.reload()
+          }
+        })
+    })
+
+    /* const fetching = await fetch('https://simbig24-api.onrender.com/register', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+
+    const response = await fetching.json()
+
+    if (response.success) {
+      alert('registro correcto')
+      location.reload()
+    } */
+  }
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="my-4">
@@ -280,6 +318,7 @@ const FormRegister = () => {
             Name <span className="text-lg text-red-500">*</span>
           </label>
           <input
+            autoComplete="off"
             id="#name"
             className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
             type="text"
@@ -306,6 +345,7 @@ const FormRegister = () => {
           </label>
           <input
             id="#lastname"
+            autoComplete="off"
             className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
             type="text"
             placeholder="Your last name"
@@ -334,6 +374,7 @@ const FormRegister = () => {
           id="#email"
           className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
           type="text"
+          autoComplete="off"
           placeholder="Your email"
           {...register('email', {
             required: true,
@@ -355,6 +396,7 @@ const FormRegister = () => {
           </label>
           <select
             id="country"
+            autoComplete="off"
             className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
             {...register('country')}
           >
@@ -374,19 +416,25 @@ const FormRegister = () => {
           </label>
           <input
             id="#phone"
+            autoComplete="off"
             className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
             type="text"
             placeholder="Your phone"
             {...register('phone', {
               minLength: 2,
+              pattern:
+                /^(?:\+?\d{1,3}[-.\s]?)?(?:\(?\d{2,3}\)?[-.\s]?)?\d{3}[-.\s]?\d{4}$/,
             })}
           />
           {!!errors.phone && (
             <span className="bg-yellow-300 px-6 py-2 mt-1">
               <ul className="list-disc text-yellow-900 text-sm">
-                <li>Solo debe contener letras.</li>
-                <li>Minimo 2 caracteres.</li>
-                <li>Maximo 50 caracteres.</li>
+                <li>Formatos validos:</li>
+                <li>+1 234 567 8900</li>
+                <li>(123) 456-7890</li>
+                <li>123-456-7890</li>
+                <li>123.456.7890</li>
+                <li>1234567890</li>
               </ul>
             </span>
           )}
@@ -399,6 +447,7 @@ const FormRegister = () => {
         <input
           id="#linkein"
           className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
+          autoComplete="off"
           type="text"
           placeholder="Your linkedIn"
           {...register('linkedin')}
@@ -414,6 +463,7 @@ const FormRegister = () => {
         <input
           id="#affiliation"
           className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
+          autoComplete="off"
           type="text"
           placeholder="Please enter your affiliation or the University where you study"
           {...register('affiliation', {
@@ -421,7 +471,7 @@ const FormRegister = () => {
             minLength: 2,
           })}
         />
-        {!!errors.name && (
+        {!!errors.affiliation && (
           <span className="bg-yellow-300 px-6 py-2 mt-1">
             <ul className="list-disc text-yellow-900 text-sm">
               <li>Solo debe contener letras.</li>
@@ -436,6 +486,7 @@ const FormRegister = () => {
         </label>
         <select
           id="grade"
+          autoComplete="off"
           className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
           {...register('grade')}
         >
@@ -458,6 +509,7 @@ const FormRegister = () => {
         <div className="flex gap-8 mt-3">
           <label className="flex gap-2">
             <input
+              autoComplete="off"
               type="radio"
               className="scale-125"
               {...register('authorPaper', {
@@ -469,6 +521,7 @@ const FormRegister = () => {
           </label>
           <label className="flex gap-2">
             <input
+              autoComplete="off"
               type="radio"
               className="scale-125"
               {...register('authorPaper', {
@@ -500,6 +553,7 @@ const FormRegister = () => {
           <label className="flex gap-2">
             <input
               type="radio"
+              autoComplete="off"
               className="scale-125"
               {...register('certificate', {
                 required: true,
@@ -511,6 +565,7 @@ const FormRegister = () => {
           <label className="flex gap-2">
             <input
               type="radio"
+              autoComplete="off"
               className="scale-125"
               {...register('certificate', {
                 required: true,
@@ -522,6 +577,7 @@ const FormRegister = () => {
           <label className="flex gap-2">
             <input
               type="radio"
+              autoComplete="off"
               className="scale-125"
               {...register('certificate', {
                 required: true,
@@ -552,7 +608,7 @@ const FormRegister = () => {
       </div>
       <div className="py-4">
         <label className="flex gap-8 items-start">
-          <input type="checkbox" className="mt-2 scale-125" />
+          <input type="checkbox" className="mt-2 scale-125" defaultChecked />
           <p>
             I want to receive information on employment, research and / or other
             related opportunities from SIMBig and its partners
@@ -560,9 +616,17 @@ const FormRegister = () => {
         </label>
       </div>
       <div className="flex justify-end">
-        <button className="px-4 py-2 bg-primary text-white font-medium mt-4">
-          Registrase
+        <button
+          className="px-4 py-2 bg-primary w-[150px] text-white font-medium mt-4 flex justify-center items-center disabled:opacity-60"
+          disabled={isPending}
+        >
+          {isPending ? (
+            <div className="h-5 w-5 border-[3px] border-t-transparent border-l-white border-r-white border-b-white rounded-full animate-spin"></div>
+          ) : (
+            'Register'
+          )}
         </button>
+        {String(isPending)}
       </div>
     </form>
   )

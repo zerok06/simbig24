@@ -70,7 +70,7 @@
                 "url": "/#dates"
             },
             {
-                "isActive": false,
+                "isActive": true,
                 "isSub": false,
                 "title": "Registration",
                 "url": "/registration"
