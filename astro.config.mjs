@@ -9,5 +9,5 @@ export default defineConfig({
   integrations: [tailwind({
     applyBaseStyles: false
   }), mdx(), react()],
-  base: '/SIMBig2024',
+  /*  base: '/SIMBig2024', */
 });
