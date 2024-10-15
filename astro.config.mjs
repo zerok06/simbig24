@@ -8,6 +8,6 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [tailwind({
     applyBaseStyles: false
-  }), mdx(), react()]
-  /* base: '/SIMBig2024', */
+  }), mdx(), react()],
+  base: '/SIMBig2024',
 });

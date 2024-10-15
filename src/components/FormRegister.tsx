@@ -275,8 +275,6 @@ const FormRegister = () => {
   const [submitForm, setSubmitForm] = useState(false)
 
   const onSubmit: SubmitHandler<Inputs> = async data => {
-    console.log(data)
-
     setSubmitForm(true)
     const fetching = await fetch('https://simbig24-api.onrender.com/register', {
       method: 'POST',
@@ -596,14 +594,10 @@ const FormRegister = () => {
         </div>
         <hr className="my-8" />
         <h3 className="text-2xl text-primary font-semibold">
-          Upload Your Transfer Receipt
+          Fill the operation number
           <span className="text-lg text-red-500">*</span>
         </h3>
         <div className="flex flex-1 min-w-[312px] flex-col py-4">
-          <label className=" text-base font-medium">
-            Upload Operation Code
-            <span className="text-lg text-red-500">*</span>
-          </label>
           <input
             id="#operationCode"
             className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
