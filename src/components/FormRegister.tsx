@@ -1,5 +1,5 @@
 'use client'
-import React, { useTransition } from 'react'
+import React, { useState, useTransition } from 'react'
 import { useForm, type SubmitHandler } from 'react-hook-form'
 
 interface Inputs {
@@ -269,28 +269,11 @@ const FormRegister = () => {
     formState: { errors },
   } = useForm<Inputs>()
 
-  const [isPending, startTransition] = useTransition()
+  const [submitForm, setSubmitForm] = useState(false)
 
-  const onSubmit: SubmitHandler<Inputs> = data => {
-    startTransition(async () => {
-      await fetch('https://simbig24-api.onrender.com/register', {
-        method: 'POST',
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      })
-        .then(res => res.json())
-        .then(response => {
-          if (response.success) {
-            alert('registro correcto')
-            location.reload()
-          }
-        })
-    })
-
-    /* const fetching = await fetch('https://simbig24-api.onrender.com/register', {
+  const onSubmit: SubmitHandler<Inputs> = async data => {
+    setSubmitForm(true)
+    const fetching = await fetch('https://simbig24-api.onrender.com/register', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
@@ -304,7 +287,8 @@ const FormRegister = () => {
     if (response.success) {
       alert('registro correcto')
       location.reload()
-    } */
+    }
+    setSubmitForm(false)
   }
 
   return (
@@ -618,15 +602,15 @@ const FormRegister = () => {
       <div className="flex justify-end">
         <button
           className="px-4 py-2 bg-primary w-[150px] text-white font-medium mt-4 flex justify-center items-center disabled:opacity-60"
-          disabled={isPending}
+          disabled={submitForm}
         >
-          {isPending ? (
+          {submitForm ? (
             <div className="h-5 w-5 border-[3px] border-t-transparent border-l-white border-r-white border-b-white rounded-full animate-spin"></div>
           ) : (
             'Register'
           )}
         </button>
-        {String(isPending)}
+        {String(submitForm)}
       </div>
     </form>
   )
