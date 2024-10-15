@@ -278,7 +278,7 @@ const FormRegister = () => {
     console.log(data)
 
     setSubmitForm(true)
-    const fetching = await fetch('https://localhost:3000/register', {
+    const fetching = await fetch('https://simbig24-api.onrender.com/register', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
