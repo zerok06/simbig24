@@ -279,8 +279,6 @@ const FormRegister = () => {
   const [submitForm, setSubmitForm] = useState(false)
 
   const onSubmit: SubmitHandler<Inputs> = async data => {
-    console.log(data)
-
     setSubmitForm(true)
 
     const sendForm = new FormData()
@@ -300,7 +298,6 @@ const FormRegister = () => {
     sendForm.set('certificate', data.certificate)
     sendForm.set('operationNumber', data.operationNumber)
     sendForm.set('image', data.image[0])
-    console.log(sendForm)
 
     const fetching = await fetch('https://simbig24-api.onrender.com/register', {
       method: 'POST',
@@ -316,7 +313,7 @@ const FormRegister = () => {
       toast.success(
         '¡Registro completado con éxito! Los datos han sido guardados correctamente.'
       )
-      /* reset() */
+      reset()
     } else {
       toast.error(
         'Error al registrar. Hubo un problema al guardar los datos, por favor intenta nuevamente.'
