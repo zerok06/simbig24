@@ -311,12 +311,18 @@ const FormRegister = () => {
 
     if (response.success) {
       toast.success(
-        '¡Registro completado con éxito! Los datos han sido guardados correctamente.'
+        'Registration completed successfully! The data has been saved correctly.',
+        {
+          unstyled: false,
+          classNames: {
+            title: 'text-lg',
+          },
+        }
       )
       reset()
     } else {
       toast.error(
-        'Error al registrar. Hubo un problema al guardar los datos, por favor intenta nuevamente.'
+        'Error registering. There was a problem saving the data, please try again.'
       )
     }
     setSubmitForm(false)

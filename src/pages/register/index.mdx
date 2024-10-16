@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/LayoutMdx.astro
 title: Registration
-background: https://images.unsplash.com/photo-1636293235717-7895bf07abc8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+background: /assets/images/background/12.webp
 tag: registration
 ---
 
@@ -31,6 +31,6 @@ For this edition of SIMBig, a single fee will be charged to all participants, in
 4. **Important notice**: Bank fees will be at the expense of the participant.
 
 # Registration form
-<a className="px-4 py-2 bg-primary text-white font-medium disabled:opacity-60 no-underline hover:underline" href="/registration/new" >Click here to start the registration</a>
+<a className="px-4 py-2 bg-primary text-white font-medium disabled:opacity-60 no-underline hover:underline" href={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${"/register/new"}`} >Click here to start the registration</a>
 <br/>
 For more information, please, contact us at simbig2024@simbig.org

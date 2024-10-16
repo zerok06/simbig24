@@ -73,7 +73,7 @@
                 "isActive": true,
                 "isSub": false,
                 "title": "Registration",
-                "url": "/registration"
+                "url": "/register"
             },
             {
                 "isActive": false,
