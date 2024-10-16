@@ -3,18 +3,22 @@ import React, { useState, useTransition } from 'react'
 import { useForm, type SubmitHandler } from 'react-hook-form'
 import { Toaster, toast } from 'sonner'
 interface Inputs {
-  name: string
+  firstName: string
   lastName: string
   email: string
   country: string
   phone: string
-  linkedin: string
   affiliation: string
   grade: string
-  authorPaper: boolean
-  certificate: boolean
-  operationCode: string
-  image: File
+  position: string
+  area: string
+  googleScholar: string
+  linkedin: string
+  authorPaper: string
+  idPaper: string
+  certificate: string
+  operationNumber: string
+  image: FileList
 }
 
 const country = [
@@ -275,14 +279,35 @@ const FormRegister = () => {
   const [submitForm, setSubmitForm] = useState(false)
 
   const onSubmit: SubmitHandler<Inputs> = async data => {
+    console.log(data)
+
     setSubmitForm(true)
+
+    const sendForm = new FormData()
+    sendForm.set('firstName', data.firstName)
+    sendForm.set('lastName', data.lastName)
+    sendForm.set('email', data.email)
+    sendForm.set('country', data.country)
+    sendForm.set('phone', data.phone)
+    sendForm.set('affiliation', data.affiliation)
+    sendForm.set('grade', data.grade)
+    sendForm.set('position', data.position)
+    sendForm.set('area', data.area)
+    sendForm.set('googleScholar', data.googleScholar)
+    sendForm.set('linkedin', data.linkedin)
+    sendForm.set('authorPaper', data.authorPaper)
+    sendForm.set('idPaper', data.idPaper)
+    sendForm.set('certificate', data.certificate)
+    sendForm.set('operationNumber', data.operationNumber)
+    sendForm.set('image', data.image[0])
+    console.log(sendForm)
+
     const fetching = await fetch('https://simbig24-api.onrender.com/register', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
-        'Content-Type': 'application/json',
       },
-      body: JSON.stringify(data),
+      body: sendForm,
     })
 
     const response = await fetching.json()
@@ -291,7 +316,7 @@ const FormRegister = () => {
       toast.success(
         '¡Registro completado con éxito! Los datos han sido guardados correctamente.'
       )
-      reset()
+      /* reset() */
     } else {
       toast.error(
         'Error al registrar. Hubo un problema al guardar los datos, por favor intenta nuevamente.'
@@ -310,21 +335,21 @@ const FormRegister = () => {
         <div className="flex gap-4 flex-wrap py-4">
           <div className="flex flex-1 min-w-[312px] flex-col">
             <label htmlFor="#name" className=" text-base font-medium">
-              Name <span className="text-lg text-red-500">*</span>
+              First Name <span className="text-lg text-red-500">*</span>
             </label>
             <input
               autoComplete="off"
-              id="#name"
+              id="#firstName"
               className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
               type="text"
-              placeholder="Your name"
-              {...register('name', {
+              placeholder="Enter your first name"
+              {...register('firstName', {
                 required: true,
                 minLength: 2,
                 maxLength: 60,
               })}
             />
-            {!!errors.name && (
+            {!!errors.firstName && (
               <span className="bg-yellow-300 px-6 py-2 mt-1">
                 <ul className="list-disc text-yellow-900 text-sm">
                   <li>Must only contain letters.</li>
@@ -336,14 +361,14 @@ const FormRegister = () => {
           </div>
           <div className="flex flex-1 min-w-[312px] flex-col">
             <label htmlFor="#lastname" className=" text-base font-medium">
-              LastName<span className="text-lg text-red-500">*</span>
+              Last Name<span className="text-lg text-red-500">*</span>
             </label>
             <input
               id="#lastname"
               autoComplete="off"
               className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
               type="text"
-              placeholder="Your last name"
+              placeholder="Enter your last name"
               {...register('lastName', {
                 required: true,
                 minLength: 2,
@@ -370,7 +395,7 @@ const FormRegister = () => {
             className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
             type="text"
             autoComplete="off"
-            placeholder="Your email"
+            placeholder="Enter your email address"
             {...register('email', {
               required: true,
               pattern: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
@@ -387,7 +412,7 @@ const FormRegister = () => {
         <div className="flex gap-4 flex-wrap py-4">
           <div className="flex flex-1 min-w-[312px] flex-col">
             <label htmlFor="#country" className=" text-base font-medium">
-              Country
+              Country <span className="text-lg text-red-500">*</span>
             </label>
             <select
               id="country"
@@ -396,7 +421,7 @@ const FormRegister = () => {
               {...register('country')}
             >
               <option disabled selected value={''}>
-                Select option...
+                Select your country...
               </option>
               {country.map(item => (
                 <option value={item.name} key={item.code}>
@@ -407,14 +432,15 @@ const FormRegister = () => {
           </div>
           <div className="flex flex-1 min-w-[312px] flex-col">
             <label htmlFor="#phone" className=" text-base font-medium">
-              Phone
+              Phone Number
+              <span className="text-lg text-primary">(optional)</span>
             </label>
             <input
               id="#phone"
               autoComplete="off"
               className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
               type="text"
-              placeholder="Your phone"
+              placeholder="Enter your phone number..."
               {...register('phone', {
                 minLength: 2,
                 pattern:
@@ -435,25 +461,13 @@ const FormRegister = () => {
             )}
           </div>
         </div>
-        <div className="flex flex-1 min-w-[312px] flex-col py-4">
-          <label htmlFor="#linkein" className=" text-base font-medium">
-            LinkedIn
-          </label>
-          <input
-            id="#linkein"
-            className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
-            autoComplete="off"
-            type="text"
-            placeholder="Your linkedIn"
-            {...register('linkedin')}
-          />
-        </div>
         <h3 className="text-2xl text-primary font-semibold">
-          Academic Information<span className="text-lg text-red-500">*</span>
+          Professional Information
         </h3>
+        {/* Affiliation */}
         <div className="flex flex-1 min-w-[312px] flex-col py-4">
           <label htmlFor="#affiliation" className=" text-base font-medium">
-            Affiliation/University
+            Affiliation (University/Organization)
             <span className="text-lg text-red-500">*</span>
           </label>
           <input
@@ -461,7 +475,7 @@ const FormRegister = () => {
             className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
             autoComplete="off"
             type="text"
-            placeholder="Please enter your affiliation or the University where you study"
+            placeholder="Enter your affiliation (e.g., university or organization)"
             {...register('affiliation', {
               required: true,
               minLength: 2,
@@ -476,27 +490,102 @@ const FormRegister = () => {
             </span>
           )}
         </div>
+        {/* Academic level */}
         <div className="flex flex-1 min-w-[312px] flex-col py-4">
           <label htmlFor="#grade" className=" text-base font-medium">
-            Grade
+            Academic Level<span className="text-lg text-red-500">*</span>
           </label>
           <select
             id="grade"
             autoComplete="off"
             className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
-            {...register('grade')}
+            {...register('grade', { required: true })}
           >
             <option disabled selected value={''}>
-              Select option...
+              Select your academic level...
             </option>
-            <option value="Student">Student</option>
-            <option value="Professional">Professional</option>
-            <option value="Magister">Magister</option>
+            <option value="Student">High School</option>
+            <option value="Professional">Bachelor</option>
+            <option value="Magister">Master</option>
             <option value="PhD">PhD</option>
           </select>
         </div>
+        {/* Position */}
+        <div className="flex flex-1 min-w-[312px] flex-col py-4">
+          <label htmlFor="#position" className=" text-base font-medium">
+            Position/Title<span className="text-lg text-red-500">*</span>
+          </label>
+          <input
+            id="#position"
+            className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
+            type="text"
+            autoComplete="off"
+            placeholder="Enter your current position or job title..."
+            {...register('position', {
+              required: true,
+            })}
+          />
+          {!!errors.position && (
+            <span className="bg-yellow-300 px-6 py-2 mt-1">
+              <ul className="list-disc text-yellow-900 text-sm">
+                <li>It must contain an "email" type format.</li>
+              </ul>
+            </span>
+          )}
+        </div>
+        {/* Area */}
+        <div className="flex flex-1 min-w-[312px] flex-col py-4">
+          <label htmlFor="#area" className=" text-base font-medium">
+            Area<span className="text-lg text-red-500">*</span>
+          </label>
+          <input
+            id="#area"
+            className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
+            type="text"
+            autoComplete="off"
+            placeholder="Enter your area of expertise or industry..."
+            {...register('area', {
+              required: true,
+            })}
+          />
+          {!!errors.area && (
+            <span className="bg-yellow-300 px-6 py-2 mt-1">
+              <ul className="list-disc text-yellow-900 text-sm">
+                <li>It must contain an "email" type format.</li>
+              </ul>
+            </span>
+          )}
+        </div>
+        {/* LinkedIn */}
+        <div className="flex flex-1 min-w-[312px] flex-col py-4">
+          <label htmlFor="#linkein" className=" text-base font-medium">
+            LinkedIn
+          </label>
+          <input
+            id="#linkein"
+            className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
+            autoComplete="off"
+            type="text"
+            placeholder="Enter your LinkedIn profile URL..."
+            {...register('linkedin')}
+          />
+        </div>
+        {/* Google Scholar */}
+        <div className="flex flex-1 min-w-[312px] flex-col py-4">
+          <label htmlFor="#googleScholar" className=" text-base font-medium">
+            Google Scholar Profile
+          </label>
+          <input
+            id="#googleScholar"
+            className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
+            autoComplete="off"
+            type="text"
+            placeholder="Enter your Google Scholar link if you have one..."
+            {...register('googleScholar')}
+          />
+        </div>
         <h3 className="text-2xl text-primary font-semibold">
-          Participate Information
+          Participation Information
         </h3>
         <div className="flex flex-1 min-w-[312px] flex-col py-4">
           <label htmlFor="#affiliation" className=" text-base font-medium">
@@ -537,13 +626,26 @@ const FormRegister = () => {
             </span>
           )}
         </div>
+        {/* Id Paper */}
+        <div className="flex flex-1 min-w-[312px] flex-col py-4">
+          <label htmlFor="#idPaper" className=" text-base font-medium">
+            If yes, provide the paper number (Paper ID)
+          </label>
+          <input
+            id="#idPaper"
+            className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
+            autoComplete="off"
+            type="text"
+            placeholder="Enter your paper ID..."
+            {...register('idPaper')}
+          />
+        </div>
         <div className="flex flex-1 min-w-[312px] flex-col py-4">
           <label htmlFor="#certificate" className=" text-base font-medium">
             Do you want a Certificate?
             <span className="text-lg text-red-500">*</span>
             <p className="text-black/70 text-xs">
-              Remember that this year the certification for SIMBig 2024 will
-              have a cost
+              (Note: A fee applies for SIMBig 2024 certification.)
             </p>
           </label>
           <div className="flex gap-8 mt-3  flex-wrap">
@@ -594,21 +696,21 @@ const FormRegister = () => {
         </div>
         <hr className="my-8" />
         <h3 className="text-2xl text-primary font-semibold">
-          Fill the operation number
+          Operation Number
           <span className="text-lg text-red-500">*</span>
         </h3>
         <div className="flex flex-1 min-w-[312px] flex-col py-4">
           <input
-            id="#operationCode"
+            id="#operationNumber"
             className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
             type="text"
             autoComplete="off"
-            placeholder="Operation Code..."
-            {...register('operationCode', {
+            placeholder="Enter your operation number..."
+            {...register('operationNumber', {
               required: true,
             })}
           />
-          {!!errors.operationCode && (
+          {!!errors.operationNumber && (
             <span className="bg-yellow-300 px-6 py-2 mt-1">
               <ul className="list-disc text-yellow-900 text-sm">
                 <li>You must enter an operation code.</li>
@@ -618,20 +720,36 @@ const FormRegister = () => {
           <span className="bg-green-200 px-6 py-2 mt-1">
             <ul className="list-disc text-green-900 text-sm">
               <li>
-                Remember to save a digital copy of the operation number, as it
-                will be necessary to present it when collecting the credentials.
+                (Save a digital copy, as it will be required when collecting
+                credentials.)
               </li>
             </ul>
           </span>
         </div>
+
+        <div className="flex flex-1 min-w-[312px] flex-col py-4">
+          <label htmlFor="#googleScholar" className=" text-base font-medium">
+            Upload your invoice (PDF, PNG, or JPG files)
+            <span className="text-lg text-red-500">*</span>
+          </label>
+          <input
+            id="#googleScholar"
+            className="px-4 py-2 bg-primary/10 outline-none placeholder:text-primary/60 placeholder:font-medium w-full"
+            autoComplete="off"
+            type="file"
+            accept=".pdf, .png, .jpg, .jpeg"
+            {...register('image', { required: true })}
+          />
+        </div>
+
         <hr className="my-8" />
         <div className="py-4">
           <label className="flex gap-8 items-start">
             <input type="checkbox" className="mt-2 scale-125" />
             <p>
-              I declare that the data filled in are real and can be used by the
-              organizers of the SIMBig 2024 Event. If you want more information
-              visit our [LINK]
+              I declare that the information provided is accurate and may be
+              used by the organizers of the SIMBig 2024 event. For more details,
+              visit [LINK].
             </p>
           </label>
         </div>
@@ -639,8 +757,8 @@ const FormRegister = () => {
           <label className="flex gap-8 items-start">
             <input type="checkbox" className="mt-2 scale-125" defaultChecked />
             <p>
-              I want to receive information on employment, research and / or
-              other related opportunities from SIMBig and its partners
+              I would like to receive information about job, research, and other
+              related opportunities from SIMBig and its partners.
             </p>
           </label>
         </div>
