@@ -740,6 +740,13 @@ const FormRegister = () => {
             accept=".pdf, .png, .jpg, .jpeg"
             {...register('image', { required: true })}
           />
+          {!!errors.image && (
+            <span className="bg-yellow-300 px-6 py-2 mt-1">
+              <ul className="list-disc text-yellow-900 text-sm">
+                <li>Please select an image before submitting the form.</li>
+              </ul>
+            </span>
+          )}
         </div>
 
         <hr className="my-8" />
