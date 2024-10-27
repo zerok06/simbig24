@@ -166,6 +166,23 @@
         "paragraph": "Outstanding leaders who will challenge your ideas and enhance your creativity.",
         "components": [
             {
+                "id": "47ac149a-d9a1-4fbe-8b6b-848f16c53b75",
+                "name": "GENTLES, Andrew",
+                "title": "Professor, PhD.",
+                "slug": "andrew-gentles",
+                "image": "/assets/images/speaker/face/andrew.jpg",
+                "path": "/speakers",
+                "job": "Stanford University, USA",
+                "logoJob": "/assets/images/speaker/job/stanford_logo1.jpg",
+                "desc": "I completed my undergraduate degree in physics at the University of Manchester, and my PhD in theoretical particle physics at the University of Southampton. Following this, I switched fields with a postdoc in evolutionary genetics at Queens Medical Centre, University of Nottingham; then in early computational analysis of the human genome at Stanford University.  <br/><br/>  After a foray into non-profit research, I became faculty member at Stanford in 2016. I am currently in the departments of Pathology, Medicine, and Biomedical Data Science. My group develops methods and resources for understanding disease biology from high dimensional datasets such as gene expression and spatial imaging. We are particularly interested in the role of the microenvironment in cancer, but also have projects in Alzheimer Disease.",
+                "social": {
+                    "website": "https://profiles.stanford.edu/andrew-gentles",
+                    "LinkedIn": "https://www.linkedin.com/in/andrew-gentles-65786b1/",
+                    "twitter": "https://x.com/askyperson",
+                    "google": "https://scholar.google.com/citations?user=6JO_L6wAAAAJ&hl=en"
+                }
+            },
+            {
                 "id": "d2bfb6f1-2508-4089-9005-0ae3c2c3ed9c",
                 "name": "VILLAVICENCIO, Aline",
                 "title": "Professor, PhD.",
@@ -568,7 +585,7 @@
                         "name": "Jose Enrique Paye Mamani",
                         "title": "Stdnt. Systems and Computer Engineering",
                         "uni": "Universidad Nacional de Moquegua",
-                        "image": "/assets/images/committee/jose.webp",
+                        "image": "/assets/images/committee/josepaye.webp",
                         "location": "Moquegua, Peru",
                         "desc": "",
                         "social": {
@@ -612,574 +629,868 @@
         },
         "programm": [
             {
-                "id": 1,
-                "name": "Nathalie Abadie",
-                "affiliation": "COGIT IGN",
-                "country": "France"
-            },
-            {
-                "id": 2,
-                "name": "Hugo Alatrista-Salas",
-                "affiliation": "Pontificia Universidad Católica del Perú",
-                "country": "Peru"
-            },
-            {
-                "id": 3,
-                "name": "Marco Alvarez",
-                "affiliation": "University of Rhode Islan",
-                "country": "USA"
-            },
-            {
-                "id": 4,
-                "name": "Yuan An",
-                "affiliation": "Drexel University",
-                "country": "USA"
-            },
-            {
-                "id": 5,
-                "name": "Erick Antezana",
-                "affiliation": "Norwegian University of Science and Technology",
-                "country": "Norway"
-            },
-            {
-                "id": 6,
-                "name": "Smith Washington Arauco Canchumuni",
-                "affiliation": "Pontifical Catholic University of Rio de Janeiro",
-                "country": "Brazil"
-            },
-            {
-                "id": 7,
-                "name": "Giacomo Bergami",
-                "affiliation": "Newcastle University",
-                "country": "UK"
-            },
-            {
-                "id": 8,
-                "name": "Sandra Bringay",
-                "affiliation": "Paul Valéry University",
-                "country": "France"
-            },
-            {
-                "id": 9,
-                "name": "Qingyu Chen",
-                "affiliation": "National Institutes of Health (NLM/NIH)",
-                "country": "USA"
-            },
-            {
-                "id": 10,
-                "name": "Davide Chicco",
-                "affiliation": "Peter Munk Cardiac Centre",
-                "country": "Canada"
-            },
-            {
-                "id": 11,
-                "name": "Fabio Crestani",
-                "affiliation": "University of Lugano",
-                "country": "Switzerland"
-            },
-            {
-                "id": 12,
-                "name": "Nuno Datia",
-                "affiliation": "ISEL",
-                "country": "Portugal"
-            },
-            {
-                "id": 13,
-                "name": "Alneu de Andrade Lopes",
-                "affiliation": "PPGI-IM/NCE-UFRJ",
-                "country": "Brazil"
-            },
-            {
-                "id": 14,
-                "name": "Jessica de Faria Dafflon",
-                "affiliation": "National Institutes of Health",
-                "country": "USA"
-            },
-            {
-                "id": 15,
-                "name": "Dina Demner-Fushman",
-                "affiliation": "National Institutes of Health (NLM/NIH)",
-                "country": "USA"
-            },
-            {
-                "id": 16,
-                "name": "Damiano Distante",
-                "affiliation": "University of Rome Unitelma Sapienza",
-                "country": "Italy"
-            },
-            {
-                "id": 17,
-                "name": "Marcos Aurélio Domingues",
-                "affiliation": "State University of Maringá",
-                "country": "Brazil"
-            },
-            {
-                "id": 18,
-                "name": "Martín Ariel Domínguez",
-                "affiliation": "Universidad Nacional de Córdoba",
-                "country": "Argentina"
-            },
-            {
-                "id": 19,
-                "name": "Alexandre Donizeti",
-                "affiliation": "UFABC",
-                "country": "Brazil"
-            },
-            {
-                "id": 20,
-                "name": "Brett Drury",
-                "affiliation": "Liverpool Hope University",
-                "country": "UK"
-            },
-            {
-                "id": 21,
-                "name": "Okyaz Eminaga",
-                "affiliation": "Stanford University",
-                "country": "USA"
-            },
-            {
-                "id": 22,
-                "name": "Jacinto Estima",
-                "affiliation": "Centre for Informatics and Systems of the University of Coimbra (CISUC)",
-                "country": "Portugal"
-            },
-            {
-                "id": 23,
-                "name": "Rafael Giusti",
-                "affiliation": "Universidade Federal do Amazonas",
-                "country": "Brazil"
-            },
-            {
-                "id": 24,
-                "name": "Natalia Grabar",
-                "affiliation": "University of Lille",
-                "country": "France"
-            },
-            {
-                "id": 25,
-                "name": "Cédric Grueau",
-                "affiliation": "Setúbal Polytechnic Institute",
-                "country": "Portugal"
-            },
-            {
-                "id": 26,
-                "name": "Yi Guo",
-                "affiliation": "University of Florida",
-                "country": "USA"
-            },
-            {
-                "id": 27,
-                "name": "Juan Gutierrez Cárdenas",
-                "affiliation": "Universidad de Lima",
-                "country": "Peru"
-            },
-            {
-                "id": 28,
-                "name": "Matthias Hagen",
-                "affiliation": "Friedrich-Schiller-Universität Jena",
-                "country": ""
-            },
-            {
-                "id": 29,
-                "name": "Aidan Hogan",
-                "affiliation": "University of Chile",
-                "country": "Chile"
-            },
-            {
-                "id": 30,
-                "name": "Ian Horrocks",
-                "affiliation": "Oxford University",
-                "country": "UK"
-            },
-            {
-                "id": 31,
-                "name": "Diana Inkpen",
-                "affiliation": "University of Ottawa",
-                "country": "Canada"
-            },
-            {
-                "id": 32,
-                "name": "Eric Kergosien",
-                "affiliation": "GERiCO Lab - University of Lille 3",
-                "country": "France"
-            },
-            {
-                "id": 33,
-                "name": "Ravi Kumar",
-                "affiliation": "Google",
-                "country": "USA"
-            },
-            {
-                "id": 34,
-                "name": "Jose Labra-Gayo",
-                "affiliation": "University of Oviedo",
-                "country": "Spain"
-            },
-            {
-                "id": 35,
-                "name": "Juan Lazo Lazo",
-                "affiliation": "Universidad del Pacífico",
-                "country": "Peru"
-            },
-            {
-                "id": 36,
-                "name": "Huei Diana Lee",
-                "affiliation": "Universidade Estadual do Oeste do Paraná",
-                "country": "Brazil"
-            },
-            {
-                "id": 37,
-                "name": "Wookey Lee",
-                "affiliation": "INHA University",
-                "country": "Korea"
-            },
-            {
-                "id": 38,
-                "name": "Maysa Macedo",
-                "affiliation": "IBM Research",
-                "country": "Brazil"
-            },
-            {
-                "id": 39,
-                "name": "Sanjay Kumar Madria",
-                "affiliation": "Missouri University of Science and Technology",
-                "country": "USA"
-            },
-            {
-                "id": 40,
-                "name": "Ron Mahabir",
-                "affiliation": "George Mason University",
-                "country": "USA"
-            },
-            {
-                "id": 41,
-                "name": "Florent Masseglia",
-                "affiliation": "Inria",
-                "country": "France"
-            },
-            {
-                "id": 42,
-                "name": "Rosario Medina Rodriguez",
-                "affiliation": "Pontificia Universidad Católica del Perú",
-                "country": "Peru"
-            },
-            {
-                "id": 43,
-                "name": "Claudio Miceli",
-                "affiliation": "Federal University of Rio de Janeiro",
-                "country": "Brazil"
-            },
-            {
-                "id": 44,
-                "name": "Avdesh Mishra",
-                "affiliation": "Texas A&M University-Kingsville",
-                "country": "USA"
-            },
-            {
-                "id": 45,
-                "name": "Pritam Mukherjee",
-                "affiliation": "National Institutes of Health (NLM/NIH)",
-                "country": "USA"
-            },
-            {
-                "id": 46,
-                "name": "Peter Mutschke",
-                "affiliation": "GESIS – Leibniz Institute for the Social Sciences",
-                "country": ""
-            },
-            {
-                "id": 47,
-                "name": "Behzad Naderalvojoud",
-                "affiliation": "Stanford University",
-                "country": "USA"
-            },
-            {
-                "id": 48,
-                "name": "Jordi Nin",
-                "affiliation": "Universitat Ramon Llull, ESADE",
-                "country": "Spain"
-            },
-            {
-                "id": 49,
-                "name": "Maciej Ogrodniczuk",
-                "affiliation": "Institute of Computer Science of the Polish Academy of Sciences",
-                "country": "Poland"
-            },
-            {
-                "id": 50,
-                "name": "Fernando Ortiz-Rodriguez",
-                "affiliation": "Universidad Autonoma de Tamaulipas",
-                "country": "Mexico"
-            },
-            {
-                "id": 51,
-                "name": "George Papadopoulos",
-                "affiliation": "TBD",
-                "country": ""
-            },
-            {
-                "id": 52,
-                "name": "Matilde Pato",
-                "affiliation": "ISEL",
-                "country": "Portugal"
-            },
-            {
-                "id": 53,
-                "name": "José Manuel Perea-Ortega",
-                "affiliation": "University of Extremadura",
-                "country": "Spain"
-            },
-            {
-                "id": 54,
-                "name": "Pascal Poncelet",
-                "affiliation": "University of Montpellier",
-                "country": "France"
-            },
-            {
-                "id": 55,
-                "name": "Marcos Quiles",
-                "affiliation": "Federal University of São Paulo",
-                "country": "Brazil"
-            },
-            {
-                "id": 56,
-                "name": "José Fabián Reyes Román",
-                "affiliation": "Universitat Politècnica de València",
-                "country": "Spain"
-            },
-            {
-                "id": 57,
-                "name": "Nancy Rodriguez",
-                "affiliation": "University of Montpellier",
-                "country": "France"
-            },
-            {
-                "id": 58,
-                "name": "Edelweis Rohrer",
-                "affiliation": "Universidad de la República",
-                "country": "Uruguay"
-            },
-            {
-                "id": 59,
-                "name": "Arnaud Sallaberry",
-                "affiliation": "Paul Valéry University",
-                "country": "France"
-            },
-            {
-                "id": 60,
-                "name": "Shengtian Sang",
-                "affiliation": "Stanford University",
-                "country": "USA"
-            },
-            {
-                "id": 61,
-                "name": "Rafael Santos",
-                "affiliation": "Instituto Nacional de Pesquisas Espaciais",
-                "country": "Brazil"
-            },
-            {
-                "id": 62,
-                "name": "Edgar Sarmiento-Calisaya",
-                "affiliation": "Universidad Nacional de San Agustín",
-                "country": "Peru"
-            },
-            {
-                "id": 63,
-                "name": "Nazha Selmaoui-Folcher",
-                "affiliation": "University of New Caledonia",
-                "country": "New Caledonia"
-            },
-            {
-                "id": 64,
-                "name": "Nigam Shah",
-                "affiliation": "Stanford University",
-                "country": "USA"
-            },
-            {
-                "id": 65,
-                "name": "Matthew Shardlow",
-                "affiliation": "University of Manchester",
-                "country": "UK"
-            },
-            {
-                "id": 66,
-                "name": "Wenyu Song",
-                "affiliation": "Harvard University",
-                "country": "USA"
-            },
-            {
-                "id": 67,
-                "name": "Aurea Rossy Soriano Vargas",
-                "affiliation": "University of Campinas",
-                "country": "Brazil"
-            },
-            {
-                "id": 68,
-                "name": "Victor Stroele",
-                "affiliation": "PPGCC/UFJF",
-                "country": "Brazil"
-            },
-            {
-                "id": 69,
-                "name": "Claude Tadonki",
-                "affiliation": "MINES ParisTech",
-                "country": "France"
-            },
-            {
-                "id": 70,
-                "name": "Maguelonne Teisseire",
-                "affiliation": "INRAE",
-                "country": "France"
-            },
-            {
-                "id": 71,
-                "name": "Paul Thompson",
-                "affiliation": "University of Manchester",
-                "country": "UK"
-            },
-            {
-                "id": 72,
-                "name": "Sanju Tiwari",
-                "affiliation": "Universidad Autonoma de Tamaulipas",
-                "country": "Mexico"
-            },
-            {
-                "id": 73,
-                "name": "Andrew Tomkins",
-                "affiliation": "Google",
-                "country": "USA"
-            },
-            {
-                "id": 74,
+                "id": 103,
                 "name": "Carlos Vázquez",
                 "affiliation": "École de Technologie Supérieure",
                 "country": "Canada"
             },
             {
-                "id": 75,
-                "name": "Antonio Vetro",
-                "affiliation": "Politecnico di Torino",
-                "country": "Italy"
-            },
-            {
-                "id": 76,
-                "name": "Sebastian Walter",
-                "affiliation": "Semalytix GmbH",
-                "country": "Germany"
-            },
-            {
-                "id": 77,
-                "name": "Karine Zeitouni",
-                "affiliation": "University of Versailles-St-Quentin",
+                "id": 104,
+                "name": "Catherine Dominguès",
+                "affiliation": "IGN",
                 "country": "France"
             },
             {
-                "id": 78,
-                "name": "Chryssa Zerva",
-                "affiliation": "Instituto de Telecomunicações",
+                "id": 105,
+                "name": "Cédric Lopez",
+                "affiliation": "Emvista",
+                "country": "France"
+            },
+            {
+                "id": 106,
+                "name": "Cédric Grueau",
+                "affiliation": "Setúbal Polytechnic Institute",
                 "country": "Portugal"
             },
             {
-                "id": 79,
-                "name": "Yuan Zhao",
-                "affiliation": "National Institutes of Health (NIMH/NIH)",
-                "country": "USA"
-            },
-            {
-                "id": 80,
+                "id": 107,
                 "name": "Charles Zheng",
                 "affiliation": "National Institutes of Health (NIMH/NIH)",
                 "country": "USA"
             },
             {
-                "id": 81,
-                "name": "Ivan Dimitry Zyrianoff",
-                "affiliation": "University of Bologna",
-                "country": "Italy"
-            },
-            {
-                "id": 82,
-                "name": "Muhammad Shafiq",
-                "affiliation": "Guangzhou University",
-                "country": "China"
-            },
-            {
-                "id": 83,
-                "name": "Nicolas Travers",
-                "affiliation": "Ecole Supérieure d'Ingénieurs Léonard de Vinci",
-                "country": "France"
-            },
-            {
-                "id": 84,
-                "name": "David Hicks",
-                "affiliation": "Texas A&M University-Kingsville",
+                "id": 108,
+                "name": "Chistian Grant",
+                "affiliation": "University of Florida",
                 "country": "USA"
             },
             {
-                "id": 85,
-                "name": "Alan Valejo",
-                "affiliation": "University of São Paulo",
-                "country": "Brazil"
-            },
-            {
-                "id": 86,
-                "name": "Mete Celik",
-                "affiliation": "Erciyes Üniversitesi",
-                "country": "Turkey"
-            },
-            {
-                "id": 87,
-                "name": "Fatiha Saïs",
-                "affiliation": "Paris Saclay University",
-                "country": "France"
-            },
-            {
-                "id": 88,
-                "name": "Jesús Bellido Angulo",
-                "affiliation": "Universidad de Ingeniería y Tecnología UTEC",
+                "id": 109,
+                "name": "Chistian Libaque",
+                "affiliation": "Universidad del Pacífico",
                 "country": "Peru"
             },
             {
-                "id": 89,
-                "name": "Adrien Coulet",
-                "affiliation": "Inria Paris",
+                "id": 110,
+                "name": "Chryssa Zerva",
+                "affiliation": "Instituto de Telecomunicações",
+                "country": "Portugal"
+            },
+            {
+                "id": 111,
+                "name": "Cinzia Cappiello",
+                "affiliation": "Politecnico di Milano",
+                "country": "Italy"
+            },
+            {
+                "id": 112,
+                "name": "Claude Tadonki",
+                "affiliation": "MINES ParisTech",
                 "country": "France"
             },
             {
-                "id": 90,
-                "name": "André Miralles",
-                "affiliation": "Irstea",
-                "country": "France"
+                "id": 113,
+                "name": "Claudio De Farias",
+                "affiliation": "Federal University of Rio de Janeiro",
+                "country": "Brazil"
             },
             {
-                "id": 91,
-                "name": "Won Kim",
-                "affiliation": "National Institutes of Health (NLM/NIH)",
-                "country": "USA"
-            },
-            {
-                "id": 92,
+                "id": 114,
                 "name": "Clement Jonquet",
                 "affiliation": "University of Montpellier",
                 "country": "France"
             },
             {
-                "id": 93,
+                "id": 115,
+                "name": "Conceição Rocha",
+                "affiliation": "INESC TEC",
+                "country": "Brazil"
+            },
+            {
+                "id": 116,
+                "name": "Abdeltawab Hendawi",
+                "affiliation": "University of Rhode Island",
+                "country": "USA"
+            },
+            {
+                "id": 117,
+                "name": "Adrien Coulet",
+                "affiliation": "Inria Paris",
+                "country": "France"
+            },
+            {
+                "id": 118,
+                "name": "Aidan Hogan",
+                "affiliation": "University of Chile",
+                "country": "Chile"
+            },
+            {
+                "id": 119,
+                "name": "Alan Valejo",
+                "affiliation": "Federal University of São Carlos",
+                "country": "Brazil"
+            },
+            {
+                "id": 120,
+                "name": "Alexandre Alves",
+                "affiliation": "CMCC/UFABC",
+                "country": "Brazil"
+            },
+            {
+                "id": 121,
+                "name": "Alexandre Donizeti",
+                "affiliation": "UFABC",
+                "country": "Brazil"
+            },
+            {
+                "id": 122,
+                "name": "Alipio Jorge",
+                "affiliation": "University of Porto",
+                "country": "Portugal"
+            },
+            {
+                "id": 123,
+                "name": "Alneu de Andrade Lopes",
+                "affiliation": "PPGI-IM/NCE-UFRJ",
+                "country": "Brazil"
+            },
+            {
+                "id": 124,
+                "name": "Amarnath Gupta",
+                "affiliation": "San Diego Supercomputing Center",
+                "country": "USA"
+            },
+            {
+                "id": 125,
+                "name": "André Miralles",
+                "affiliation": "Irstea",
+                "country": "France"
+            },
+            {
+                "id": 126,
+                "name": "Andrew Tomkins",
+                "affiliation": "Google",
+                "country": "USA"
+            },
+            {
+                "id": 127,
+                "name": "Andrew Gentles",
+                "affiliation": "Stanford University",
+                "country": "USA"
+            },
+            {
+                "id": 128,
+                "name": "Animesh Chaturvedi",
+                "affiliation": "Indian Institute of Information Technology Dharwad",
+                "country": "India"
+            },
+            {
+                "id": 129,
+                "name": "Antoine Doucet",
+                "affiliation": "La Rochelle Université",
+                "country": "France"
+            },
+            {
+                "id": 130,
+                "name": "Antonio Vetro",
+                "affiliation": "Politecnico di Torino",
+                "country": "Italy"
+            },
+            {
+                "id": 131,
+                "name": "Arash Jalal Zadeh Fard",
+                "affiliation": "OpenText - Vertica",
+                "country": "USA"
+            },
+            {
+                "id": 132,
+                "name": "Arnaud Sallaberry",
+                "affiliation": "Paul Valéry University",
+                "country": "France"
+            },
+            {
+                "id": 133,
+                "name": "Aurea Rossy Soriano Vargas",
+                "affiliation": "University of Campinas",
+                "country": "Brazil"
+            },
+            {
+                "id": 134,
+                "name": "Avdesh Mishra",
+                "affiliation": "Texas A&M University-Kingsville",
+                "country": "USA"
+            },
+            {
+                "id": 135,
+                "name": "Behzad Naderalvojoud",
+                "affiliation": "Stanford University",
+                "country": "USA"
+            },
+            {
+                "id": 136,
+                "name": "Bowei Chen",
+                "affiliation": "University of Glasgow",
+                "country": "UK"
+            },
+            {
+                "id": 137,
+                "name": "Brett Drury",
+                "affiliation": "Liverpool Hope University",
+                "country": "UK"
+            },
+            {
+                "id": 138,
+                "name": "Bruno Martins",
+                "affiliation": "University of Lisbon",
+                "country": "Portugal"
+            },
+            {
+                "id": 152,
+                "name": "Damiano Distante",
+                "affiliation": "University of Rome Unitelma Sapienza",
+                "country": "Italy"
+            },
+            {
+                "id": 153,
+                "name": "David Hicks",
+                "affiliation": "Texas A&M University-Kingsville",
+                "country": "USA"
+            },
+            {
+                "id": 154,
+                "name": "Diana Inkpen",
+                "affiliation": "University of Ottawa",
+                "country": "Canada"
+            },
+            {
+                "id": 155,
+                "name": "Diego Silva",
+                "affiliation": "Universidade Federal de São Carlos",
+                "country": "Brazil"
+            },
+            {
+                "id": 156,
+                "name": "Dina Demner-Fushman",
+                "affiliation": "National Library of Medicine",
+                "country": "USA"
+            },
+            {
+                "id": 157,
+                "name": "Edelweis Rohrer",
+                "affiliation": "Universidad de la República",
+                "country": "Uruguay"
+            },
+            {
+                "id": 158,
+                "name": "Edgar Sarmiento-Calisaya",
+                "affiliation": "Universidad Nacional de San Agustín",
+                "country": "Peru"
+            },
+            {
+                "id": 159,
+                "name": "Edgar Ceh Varela",
+                "affiliation": "Eastern New Mexico University",
+                "country": "USA"
+            },
+            {
+                "id": 160,
+                "name": "Emilio Labra",
+                "affiliation": "University of Oviedo",
+                "country": "Spain"
+            },
+            {
+                "id": 161,
+                "name": "Erick Antezana",
+                "affiliation": "Norwegian University of Science and Technology",
+                "country": "Norway"
+            },
+            {
+                "id": 162,
+                "name": "Evelyn Cervantes",
+                "affiliation": "Oracle",
+                "country": "Brazil"
+            },
+            {
+                "id": 163,
+                "name": "Fabio Crestani",
+                "affiliation": "University of Lugano",
+                "country": "Switzerland"
+            },
+            {
+                "id": 164,
+                "name": "Fatiha Saïs",
+                "affiliation": "Paris Saclay University",
+                "country": "France"
+            },
+            {
+                "id": 165,
+                "name": "Fernando Ortiz-Rodriguez",
+                "affiliation": "Universidad Autonoma de Tamaulipas",
+                "country": "Mexico"
+            },
+            {
+                "id": 166,
+                "name": "Florence Le Ber",
+                "affiliation": "Université de Strasbourg",
+                "country": "France"
+            },
+            {
+                "id": 167,
+                "name": "Florent Masseglia",
+                "affiliation": "Inria",
+                "country": "France"
+            },
+            {
+                "id": 168,
+                "name": "Francesco Buccafurri",
+                "affiliation": "Università Mediterranea di Reggio Calabria",
+                "country": "Italy"
+            },
+            {
+                "id": 169,
+                "name": "Gabriela Csurka",
+                "affiliation": "Naver Labs Europe",
+                "country": "France"
+            },
+            {
+                "id": 170,
+                "name": "George Papadopoulos",
+                "affiliation": "University of Cyprus",
+                "country": "Cyprus"
+            },
+            {
+                "id": 171,
+                "name": "Giacomo Bergami",
+                "affiliation": "Newcastle University",
+                "country": "UK"
+            },
+            {
+                "id": 172,
+                "name": "Gissella Bejarano",
+                "affiliation": "Universidad Peruana Cayetano Heredia",
+                "country": "Peru"
+            },
+            {
+                "id": 173,
+                "name": "Guillaume Metzler",
+                "affiliation": "Laboratoire ERIC, Université de Lyon",
+                "country": "France"
+            },
+            {
+                "id": 174,
+                "name": "Guillermo Calderon-Ruiz",
+                "affiliation": "Universidad Católica de Santa Maria",
+                "country": "Peru"
+            },
+            {
+                "id": 175,
+                "name": "Haihua Chen",
+                "affiliation": "University of North Texas",
+                "country": "USA"
+            },
+            {
+                "id": 176,
+                "name": "Huei Diana Lee",
+                "affiliation": "Universidade Estadual do Oeste do Paraná",
+                "country": "Brazil"
+            },
+            {
+                "id": 177,
+                "name": "Ian Horrocks",
+                "affiliation": "Oxford University",
+                "country": "UK"
+            },
+            {
+                "id": 178,
+                "name": "Ivan Dimitry Zyrianoff",
+                "affiliation": "University of Bologna",
+                "country": "Italy"
+            },
+            {
+                "id": 179,
+                "name": "Jacinto Estima",
+                "affiliation": "Centre for Informatics and Systems of the University of Coimbra (CISUC)",
+                "country": "Portugal"
+            },
+            {
+                "id": 180,
+                "name": "Jean-Paul Calbimonte",
+                "affiliation": "University of Applied Sciences and Arts Western Switzerland HES-SO",
+                "country": "Switzerland"
+            },
+            {
+                "id": 181,
+                "name": "Jeff Phillips",
+                "affiliation": "University of Utah",
+                "country": "USA"
+            },
+            {
+                "id": 182,
+                "name": "Jessica Pinaire",
+                "affiliation": "Kalya",
+                "country": "France"
+            },
+            {
+                "id": 183,
+                "name": "Jessica de Faria Dafflon",
+                "affiliation": "National Institutes of Health",
+                "country": "USA"
+            },
+            {
+                "id": 184,
+                "name": "Jinpeng Chen",
+                "affiliation": "Beijing University of Posts and Telecommunications",
+                "country": "China"
+            },
+            {
+                "id": 185,
+                "name": "Jonathan Anderson",
+                "affiliation": "Memorial University",
+                "country": "Canada"
+            },
+            {
+                "id": 186,
+                "name": "Jordi Nin",
+                "affiliation": "Universitat Ramon Llull, ESADE",
+                "country": "Spain"
+            },
+            {
+                "id": 187,
+                "name": "Jorge Poco",
+                "affiliation": "Fundação Getulio Vargas",
+                "country": "Brazil"
+            },
+            {
+                "id": 188,
+                "name": "Jorge Eduardo Díaz Suárez",
+                "affiliation": "Universidad Peruana de Ciencias Aplicadas",
+                "country": "Peru"
+            },
+            {
+                "id": 189,
+                "name": "José Fabián Reyes Román",
+                "affiliation": "Universitat Politècnica de València",
+                "country": "Spain"
+            },
+            {
+                "id": 190,
+                "name": "Juan Gutierrez-Cardenas",
+                "affiliation": "Universidad de Lima",
+                "country": "Peru"
+            },
+            {
+                "id": 191,
+                "name": "Juan Lazo Lazo",
+                "affiliation": "Universidad del Pacífico",
+                "country": "Peru"
+            },
+            {
+                "id": 192,
                 "name": "Ka Chun Lam",
                 "affiliation": "National Institutes of Health (NIMH/NIH)",
                 "country": "USA"
             },
             {
-                "id": 94,
+                "id": 193,
+                "name": "Karine Zeitouni",
+                "affiliation": "University of Versailles-St-Quentin",
+                "country": "France"
+            },
+            {
+                "id": 194,
+                "name": "Katerina Doka",
+                "affiliation": "National Technical University of Athens",
+                "country": "Greece"
+            },
+            {
+                "id": 195,
+                "name": "Larbi Boubchir",
+                "affiliation": "University of Paris 8",
+                "country": "France"
+            },
+            {
+                "id": 196,
+                "name": "Luca Davoli",
+                "affiliation": "University of Parma",
+                "country": "Italy"
+            },
+            {
+                "id": 197,
+                "name": "Maciej Ogrodniczuk",
+                "affiliation": "Institute of Computer Science of the Polish Academy of Sciences",
+                "country": "Poland"
+            },
+            {
+                "id": 198,
+                "name": "Maguelonne Teisseire",
+                "affiliation": "INRAE",
+                "country": "France"
+            },
+            {
+                "id": 199,
+                "name": "Marco Alvarez",
+                "affiliation": "University of Rhode Island",
+                "country": "USA"
+            },
+            {
+                "id": 200,
+                "name": "Marco Brocanelli",
+                "affiliation": "The Ohio State University",
+                "country": "USA"
+            },
+            {
+                "id": 201,
+                "name": "Marcos Aurélio Domingues",
+                "affiliation": "State University of Maringá",
+                "country": "Brazil"
+            },
+            {
+                "id": 202,
+                "name": "Marcos Quiles",
+                "affiliation": "Federal University of São Paulo",
+                "country": "Brazil"
+            },
+            {
+                "id": 203,
+                "name": "Martín Ariel Domínguez",
+                "affiliation": "Universidad Nacional de Córdoba",
+                "country": "Argentina"
+            },
+            {
+                "id": 204,
+                "name": "Martin Benzins",
+                "affiliation": "SCI Institute",
+                "country": "USA"
+            },
+            {
+                "id": 205,
+                "name": "Mathieu Roche",
+                "affiliation": "CIRAD",
+                "country": "France"
+            },
+            {
+                "id": 206,
+                "name": "Matilde Pato",
+                "affiliation": "Instituto Superior de Engenharia de Lisboa",
+                "country": "Portugal"
+            },
+            {
+                "id": 207,
+                "name": "Matthew Shardlow",
+                "affiliation": "University of Manchester",
+                "country": "UK"
+            },
+            {
+                "id": 208,
+                "name": "Matthias Hagen",
+                "affiliation": "Friedrich-Schiller-Universität Jena",
+                "country": "Germany"
+            },
+            {
+                "id": 209,
+                "name": "Mattia Prosperi",
+                "affiliation": "University of Florida",
+                "country": "USA"
+            },
+            {
+                "id": 210,
+                "name": "Maurizio Atzori",
+                "affiliation": "University of Cagliari",
+                "country": "Italy"
+            },
+            {
+                "id": 211,
+                "name": "Maysa Macedo",
+                "affiliation": "IBM Research",
+                "country": "Brazil"
+            },
+            {
+                "id": 212,
+                "name": "Mete Celik",
+                "affiliation": "Erciyes Üniversitesi",
+                "country": "Turkey"
+            },
+            {
+                "id": 213,
+                "name": "Miguel Nuñez del Prado",
+                "affiliation": "The World Bank",
+                "country": "USA"
+            },
+            {
+                "id": 214,
+                "name": "Nancy Rodriguez",
+                "affiliation": "University of Montpellier",
+                "country": "France"
+            },
+            {
+                "id": 215,
+                "name": "Natalia Grabar",
+                "affiliation": "University of Lille",
+                "country": "France"
+            },
+            {
+                "id": 216,
+                "name": "Nathalie Abadie",
+                "affiliation": "COGIT IGN",
+                "country": "France"
+            },
+            {
+                "id": 217,
+                "name": "Nazha Selmaoui-Folcher",
+                "affiliation": "University of New Caledonia",
+                "country": "New Caledonia"
+            },
+            {
+                "id": 218,
+                "name": "Nemanja Djuric",
+                "affiliation": "Aurora Innovation",
+                "country": "USA"
+            },
+            {
+                "id": 219,
+                "name": "Nicolas Travers",
+                "affiliation": "Léonard de Vinci Pôle Universitaire, Research Center",
+                "country": "France"
+            },
+            {
+                "id": 220,
+                "name": "Nigam Shah",
+                "affiliation": "Stanford University",
+                "country": "USA"
+            },
+            {
+                "id": 221,
+                "name": "Nuno Datia",
+                "affiliation": "ISEL",
+                "country": "Portugal"
+            },
+            {
+                "id": 222,
+                "name": "Pascal Poncelet",
+                "affiliation": "University of Montpellier",
+                "country": "France"
+            },
+            {
+                "id": 223,
+                "name": "Paul Thompson",
+                "affiliation": "University of Manchester",
+                "country": "UK"
+            },
+            {
+                "id": 224,
+                "name": "Paula Estrella",
+                "affiliation": "Universidad Nacional de Córdoba",
+                "country": "Argentina"
+            },
+            {
+                "id": 225,
+                "name": "Pierre Zweigenbaum",
+                "affiliation": "CNRS",
+                "country": "France"
+            },
+            {
+                "id": 226,
+                "name": "Pritam Mukherjee",
+                "affiliation": "National Institutes of Health (NLM/NIH)",
+                "country": "USA"
+            },
+            {
+                "id": 227,
+                "name": "Prithwish Chakraborty",
+                "affiliation": "IBM Corporation",
+                "country": "USA"
+            },
+            {
+                "id": 228,
+                "name": "Qingyu Chen",
+                "affiliation": "Yale University",
+                "country": "USA"
+            },
+            {
+                "id": 229,
+                "name": "Rada Chirkova",
+                "affiliation": "North Carolina State University",
+                "country": "USA"
+            },
+            {
+                "id": 230,
+                "name": "Rafael Giusti",
+                "affiliation": "Universidade Federal do Amazonas",
+                "country": "Brazil"
+            },
+            {
+                "id": 231,
+                "name": "Rafael Santos",
+                "affiliation": "Instituto Nacional de Pesquisas Espaciais",
+                "country": "Brazil"
+            },
+            {
+                "id": 232,
+                "name": "Ravi Kumar",
+                "affiliation": "Google",
+                "country": "USA"
+            },
+            {
+                "id": 233,
+                "name": "Richard Chbeir",
+                "affiliation": "Université de Pau",
+                "country": "France"
+            },
+            {
+                "id": 234,
+                "name": "Rosario Medina-Rodriguez",
+                "affiliation": "INRIA",
+                "country": "France"
+            },
+            {
+                "id": 235,
                 "name": "Sabrine Mallek",
                 "affiliation": "ICN Business School",
                 "country": "France"
             },
             {
-                "id": 95,
-                "name": "Diego Silva",
-                "affiliation": "Universidade Federal de São Carlos",
+                "id": 236,
+                "name": "Sandra Bringay",
+                "affiliation": "Paul Valéry University",
+                "country": "France"
+            },
+            {
+                "id": 237,
+                "name": "Sanjay Kumar Madria",
+                "affiliation": "Missouri University of Science and Technology",
+                "country": "USA"
+            },
+            {
+                "id": 238,
+                "name": "Sanju Tiwari",
+                "affiliation": "Universidad Autonoma de Tamaulipas",
+                "country": "Mexico"
+            },
+            {
+                "id": 239,
+                "name": "Sebastian Walter",
+                "affiliation": "Weav AI",
+                "country": "USA"
+            },
+            {
+                "id": 240,
+                "name": "Shengtian Sang",
+                "affiliation": "Stanford University",
+                "country": "USA"
+            },
+            {
+                "id": 241,
+                "name": "Shubhi Asthana",
+                "affiliation": "IBM Research - Almaden",
+                "country": "USA"
+            },
+            {
+                "id": 242,
+                "name": "Smith Washington Arauco Canchumuni",
+                "affiliation": "Pontifical Catholic University of Rio de Janeiro",
                 "country": "Brazil"
+            },
+            {
+                "id": 243,
+                "name": "Sophia Ananiadou",
+                "affiliation": "University of Manchester",
+                "country": "UK"
+            },
+            {
+                "id": 244,
+                "name": "Sven Hartmann",
+                "affiliation": "TU Clausthal",
+                "country": "Germany"
+            },
+            {
+                "id": 245,
+                "name": "Thiago Silva",
+                "affiliation": "Federal University of Technology",
+                "country": "Brazil"
+            },
+            {
+                "id": 246,
+                "name": "Thierry Charnois",
+                "affiliation": "University of Sorbonne Paris Nord",
+                "country": "France"
+            },
+            {
+                "id": 247,
+                "name": "Thomas Guyet",
+                "affiliation": "Inria, Centre de Lyon",
+                "country": "France"
+            },
+            {
+                "id": 248,
+                "name": "Tome Eftimov",
+                "affiliation": "Jozef Stefan Institute",
+                "country": "Slovenia"
+            },
+            {
+                "id": 249,
+                "name": "Ulf Lesser",
+                "affiliation": "Humboldt-Universität zu Berlin",
+                "country": "Germany"
+            },
+            {
+                "id": 250,
+                "name": "Victor Stroele",
+                "affiliation": "Federal University of Juiz de Fora",
+                "country": "Brazil"
+            },
+            {
+                "id": 251,
+                "name": "Vincent Gauthier",
+                "affiliation": "Telecom Sud Paris",
+                "country": "France"
+            },
+            {
+                "id": 252,
+                "name": "Wenyu Song",
+                "affiliation": "Harvard University",
+                "country": "USA"
+            },
+            {
+                "id": 253,
+                "name": "Won Kim",
+                "affiliation": "National Institutes of Health (NLM/NIH)",
+                "country": "USA"
+            },
+            {
+                "id": 254,
+                "name": "Wookey Lee",
+                "affiliation": "INHA University",
+                "country": "Korea"
+            },
+            {
+                "id": 255,
+                "name": "Xinsong Du",
+                "affiliation": "Brigham and Women’s Hospital & Harvard Medical School",
+                "country": "USA"
+            },
+            {
+                "id": 256,
+                "name": "Yi Guo",
+                "affiliation": "University of Florida",
+                "country": "USA"
+            },
+            {
+                "id": 257,
+                "name": "Yuan An",
+                "affiliation": "Drexel University",
+                "country": "USA"
+            },
+            {
+                "id": 258,
+                "name": "Yuan Zhao",
+                "affiliation": "National Institutes of Health (NIMH/NIH)",
+                "country": "USA"
+            },
+            {
+                "id": 259,
+                "name": "Zhuo Huang",
+                "affiliation": "University of Sydney",
+                "country": "Australia"
             }
         ]
     },
