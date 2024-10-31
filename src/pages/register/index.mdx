@@ -56,11 +56,11 @@ Please refer to our step-by-step PDF guides to correctly complete the SIMBig 202
 
 <div className="flex gap-4">
     <a href={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${'/files/tutorial-register-en.pdf'}`} className="bg-gray-50 px-4 py-3 rounded-2xl flex justify-center items-center flex-col" target="_blank">
-        <img src="/assets/pdf.png" title="" className="w-20 m-0" />
+        <img src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${'/assets/pdf.png'}`} title="" className="w-20 m-0" />
         <span>English</span>
     </a>
     <a href={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${'/files/tutorial-register-es.pdf'}`} className="bg-gray-50 px-4 py-3 rounded-2xl flex justify-center items-center flex-col"  target="_blank">
-        <img src="/assets/pdf.png" title=""  className="w-20 m-0"/>
+        <img src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${'/assets/pdf.png'}`}  title=""  className="w-20 m-0"/>
         <span>Spanish</span>
     </a>
 </div>
