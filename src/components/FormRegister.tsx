@@ -298,8 +298,8 @@ const FormRegister = () => {
     sendForm.set('certificate', data.certificate)
     sendForm.set('operationNumber', data.operationNumber)
     sendForm.set('image', data.image[0])
-
-    const fetching = await fetch('https://simbig24-api.onrender.com/register', {
+    /* 'https://simbig24-api.onrender.com/register' */
+    const fetching = await fetch('http://localhost:3000/register', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
@@ -563,6 +563,7 @@ const FormRegister = () => {
         <div className="flex flex-1 min-w-[312px] flex-col py-4">
           <label htmlFor="#linkein" className=" text-base font-medium">
             LinkedIn
+            <span className="text-lg text-primary">(optional)</span>
           </label>
           <input
             id="#linkein"
@@ -577,6 +578,7 @@ const FormRegister = () => {
         <div className="flex flex-1 min-w-[312px] flex-col py-4">
           <label htmlFor="#googleScholar" className=" text-base font-medium">
             Google Scholar Profile
+            <span className="text-lg text-primary">(optional)</span>
           </label>
           <input
             id="#googleScholar"
