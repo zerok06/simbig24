@@ -298,8 +298,7 @@ const FormRegister = () => {
     sendForm.set('certificate', data.certificate)
     sendForm.set('operationNumber', data.operationNumber)
     sendForm.set('image', data.image[0])
-    /* 'https://simbig24-api.onrender.com/register' */
-    const fetching = await fetch('http://localhost:3000/register', {
+    const fetching = await fetch('https://simbig24-api.onrender.com/register', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
@@ -331,6 +330,7 @@ const FormRegister = () => {
   return (
     <>
       <Toaster richColors />
+
       <form onSubmit={handleSubmit(onSubmit)} className="my-4">
         <h3 className="text-2xl text-primary font-semibold">
           Personal Information
@@ -757,7 +757,7 @@ const FormRegister = () => {
         <hr className="my-8" />
         <div className="py-4">
           <label className="flex gap-8 items-start">
-            <input type="checkbox" className="mt-2 scale-125" />
+            <input type="checkbox" className="mt-2 scale-125" defaultChecked />
             <p>
               I declare that the information provided is accurate and may be
               used by the organizers of the SIMBig 2024 event.
@@ -773,13 +773,16 @@ const FormRegister = () => {
             </p>
           </label>
         </div>
-        <div className="flex justify-end">
+        <div className="flex justify-center">
           <button
-            className="px-4 py-2 bg-primary w-full md:w-[150px] text-white font-medium mt-4 flex justify-center items-center disabled:opacity-60"
+            className="px-5 text-lg py-3 bg-primary w-full md:w-[150px] text-white font-medium mt-4 flex justify-center items-center disabled:opacity-60"
             disabled={submitForm}
           >
             {submitForm ? (
-              <div className="h-5 w-5 border-[3px] border-t-transparent border-l-white border-r-white border-b-white rounded-full animate-spin"></div>
+              <div className="flex gap-3 items-center">
+                <div className="h-5 w-5 border-[3px] border-t-transparent border-l-white border-r-white border-b-white rounded-full animate-spin"></div>
+                <p>Loading...</p>
+              </div>
             ) : (
               'Register'
             )}
