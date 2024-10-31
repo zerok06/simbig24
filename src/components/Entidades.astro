@@ -90,7 +90,7 @@ const existItems = sponsors.length > 0
       existItems && (
         <>
           <h3 class="text-left text-2xl font-bold mb-2 mt-8 ">Sponsors</h3>
-          <div class="flex mt-4">
+          <div class="flex mt-4 flex-wrap sm:flex-row flex-col items-center md:justify-start justify-center md:gap-0 gap-6">
             {sponsors.map(({ url, image, name }) => (
               <div
                 class="min-w-[249.6px] max-w-[20%] flex items-center justify-center"

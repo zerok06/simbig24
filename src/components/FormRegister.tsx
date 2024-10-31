@@ -758,8 +758,7 @@ const FormRegister = () => {
             <input type="checkbox" className="mt-2 scale-125" />
             <p>
               I declare that the information provided is accurate and may be
-              used by the organizers of the SIMBig 2024 event. For more details,
-              visit [LINK].
+              used by the organizers of the SIMBig 2024 event.
             </p>
           </label>
         </div>
