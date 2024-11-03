@@ -5,6 +5,7 @@ import SocialLinks from '../components/SocialLinks.astro'
 import Footer from '../components/Footer.astro'
 import Wrapper from '../components/Wrapper.astro'
 import SEO from '../components/SEO.astro'
+import GetCountParticipants from '../components/GetCountParticipants'
 
 const {
   frontmatter: { title, background, tag, longTitle },
@@ -27,6 +28,7 @@ const {
     <SEO title={tag} />
   </head>
   <body class="min-h-screen antialiased">
+    <GetCountParticipants client:load />
     <SocialLinks />
     <header class="min-h-[50svh] relative bg-black/30 text-white">
       <img

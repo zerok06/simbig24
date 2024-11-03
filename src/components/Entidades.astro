@@ -91,24 +91,22 @@ const existItems = sponsors.length > 0
         <>
           <h3 class="text-left text-2xl font-bold mb-2 mt-8 ">Sponsors</h3>
           <div class="flex mt-4 flex-wrap sm:flex-row flex-col items-center md:justify-start justify-center md:gap-0 gap-6">
-            {sponsors.map(({ url, image, name }) => (
-              <div
-                class="min-w-[249.6px] max-w-[20%] flex items-center justify-center"
-                title={name}
+            <div
+              class="min-w-[249.6px] max-w-[20%] flex items-center justify-center"
+              title={'Aij'}
+            >
+              <a
+                href={'https://aij.ijcai.org/'}
+                class="h-24 opacity-80 hover:opacity-100 transition-opacity duration-300"
+                target="_blank"
               >
-                <a
-                  href={url}
-                  class="h-24 w-24 opacity-80 hover:opacity-100 transition-opacity duration-300"
-                  target="_blank"
-                >
-                  <img
-                    src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${image}`}
-                    alt={name}
-                    class="w-full h-full object-contain "
-                  />
-                </a>
-              </div>
-            ))}
+                <img
+                  src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${'/assets/images/aij.jpg'}`}
+                  alt={'John Franco Rojas'}
+                  class="w-full h-full object-contain "
+                />
+              </a>
+            </div>
             <div
               class="min-w-[249.6px] max-w-[20%] flex items-center justify-center"
               title={'John Franco Rojas'}
