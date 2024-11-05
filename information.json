@@ -76,10 +76,10 @@
                 "url": "/register"
             },
             {
-                "isActive": false,
+                "isActive": true,
                 "isSub": false,
                 "title": "Program",
-                "url": "/#program"
+                "url": "/program"
             },
             {
                 "isActive": true,
@@ -501,6 +501,11 @@
     "venue": {
         "title": "Venue",
         "tag": "SIMBig 2024 - Venue",
+        "background": "/assets/images/background/3.webp"
+    },
+    "program": {
+        "title": "Program",
+        "tag": "SIMBig 2024 - Program",
         "background": "/assets/images/background/3.webp"
     },
     "organizing-committee": {
