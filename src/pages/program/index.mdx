@@ -9,13 +9,13 @@ import ContactUs from './ContactUs.astro'
 
 
 
-### Download the program of SIMBig 2022 <a href="/files/ProgramSIMBig2024.pdf" download={true} target='_blank'>here</a>
+### Download the program of SIMBig 2022 <a href={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${"/files/ProgramSIMBig2024.pdf"}`} download="ProgramSIMBig2024" target='_blank'>here</a>
 
 The SIMBig 2024 program may be subject to changes
 
 For SIMBig 2024, no specific template is required. Authors may choose their preferred format, as long as it is clear and academically structured
 
-<iframe src="/files/ProgramSIMBig2024.pdf" width="100%" height="1100px">
+<iframe src={`${import.meta.env.PROD ? '/SIMBig2024' : ''}${"/files/ProgramSIMBig2024.pdf"}`} width="100%" height="1100px">
           </iframe>
 
 ## Contact information
